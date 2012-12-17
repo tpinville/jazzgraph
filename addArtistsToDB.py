@@ -2,6 +2,7 @@
 #-*- coding:utf-8 -*-
 #
 # Ajoute les artistes d'une liste ainsi que leur discographie (infos de leurs albums)
+# TODO pas termine, pour l'instant c'est un test qui d'ajoute qu'un seul artiste
 
 from todb import *
 from itertools import ifilter

@@ -1,127 +1,166 @@
-import os
-import simplejson, urllib
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+#
+# Fonctions pour faire des requetes sur la base AllMusic
 
-import constantes # fichier avec SEARCH_BASE CALL_API  API_KEY  API_SECRET SYN_TOKEN COOKIE
+import os
+import simplejson
+import json
+import urllib
+import io
 
 import codecs
 import sys
 
-streamWriter = codecs.lookup('utf-8')[-1]
-sys.stdout = streamWriter(sys.stdout)
+# TODO A cacher quelquepart
+SIG = '123ff7c9295f9358013c0be0fb36a439'
+SEARCH_BASE = 'http://api.rovicorp.com/search/v2.1/music/search'
+CALL_API = 'http://developer.rovicorp.com/io-docs/call-api'
+API_KEY = 'mdqf9t9yf455rx2733c4cyxn'
+API_SECRET = 'xuSsHweAkf'
+SYN_TOKEN = '8f5915527d8efc34542ae6495d3d9461' # X-Ajax-Synchronization-Token dans le header la requete envoye par l'API console
+COOKIE = 'MASH=bb0b80e791bec1b9d22187d3488b7758' # Cookie dans le header la requete envoye par l'API console
 
+# Seuil en dessous duquel les resultats sont ignores
+# 2 => ne filtre que le nom exact (i.e. John Coltrane, Miles Davis)
+# 1 => filtre les groupes et nom similaires (i.e. John Coltrane Quartet, Ryan Miles Davis)
+RELEVANCE_THRESHOLD = 2.0
 
-'''
-def search(query, size=20,  **kwargs):
-  kwargs.update({
-    'apikey': API_KEY,
-    'sig': SIG,
-    'entitytype': 'artist',
-    'query': query,
-    'size': size,
-    'country': 'US',
-    'language': 'en',
-    'offset': 0,
-    'format': 'json'
-    })
+def relevant(result):
+  """ Indique si le resultat d'une requete est suffisament pertinent
+  """
+  return result['relevance'][0]['value'] >= RELEVANCE_THRESHOLD
 
+nameIdToStr = lambda nameId : 'MN'+str(nameId).zfill(10)
 
-  url = SEARCH_BASE + '?' + urllib.urlencode(kwargs)
-  print url
-  results = simplejson.load(urllib.urlopen(url))
-  print results['searchResponse']['results'][0]['id']
-  pprint(results)
-  
-  for result in results:
-    print result
+albumIdToStr = lambda albumId : 'MW'+str(albumId).zfill(10)
 
-  #return result['results']
-'''  
+strToId = lambda s : int(s[2:])
+
+# FIXME Problemes avec certains caracteres accentues !
+def toQuery(s):
+  """ Transforme une chaine de caractere pour qu'elle
+      puisse servir dans une requete, en remplacant ou
+      en eliminant les caracteres non supportes
+  """
+  return urllib.quote(s.replace(" ", "+"), safe='+')
+
+# FIXME Listes empiriques, il en manque probablement beaucoup...
+albumTypes = ['Album', 'EP', 'Single']
+albumFlags = ['Compilation', 'Digitally Remastered', 'Instrumental', 'Limited Edition', 'Video', 'Bootleg', 'Gold', 'XRCD Mastered', 'Offensive image,title,lyrics', 'Tribute']
 
 def basicRequest(endpointName):
-   requete = "curl -L '" + constantes.CALL_API + "' -d '" + endpointName +  "&params[clu]=&params[start]=&params[end]=&params[rep]=1&params[facet]=&params[filter]=&params[include]=&params[size]=20&params[offset]=0&params[country]=US&params[language]=en&params[format]=json&apiId=117&apiKey=" + constantes.API_KEY + "&apiSecret="+ constantes.API_SECRET + "&basicAuthName=&basicAuthPass='  --header 'Host: developer.rovicorp.com' --header 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:17.0) Gecko/17.0 Firefox/17.0' --header 'Accept: application/json, text/javascript, */*; q=0.01' --header 'Accept-Language: en-US,en;q=0.5' --header 'Accept-Encoding: gzip, deflate' --header 'Connection: keep-alive' --header 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' --header 'X-Ajax-Synchronization-Token: "+ constantes.SYN_TOKEN + "' --header 'X-Requested-With: XMLHttpRequest' --header 'Referer: http://developer.rovicorp.com/io-docs' --header 'Cookie: " + constantes.COOKIE + "' --header 'Pragma: no-cache' --header 'Cache-Control: no-cache'"
-
-   #print requete
+   """ Requete basique, recupere 'There was an issue with your form submission' en cas de probleme
+   """
+   requete = "curl -L '" + CALL_API + "' -d '" + endpointName +  "&params[clu]=&params[start]=&params[end]=&params[rep]=1&params[facet]=&params[filter]=&params[include]=&params[size]=20&params[offset]=0&params[country]=US&params[language]=en&params[format]=json&apiId=117&apiKey=" + API_KEY + "&apiSecret="+ API_SECRET + "&basicAuthName=&basicAuthPass='  --header 'Host: developer.rovicorp.com' --header 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:17.0) Gecko/17.0 Firefox/17.0' --header 'Accept: application/json, text/javascript, */*; q=0.01' --header 'Accept-Language: en-US,en;q=0.5' --header 'Accept-Encoding: gzip, deflate' --header 'Connection: keep-alive' --header 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' --header 'X-Ajax-Synchronization-Token: "+ SYN_TOKEN + "' --header 'X-Requested-With: XMLHttpRequest' --header 'Referer: http://developer.rovicorp.com/io-docs' --header 'Cookie: " + COOKIE + "' --header 'Pragma: no-cache' --header 'Cache-Control: no-cache'"
    reponse = os.popen(requete).read()
+   if reponse == 'There was an issue with your form submission':
+      return None
+   return reponse
 
-   #if reponse == "There was an issue with your form submission":
+def stdRequest(endpointName):
+  reponse = basicRequest(endpointName)
+  if reponse == None:
+    return None
+  #print reponse
+  tmp = simplejson.loads(reponse)
+  #print tmp['responseBody']
+  results = simplejson.loads(tmp['responseBody'])
+  
+  #if reponse.find('responseBody') < 0:
+  #   print "ERR_" + endpointName
+  #   return None
+  #else:
+  #   reponse = reponse[reponse.index('status', reponse.index('responseBody'))-3:reponse.index('responseRaw')-3]
+  #   reponse = reponse.replace('\\\\\\"', '')
+  #   reponse = reponse.replace('\\"', '"').replace("\\n", "")
+  #   results = simplejson.loads(reponse)
+  
+  return results
 
-   return reponse 
-   #print reponse
-   #print "--"
+def reqArtistByName(nomArtiste):
+  """Retourne le resultat d'une recherche sur le nom d'un artiste
+     sous la forme d'une liste de dictionnaires
+  """
+  endpointName = "endpointName=Search&methodName=Search&httpMethod=GET&methodUri=search/v2.1/:endpoint/search&params[:endpoint]=music&params[entitytype]=artist&params[query]=" + toQuery(nomArtiste)
 
-def getInfoArtiste(artiste):
-   endpointName = "endpointName=Search&methodName=Search&httpMethod=GET&methodUri=search/v2.1/:endpoint/search&params[:endpoint]=music&params[entitytype]=artist&params[query]=" + artiste.replace(" ", "+") 
+  #reponse = basicRequest(endpointName)
+  #if reponse == None:
+  #   return None
+  #reponse = reponse[reponse.index('searchResponse') - 3: reponse.index('responseRaw')-3]
+  #results = simplejson.loads(reponse.replace('\\"', '"').replace("\\n", ""))
+  results = stdRequest(endpointName)
+  if results != None:
+    results = results['searchResponse']['results']
+  return results
 
-   reponse = basicRequest(endpointName)
-   reponse = reponse[reponse.index('searchResponse') - 3: reponse.index('responseRaw')-3]
-   results = simplejson.loads(reponse.replace('\\"', '"').replace("\\n", ""))
-   return results
+def reqArtistById(artistId):
+  """Retourne le resultat d'une requete sur l'id d'un artiste
+  """
+  result = stdRequest("endpointName=Name&methodName=Info&httpMethod=GET&methodUri=data/v1/name/info&params[nameid]=" + nameIdToStr(artistId))
+  if result != None:
+    result = result['name']
+  return result
 
+# TODO a debugger
+def reqInfluencers(artistId):
+   return stdRequest("endpointName=Name&methodName=Influencers&httpMethod=GET&methodUri=data/v1/influencers&params[nameid]=" + nameIdToStr(artistId))
 
-def getStandardRequest(endpointName):
-   reponse = basicRequest(endpointName) 
+def reqAlbumByName(nomAlbum):
+  """Retourne le resultat d'une recherche sur le nom d'un album
+    sous la forme d'une liste de dictionnaires
+  """
+  endpointName = "endpointName=Search&methodName=Search&httpMethod=GET&methodUri=search/v2.1/:endpoint/search&params[:endpoint]=music&params[entitytype]=album&params[query]=" + toQuery(nomAlbum)
+  results = stdRequest(endpointName)
+  if results != None:
+    results = results['searchResponse']['results']
+  return results
 
-   if reponse.find('responseBody') < 0:
-      print "ERR_" + endpointName
-      return False
-   else:
-      reponse = reponse[reponse.index('status', reponse.index('responseBody'))-3:reponse.index('responseRaw')-3]
-      reponse = reponse.replace('\\\\\\"', '')
-      reponse = reponse.replace('\\"', '"').replace("\\n", "")
+def reqCredits(albumId):
+  results = stdRequest("endpointName=Album&methodName=Credits&httpMethod=GET&methodUri=data/v1/album/credits&params[album]=&params[albumid]=" + albumIdToStr(albumId))
+  if results != None:
+    results = results['credits']
+  return results
 
-      results = simplejson.loads(reponse)
+# TODO Utiliser l'id de l'artiste a la place !!
+#def reqDiscography(nomArtiste):
+#   endpointName = 'endpointName=Name&methodName=Discography&httpMethod=GET&methodUri=data/v1/name/discography&params[name]=' + nomArtiste.replace(" ","+")
+#   results  = stdRequest(endpointName)
+#   if results == None or results['status'] == 'error': 
+#      print '__ERR : ' + nomArtiste
+#   else:
+#      for resultat in results['discography']:
+#         #test a l'arrache pour voir si les credits ont deja ete rajoute 
+#         if len(os.popen('grep '+resultat['ids']['albumId']+' fullLinks.dot').read()) == 0:
+#            print resultat['ids']['albumId'], resultat['title']
+#            getCredits(resultat['ids']['albumId'], nomArtiste, resultat['title'] )
 
-   return results
+def reqDiscography(artistId):
+  results = stdRequest("endpointName=Name&methodName=Discography&httpMethod=GET&methodUri=data/v1/name/discography&params[name]=&params[amgmovieid]=&params[amgpopid]=&params[amgclassicalid]=&params[cosmoid]=&params[nameid]=" + nameIdToStr(artistId))
+  if results != None:
+    results = results['discography']
+  return results
 
-#print requete
+def showResults(results):
+  """ Affiche les resultats d'une recherche (API v2.1) suivant leur pertinence
+  """
+  for result in results:
+    line = ''
+    if result.has_key('relevance'):
+      line = line + str(result['relevance'][0]['value'])+' : '
+    if result['type'] == 'artist': # Recherhe sur un artiste
+      line = line + result['name']['name'] + ' (' + result['name']['ids']['nameId'] + ')'
+    elif result['type'] == 'album': # Recherhe sur un album
+      line = line + result['album']['title'] + ' (' + result['album']['ids']['albumId'] + ')'
+    else:
+      print '__ERR : type de recherche non pris en charge'
+      return None
+    print line
 
-def getIdArtist(nomArtiste):
-   results = getInfoArtiste(nomArtiste)
+def showAlbum(album):
+  print album['title'] + ' (' + album['ids']['albumId'] + ')'
 
-   return results['searchResponse']['results'][0]['id']
-
-def getCredits(albumId, nomArtiste, nomAlbum):
-   endpointName = "endpointName=Album&methodName=Credits&httpMethod=GET&methodUri=data/v1/album/credits&params[album]=&params[albumid]=" + albumId
-
-   results  = getStandardRequest(endpointName)
-   #print results
-   
-   if results != False:
-      for resultat in  results['credits']:
-         #print resultat
-         #print resultat['credit'], resultat['name']
-         if nomArtiste != resultat['name']:
-            print '"'+ nomArtiste +'" -> "'+resultat['name']+'" [label="'+ nomAlbum+' |'+resultat['credit'] +'|"]' 
-         #print resultat['credit']
-
-def getDiscography(nomArtiste):
-   endpointName = 'endpointName=Name&methodName=Discography&httpMethod=GET&methodUri=data/v1/name/discography&params[name]=' + nomArtiste.replace(" ","+")
-
-   results  = getStandardRequest(endpointName)
-   
-   
-   if results == False or results['status'] == 'error': 
-      print '__ERR : ' + nomArtiste
-   else:
-      for resultat in results['discography']:
-         #test a l'arrache pour voir si les credits ont deja ete rajoute 
-         if len(os.popen('grep '+resultat['ids']['albumId']+' *.log').read()) == 0:
-            print resultat['ids']['albumId'], resultat['title']
-            getCredits(resultat['ids']['albumId'], nomArtiste, resultat['title'] )
-
-#print getCredits('MW0000449011')
-
-#print getInfoArtiste('Eric Clapton')
-f = open('bebop.txt', 'r')
-reponse = f.readlines()
-
-for artiste in reponse:
-   artiste = artiste.replace('\n','')
-   getDiscography(artiste)
-
-f.close()
-
-   #&params[amgmovieid]=&params[amgpopid]=&params[amgclassicalid]=&params[cosmoid]=&params[nameid]=&params[type]=&params[count]=0&params[offset]=0&params[country]=US&params[language]=en&params[format]=json&apiId=117&apiKey=brghmpbs732kts7npwjv649k&apiSecret=9cP9vZ2bST&basicAuthName=&basicAuthPas
-
-#"curl -L 'http://developer.rovicorp.com/io-docs/call-api' -d 'endpointName=Search&methodName=Search&httpMethod=GET&methodUri=search/v2.1/:endpoint/search&params[:endpoint]=music&params[entitytype]=album&params[query]=a+love+supreme&params[clu]=&params[start]=&params[end]=&params[rep]=1&params[facet]=&params[filter]=&params[include]=&params[size]=20&params[offset]=0&params[country]=US&params[language]=en&params[format]=json&apiId=117&apiKey=brghmpbs732kts7npwjv649k&apiSecret=9cP9vZ2bST&basicAuthName=&basicAuthPass='  --header 'Host: developer.rovicorp.com' --header 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:17.0) Gecko/17.0 Firefox/17.0' --header 'Accept: application/json, text/javascript, */*; q=0.01' --header 'Accept-Language: en-US,en;q=0.5' --header 'Accept-Encoding: gzip, deflate' --header 'Connection: keep-alive' --header 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' --header 'X-Ajax-Synchronization-Token: f2d23791524554df676dfc0009478fe9' --header 'X-Requested-With: XMLHttpRequest' --header 'Referer: http://developer.rovicorp.com/io-docs' --header 'Cookie: MASH=eac40269c8a508852fb6929df7a9e5b5' --header 'Pragma: no-cache' --header 'Cache-Control: no-cache'"
-
+# TODO
+#def showCredits(credits)
+#  elif result.has_key('credit'): # Requete de credits d'un album
+#      line = line + result['name'] + ' (' + result['id'] + ') : ' + result['credit'] + #' [' + result['type'] + ']'
