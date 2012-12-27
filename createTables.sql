@@ -1,57 +1,202 @@
--- Script de creation de la base de donnees
+-- Table: Artists
+CREATE TABLE Artists ( 
+    id          INTEGER PRIMARY KEY,
+    name        TEXT    NOT NULL,
+    birthDate   DATE,
+    birthPlace  TEXT,
+    deathDate   DATE,
+    deathPlace  TEXT,
+    country     TEXT,
+    headlineBio TEXT 
+);
 
-CREATE TABLE Artists(id integer primary key,
-                       name text not null,
-                       birthDate date,
-                       birthPlace text,
-                       deathDate date,
-                       deathPlace text,
-                       country text,
-                       headlineBio text);
-CREATE TABLE ActiveYears(artistId integer references Artists(id) not null,
-                           decade integer not null,
-                           PRIMARY KEY(artistId,decade));
-CREATE TABLE Influencers(artistId integer references Artists(id) not null,
-                           influencerId integer references Artists(id) not null,
-                           weight integer not null,
-                           PRIMARY KEY(artistId,weight));
 
-CREATE TABLE Albums(id integer primary key,
-                      title text not null,
-                      originalReleaseDate date not null,
-                      label text,
-                      type text, -- a remplacer par un enum quand on est sur de connaitre toutes les valeurs possibles
-                      rating int not null,
-                      duration int);
-CREATE TABLE AlbumPrimaryArtists(
-                      albumId integer REFERENCES Albums(id) not null,
-                      artistId integer REFERENCES Artists(id) not null,
-                      PRIMARY KEY(albumId,artistId));
-CREATE TABLE AlbumFlags(albumId integer REFERENCES Albums(id) not null,
-                         flag text not null,
-                         PRIMARY KEY(albumId,flag));
-CREATE TABLE CreditTypes(albumId integer references Albums(id) not null,
-                           artistId integer references Artists(id) not null,
-                           type char not null,
-                           PRIMARY KEY(albumId,artistId));
-CREATE TABLE CreditJobs(albumId integer REFERENCES Albums(id) not null,
-                         artistId integer REFERENCES Artists(id) not null,
-                         job text not null,
-                         PRIMARY KEY(albumId,artistId,job));
 
-CREATE TABLE Genres(id integer primary key, name text not null);
-CREATE TABLE ArtistGenres(artistId integer REFERENCES Artists(id) not null,
-                           genreId integer REFERENCES Genres(id) not null,
-                           weight integer not null,
-                           PRIMARY KEY(artistId,genreId));
-CREATE TABLE AlbumGenres(albumId integer REFERENCES Albums(id) not null,
-                           genreId integer REFERENCES Genres(id) not null,
-                           weight integer not null,
-                           PRIMARY KEY(albumId,genreId));
 
-CREATE TABLE Styles(id integer primary key, name text not null);
-CREATE TABLE ArtistStyles(artistId integer REFERENCES Artists(id) not null,
-                           styleId integer REFERENCES Styles(id) not null,
-                           weight integer not null);
+-- Table: ActiveYears
+CREATE TABLE ActiveYears ( 
+    artistId INTEGER REFERENCES Artists ( id ) 
+                     NOT NULL,
+    decade   INTEGER NOT NULL,
+    PRIMARY KEY ( artistId, decade ) 
+);
 
--- TODO : MembersOf
+
+
+
+-- Table: Influencers
+CREATE TABLE Influencers ( 
+    artistId     INTEGER REFERENCES Artists ( id ) 
+                         NOT NULL,
+    influencerId INTEGER REFERENCES Artists ( id ) 
+                         NOT NULL,
+    weight       INTEGER NOT NULL,
+    PRIMARY KEY ( artistId, weight ) 
+);
+
+
+
+
+-- Table: Albums
+CREATE TABLE Albums ( 
+    id                  INTEGER PRIMARY KEY,
+    title               TEXT    NOT NULL,
+    originalReleaseDate DATE    NOT NULL,
+    label               TEXT,
+    type                TEXT,
+    rating              INT     NOT NULL,
+    duration            INT 
+);
+
+
+
+
+-- Table: AlbumPrimaryArtists
+CREATE TABLE AlbumPrimaryArtists ( 
+    albumId  INTEGER REFERENCES Albums ( id ) 
+                     NOT NULL,
+    artistId INTEGER REFERENCES Artists ( id ) 
+                     NOT NULL,
+    PRIMARY KEY ( albumId, artistId ) 
+);
+
+
+
+
+-- Table: AlbumFlags
+CREATE TABLE AlbumFlags ( 
+    albumId INTEGER REFERENCES Albums ( id ) 
+                    NOT NULL,
+    flag    TEXT    NOT NULL,
+    PRIMARY KEY ( albumId, flag ) 
+);
+
+
+
+
+-- Table: Genres
+CREATE TABLE Genres ( 
+    id   INTEGER PRIMARY KEY,
+    name TEXT    NOT NULL 
+);
+
+
+
+
+-- Table: ArtistGenres
+CREATE TABLE ArtistGenres ( 
+    artistId INTEGER REFERENCES Artists ( id ) 
+                     NOT NULL,
+    genreId  INTEGER REFERENCES Genres ( id ) 
+                     NOT NULL,
+    weight   INTEGER NOT NULL,
+    PRIMARY KEY ( artistId, genreId ) 
+);
+
+
+
+
+-- Table: AlbumGenres
+CREATE TABLE AlbumGenres ( 
+    albumId INTEGER REFERENCES Albums ( id ) 
+                    NOT NULL,
+    genreId INTEGER REFERENCES Genres ( id ) 
+                    NOT NULL,
+    weight  INTEGER NOT NULL,
+    PRIMARY KEY ( albumId, genreId ) 
+);
+
+
+
+
+-- Table: Styles
+CREATE TABLE Styles ( 
+    id   INTEGER PRIMARY KEY,
+    name TEXT    NOT NULL 
+);
+
+
+
+
+-- Table: ArtistStyles
+CREATE TABLE ArtistStyles ( 
+    artistId INTEGER REFERENCES Artists ( id ) 
+                     NOT NULL,
+    styleId  INTEGER REFERENCES Styles ( id ) 
+                     NOT NULL,
+    weight   INTEGER NOT NULL 
+);
+
+
+
+
+-- Table: Jobs
+CREATE TABLE Jobs ( 
+    jobId INTEGER PRIMARY KEY AUTOINCREMENT,
+    job   TEXT 
+);
+
+
+
+
+-- Table: Credits
+CREATE TABLE Credits ( 
+    albumId  INTEGER NOT NULL
+                     REFERENCES Albums ( id ),
+    artistId INTEGER NOT NULL
+                     REFERENCES Artists ( id ),
+    jobId    INTEGER NOT NULL
+                     REFERENCES Jobs ( jobId ),
+    PRIMARY KEY ( albumId, artistId, jobId ) 
+);
+
+
+
+
+-- Table: JobCategories
+CREATE TABLE JobCategories ( 
+    jobCategoriesId INTEGER        PRIMARY KEY AUTOINCREMENT,
+    jobCategory     VARCHAR( 50 ) 
+);
+
+
+
+
+-- Table: LinksJobCategory
+CREATE TABLE LinksJobCategory ( 
+    jobId         INTEGER REFERENCES Jobs ( jobId ),
+    jobcategoryId INTEGER REFERENCES JobCategories ( jobCategoriesId ),
+    PRIMARY KEY ( jobId, jobcategoryId ) 
+);
+
+
+
+
+-- View: Creditsalbum
+CREATE VIEW Creditsalbum AS
+       SELECT al.id,
+              al.title,
+              ar.name,
+              j.job,
+              j.jobId,
+              ar.id artistId
+         FROM albums al, 
+              artists ar, 
+              credits cr, 
+              jobs j, 
+              linksjobcategory ljo, 
+              Jobcategories jc
+        WHERE ar.id = cr.artistId 
+              AND
+              al.id = cr.albumId 
+              AND
+              cr.jobId = j.jobid 
+              AND
+              ljo.jobId = cr.jobId 
+              AND
+              ljo.jobcategoryId = jc.jobCategoriesId
+        ORDER BY al.title,
+                  cr.jobId;
+
+
+

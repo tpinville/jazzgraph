@@ -13,13 +13,18 @@ import codecs
 import sys
 
 # TODO A cacher quelquepart
-SIG = '123ff7c9295f9358013c0be0fb36a439'
 SEARCH_BASE = 'http://api.rovicorp.com/search/v2.1/music/search'
 CALL_API = 'http://developer.rovicorp.com/io-docs/call-api'
-API_KEY = 'mdqf9t9yf455rx2733c4cyxn'
-API_SECRET = 'xuSsHweAkf'
-SYN_TOKEN = '8f5915527d8efc34542ae6495d3d9461' # X-Ajax-Synchronization-Token dans le header la requete envoye par l'API console
-COOKIE = 'MASH=bb0b80e791bec1b9d22187d3488b7758' # Cookie dans le header la requete envoye par l'API console
+API_KEY = 'brghmpbs732kts7npwjv649k'
+API_SECRET = '9cP9vZ2bST'
+SYN_TOKEN = '31c0044d7fd199270b22c67a1e8badca' # X-Ajax-Synchronization-Token dans le header la requete envoye par l'API console
+COOKIE = 'MASH=53d8ccb05f0f708689d52df6a6504b6f' # Cookie dans le header la requete envoye par l'API console
+
+
+API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
+API_SECRET = 'ZDvjkKDuhE'
+SYN_TOKEN = '00996e8cf7e1c198e358ba31c6ec3a1b' # X-Ajax-Synchronization-Token dans le header la requete envoye par l'API console
+COOKIE = 'MASH=9307c31cfea50cde35136c59dde75198' # Cookie dans le header la requete envoye par l'API console
 
 # Seuil en dessous duquel les resultats sont ignores
 # 2 => ne filtre que le nom exact (i.e. John Coltrane, Miles Davis)
@@ -43,6 +48,7 @@ def toQuery(s):
       puisse servir dans une requete, en remplacant ou
       en eliminant les caracteres non supportes
   """
+  s = s.encode('utf-8')
   return urllib.quote(s.replace(" ", "+"), safe='+')
 
 # FIXME Listes empiriques, il en manque probablement beaucoup...
@@ -64,7 +70,10 @@ def stdRequest(endpointName):
     return None
   #print reponse
   tmp = simplejson.loads(reponse)
-  #print tmp['responseBody']
+  
+  if tmp['responseBody'] == "<h1>403 Developer Inactive</h1>":
+    print "*********** Erreur dans l'API Key : inactive" 
+    return None
   results = simplejson.loads(tmp['responseBody'])
   
   #if reponse.find('responseBody') < 0:
