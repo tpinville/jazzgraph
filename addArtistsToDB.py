@@ -50,47 +50,51 @@ def addArtistToDb(artistName):
         con.commit()
         # Recupere sa discographie
         discResults = reqDiscography(artistId)
-        tailleDisc = len(discResults)
-        
-        if DEBUG == True:
-          print "taille de la discographie complete : "+str(tailleDisc)
 
-        cptDiscResults = 0
-        
-        for discResult in discResults:
-          cptDiscResults = cptDiscResults + 1 
-          flags = discResult['flags']
-        
-          # Ignore les compilations, videos et bootlegs
-          if flags == None or len(flags) == 0 \
-              or len(ignoredAlbumFlags.intersection(set(flags)))==0:
-            albumId = strToId(discResult['ids']['albumId'])
-            albumName = discResult['title']
+        if discResults == None:
+           print "Pas de discographie associee"
+        else:
+           tailleDisc = len(discResults)
+           
+           if DEBUG == True:
+             print "taille de la discographie complete : "+str(tailleDisc)
 
-            if isAlbumInDb(albumId,cur) == False:
-              if DEBUG == True:
-                print "*** Ajout de l'album \""+albumName+"\" (id=" \
-                +str(albumId)+", "+ str(cptDiscResults)+"/"+str(tailleDisc)+")"
+           cptDiscResults = 0
+           
+           for discResult in discResults:
+             cptDiscResults = cptDiscResults + 1 
+             flags = discResult['flags']
+           
+             # Ignore les compilations, videos et bootlegs
+             if flags == None or len(flags) == 0 \
+                 or len(ignoredAlbumFlags.intersection(set(flags)))==0:
+               albumId = strToId(discResult['ids']['albumId'])
+               albumName = discResult['title']
 
-              albumSearchResults = reqAlbumByName(albumName)
+               if isAlbumInDb(albumId,cur) == False:
+                 if DEBUG == True:
+                   print "*** Ajout de l'album \""+albumName+"\" (id=" \
+                   +str(albumId)+", "+ str(cptDiscResults)+"/"+str(tailleDisc)+")"
 
-              if albumSearchResults != None:
-                try:
-                  albumSearchResult = next(ifilter(lambda r : strToId(r['album']['ids']['albumId'])==albumId, albumSearchResults))
-                  if albumSearchResult != None:
-                    albumToDB(albumSearchResult['album'],cur)
-                    con.commit()
-                  else:
-                    print "!!! Impossible de trouver les infos de l'album"
-                except StopIteration:
-                  print "fin des valeurs albumId"
-              else:
-                print "Echec de la recherche de l'album intitule "+albumName
+                 albumSearchResults = reqAlbumByName(albumName)
 
-              #Ajout des credits 
-              credits = reqCredits(albumId)
-              for credit in credits:
-                creditToDB(credit,albumId, cur, con)
+                 if albumSearchResults != None:
+                   try:
+                     albumSearchResult = next(ifilter(lambda r : strToId(r['album']['ids']['albumId'])==albumId, albumSearchResults))
+                     if albumSearchResult != None:
+                       albumToDB(albumSearchResult['album'],cur)
+                       con.commit()
+                     else:
+                       print "!!! Impossible de trouver les infos de l'album"
+                   except StopIteration:
+                     print "fin des valeurs albumId"
+                 else:
+                   print "Echec de la recherche de l'album intitule "+albumName
+
+                 #Ajout des credits 
+                 credits = reqCredits(albumId)
+                 for credit in credits:
+                   creditToDB(credit,albumId, cur, con)
 
 
     #con.close() # FIXME quand on le met, "Cannot operate on a closed database" !?

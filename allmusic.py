@@ -26,6 +26,11 @@ API_SECRET = 'ZDvjkKDuhE'
 SYN_TOKEN = '00996e8cf7e1c198e358ba31c6ec3a1b' # X-Ajax-Synchronization-Token dans le header la requete envoye par l'API console
 COOKIE = 'MASH=9307c31cfea50cde35136c59dde75198' # Cookie dans le header la requete envoye par l'API console
 
+API_KEY = 'h28eru7j3sqzymk77wgsfryc'
+API_SECRET = 'YQ82GUfC5T'
+SYN_TOKEN = '98e20e22fae87bcce961e3701af11766'
+COOKIE = 'MASH=c833042589dcc1111f42f74591c354d9'
+
 # Seuil en dessous duquel les resultats sont ignores
 # 2 => ne filtre que le nom exact (i.e. John Coltrane, Miles Davis)
 # 1 => filtre les groupes et nom similaires (i.e. John Coltrane Quartet, Ryan Miles Davis)
