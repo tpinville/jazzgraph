@@ -7,7 +7,7 @@ f = open('graph.dot', 'w')
 con = lite.connect('allmusic.db')
 with con:
   cur = con.cursor()
-  cur.execute("SELECT * FROM Creditsalbum")
+  cur.execute("SELECT * FROM Creditsalbum where id in (select credits.albumid from credits,artists, linksjobcategory  where artists.id = credits.artistid and credits.jobid = linksjobcategory.jobid and artists.name in ('Max Roach'))")
 
   rows = cur.fetchall()
 
@@ -29,14 +29,16 @@ with con:
 
         for credit in credits:
           if credit[2] != art[2]:
-            line = '"'+ art[2] + '" -> "' + credit[2] + '" [album="' + credit[1] + '" job="'+  credit[3] +"\"] \n"
+            line = '"'+ art[2].replace('"','') + '" -> "' + credit[2].replace('"','')  + '" [label="' + credit[1].replace('"','\"')  + '" job="'+  credit[3] +"\"] \n"
             f.write(line.encode('utf-8'))
-          primArtists = []
-          credits = []
 #580316, u'75th Birthday Bash Live!', u'Mel Lee', u'Drums', 9, 1825961)
+
+      primArtists = []
+      credits = []
       albumId = row[0]
     else:
       if row[4] == 1: #primary artist
+#        print row[2] + ' - ' + row[1]
         primArtists.append(row)
       elif row[4] != 6: #guest artist est elimine (doublon)
         credits.append(row)
