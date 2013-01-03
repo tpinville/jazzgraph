@@ -7,7 +7,7 @@ f = open('graph.dot', 'w')
 con = lite.connect('allmusic.db')
 with con:
   cur = con.cursor()
-  cur.execute("SELECT * FROM Creditsalbum where id in (select credits.albumid from credits,artists, linksjobcategory  where artists.id = credits.artistid and credits.jobid = linksjobcategory.jobid and artists.name in ('Max Roach'))")
+  cur.execute("SELECT * FROM Creditsalbum where id in (select credits.albumid from credits,artists, linksjobcategory  where artists.id = credits.artistid and credits.jobid = linksjobcategory.jobid and artists.name in ('Kenny Dorham'))")
 
   rows = cur.fetchall()
 
