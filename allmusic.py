@@ -23,13 +23,13 @@ COOKIE = 'MASH=53d8ccb05f0f708689d52df6a6504b6f' # Cookie dans le header la requ
 
 API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
 API_SECRET = 'ZDvjkKDuhE'
-SYN_TOKEN = '00996e8cf7e1c198e358ba31c6ec3a1b' # X-Ajax-Synchronization-Token dans le header la requete envoye par l'API console
-COOKIE = 'MASH=9307c31cfea50cde35136c59dde75198' # Cookie dans le header la requete envoye par l'API console
 
 API_KEY = 'h28eru7j3sqzymk77wgsfryc'
 API_SECRET = 'YQ82GUfC5T'
-SYN_TOKEN = '98e20e22fae87bcce961e3701af11766'
-COOKIE = 'MASH=c833042589dcc1111f42f74591c354d9'
+API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
+API_SECRET = 'ZDvjkKDuhE'
+SYN_TOKEN = '89da3390bb2715888276c1cfd77c8021'
+COOKIE = 'MASH=4c2c6f532e22dd78bfd7ab768869acb9'
 
 # Seuil en dessous duquel les resultats sont ignores
 # 2 => ne filtre que le nom exact (i.e. John Coltrane, Miles Davis)
