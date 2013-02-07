@@ -3,15 +3,57 @@
 <head>
         <meta charset="utf-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/prettify.css">
 
   <script src="js/prettify.js"></script>
   <script src="js/sigma.min.js"></script>
+<style type="text/css">
+/* RESET */
+body{
+
+}
+</style>
 </head>
 <body onload="prettyPrint();">
+<script src="js/jquery.min.js"></script>
+ <script type="text/javascript">
+//
+
+
+function getImage(title)
+{
+document.getElementById('images').innerHTML = '';
+var txtHtml = "";
+
+$.getJSON("http://en.wikipedia.org/w/api.php?action=query&prop=images&titles="+title+"&format=json&callback=?", function(data)  {
+ 
+ $.each(data.query.pages , function(key, val) {
+   $.each(val.images , function(cle, valeur) {
+     
+                    $.getJSON("http://en.wikipedia.org/w/api.php?action=query&titles="+valeur.title.replace(" ","_") + "&prop=imageinfo&iiprop=url&format=json&callback=?", function(data)  {
+                     
+                     $.each(data.query.pages , function(key, val) {
+
+                       $.each(val.imageinfo , function(cle, valeur) {
+                          //txtHtml = '<img src='+ valeur.url + ' width=100 height=100/>';
+                           $("<img/>").attr("src", valeur.url).attr("width",220).attr("height",220).appendTo("#images");
+                           //$("<img/>").attr("src", valeur.url).attr("width",220).attr("height",220).appendTo("#images");
+                           //http://en.wikipedia.org/w/api.php?action=query&titles=".$term."&prop=images&format=json&imlimit=5
+                          });
+
+                         });
+                       });
+                       //alert (valeur.title.replace(" ","_"));
+
+        if ( cle == 5 ) return false;
+   });
+
+ });
+
+  });
+}
+ 
+ 
+ </script>
 <script type="text/javascript">
   var mapIdLabel = new Object();
 </script>
@@ -21,7 +63,8 @@
     <div class="row">
 <select onchange="
 init(this[this.selectedIndex].value)
-">
+;getImage(this[this.selectedIndex].value);">
+ 
 <option value='Al_Haig'>Al Haig</option>
 <option value='Art_Blakey'>Art Blakey</option>
 <option value='Art_Pepper'>Art Pepper</option>
@@ -101,7 +144,10 @@ init(this[this.selectedIndex].value)
     <div class="sigma-expand" id="sigma-example"></div>
   </div>
 </div>
-<script src="js/jquery.min.js"></script><script src="js/sigma.parseGexf.js"></script><script type="text/javascript">function init(path) {
+
+<script src="js/sigma.parseGexf.js"></script>
+
+<script type="text/javascript">function init(path) {
   /**
    * First, let's instanciate sigma.js :
    */
@@ -149,11 +195,11 @@ init(this[this.selectedIndex].value)
 
     function albumsToString(attr) {
       attr.sort();
-      return 'Albums :<ul>' +
+      return '' +
         attr.map(function(o){
-          return '<li>' + o + '</li>';
+          return '' + o + '<br>';
         }).join('') +
-        '</ul>';
+        '';
     }
 
 
@@ -166,6 +212,7 @@ init(this[this.selectedIndex].value)
       var nodes = event.content;
       var neighbors = {};
       var node;
+      var libelle = mapIdLabel[event.content[0]];
       sigInst.iterEdges(function(e){
          if(nodes.indexOf(e.source)>=0 || nodes.indexOf(e.target)>=0)
          {
@@ -174,21 +221,21 @@ init(this[this.selectedIndex].value)
 
             var artiste = '';
 
-            if (e.label == mapIdLabel[e.target])
+            if (libelle == mapIdLabel[e.target])
             {
                artiste = mapIdLabel[e.source];
             }
             else
-               artiste = mapIdLabel[e.source];
+               artiste = mapIdLabel[e.target];
 
             if (arAlbums.indexOf(e.label) == -1)
             {
-            albums.push('<b>' + artiste + ' : </b> ' + e.label);
-               arAlbums.push(e.label);
+              albums.push('<b>' + artiste + ' : </b> ' + e.label);
+              arAlbums.push(e.label);
             }
          }
          }).iterNodes(function(n){
-        node = n;
+           node = n;
 
             if(!neighbors[n.id]){
             n.hidden = 1;
@@ -203,6 +250,9 @@ init(this[this.selectedIndex].value)
 
       popUp = $(
             '<div class="node-info-popup"></div>Albums'
+      )
+      .append(
+      getImage(libelle.replace(' ','_'))
       ).append(
         // The GEXF parser stores all the attributes in an array named
         // 'attributes'. And since sigma.js does not recognize the key
@@ -217,15 +267,17 @@ init(this[this.selectedIndex].value)
         'display': 'inline-block',
         'border-radius': 3,
         'padding': 5,
-        'background': '#fff',
-        'color': '#000',
+        'background': '#222222',
+        'color': '#fff',
+        'font-family' :' Arial, Helvetica, sans-serif',
+        'font-size' : '10px',
         'box-shadow': '0 0 4px #666',
         'position': 'absolute',
         'left': node.displayX,
         'top': node.displayY+15
       });
 
-      $('ul',popUp).css('margin','0 0 0 20px');
+      $('ul',popUp).css('margin','0 0 0 0px');
 
       $('#sigma-example').append(popUp);
     }
@@ -278,6 +330,8 @@ if (document.addEventListener) {
   window.onload = init;
 }
 </script>
+ <div id="images">
+ </div>
 
 <style type="text/css">
   /* sigma.js context : */
@@ -287,7 +341,7 @@ if (document.addEventListener) {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     background: #222;
-    height: 800px;
+    height: 500px;
   }
   .sigma-expand {
     position: absolute;
