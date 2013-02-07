@@ -59,9 +59,10 @@ public class GenGraph {
         if (args.length > 0)            
             artist = args[0] ;
         else
-            artist = "Mingus";   
+            artist = "Charles Mingus";   
         
         String query = "%" + artist + "%";
+        System.out.println(artist);
         
         //Init a project - and therefore a workspace
         ProjectController pc = Lookup.getDefault().lookup(ProjectController.class);
@@ -88,9 +89,11 @@ public class GenGraph {
         
         
         
-            db.setNodeQuery("select id as id, label as label FROM Nodes where id in (SELECT targetid FROM Edges LEFT JOIN Artists ON sourceid = Artists.id where name like '"+ query + "')");
+        db.setNodeQuery("select id as id, label as label FROM Nodes where id in (SELECT targetid FROM Edges LEFT JOIN Artists ON sourceid = Artists.id where name like '"+ query + "')");
         //db.setEdgeQuery("SELECT edges.source AS source, edges.target AS target, edges.name AS label, edges.weight AS weight FROM edges LIMIT 200");
-        db.setEdgeQuery("SELECT sourceid AS source, targetid as target, label as label FROM Edges LEFT JOIN Artists ON sourceid = Artists.id");
+        db.setEdgeQuery("SELECT sourceid AS source, targetid as target, label as label FROM Edges LEFT JOIN Artists "
+                + "ON sourceid = Artists.id ");
+                //+ "where sourceid in  (select id from Artists where name like '"+ query + "')");
         
         ImporterEdgeList edgeListImporter = new ImporterEdgeList();
         
@@ -101,10 +104,7 @@ public class GenGraph {
         //Append imported data to GraphAPI
         importController.process(container, new DefaultProcessor(), workspace);
 
-         
-
-        
-        
+                 
         //See if graph is well imported
         DirectedGraph graph = graphModel.getDirectedGraph();
         System.out.println("Nodes: " + graph.getNodeCount());
@@ -182,7 +182,7 @@ public class GenGraph {
         //Export
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
         try {
-            ec.exportFile(new File("/home/tpinville/git/jazzgraph/data/"+artist.replace(" ", "_") +".gexf"));
+            ec.exportFile(new File("/home/tpinville/git/jazzgraph/gexf/"+artist.replace(" ", "_") +".gexf"));
         } catch (IOException ex) {
             ex.printStackTrace();
             return;

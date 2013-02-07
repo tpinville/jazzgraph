@@ -67,6 +67,8 @@ sigma.publicPrototype.parseGexf = function(gexfPath) {
 
       var id = nodeNode.getAttribute('id');
       var label = nodeNode.getAttribute('label') || id;
+      mapIdLabel[id] = label;
+
       
       //viz
       var size = 1;
