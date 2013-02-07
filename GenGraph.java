@@ -182,7 +182,7 @@ public class GenGraph {
         //Export
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
         try {
-            ec.exportFile(new File("/home/tpinville/git/jazzgraph/data/jazzgraph.gexf"));
+            ec.exportFile(new File("/home/tpinville/git/jazzgraph/data/"+artist.replace(" ", "_") +".gexf"));
         } catch (IOException ex) {
             ex.printStackTrace();
             return;

@@ -13,6 +13,103 @@
 <div class="container">
    <div class="row">
 
+<select onchange="
+init(this[this.selectedIndex].value)
+">
+<option value='Cannonball_Adderley'>Cannonball Adderley</option>
+<option value='Chet_Baker'>Chet Baker</option>
+<option value='Art_Blakey'>Art Blakey</option>
+<option value='Clifford_Brown'>Clifford Brown</option>
+<option value='Ray_Brown'>Ray Brown</option>
+<option value='Kenny_Burrell'>Kenny Burrell</option>
+<option value='Don_Byas'>Don Byas</option>
+<option value='Betty_Carter'>Betty Carter</option>
+<option value='Paul_Chambers'>Paul Chambers</option>
+<option value='Charlie_Christian'>Charlie Christian</option>
+<option value='Kenny_Clarke'>Kenny Clarke</option>
+<option value='Jimmy_Cobb'>Jimmy Cobb</option>
+<option value='John_Coltrane'>John Coltrane</option>
+<option value='Tadd_Dameron'>Tadd Dameron</option>
+<option value='Miles_Davis'>Miles Davis</option>
+<option value='Walter_Davis'>Walter Davis</option>
+<option value='Buddy_DeFranco'>Buddy DeFranco</option>
+<option value='Kenny_Dorham'>Kenny Dorham</option>
+<option value='Billy_Eckstine'>Billy Eckstine</option>
+<option value='Herb_Ellis'>Herb Ellis</option>
+<option value='Bill_Evans'>Bill Evans</option>
+<option value='Ella_Fitzgerald'>Ella Fitzgerald</option>
+<option value='Roy_Haynes'>Roy Haynes</option>
+<option value='Barney_Kessel'>Barney Kessel</option>
+<option value='Carl_Fontana'>Carl Fontana</option>
+<option value='Curtis_Fuller'>Curtis Fuller</option>
+<option value='Dizzy_Gillespie'>Dizzy Gillespie</option>
+<option value='Dexter_Gordon'>Dexter Gordon</option>
+<option value='Wardell_Gray'>Wardell Gray</option>
+<option value='Al_Haig'>Al Haig</option>
+<option value='Sadik_Hakim'>Sadik Hakim</option>
+<option value='Barry_Harris'>Barry Harris</option>
+<option value='Percy_Heath'>Percy Heath</option>
+<option value='Milt_Hinton'>Milt Hinton</option>
+<option value='Milt_Jackson'>Milt Jackson</option>
+<option value='J._J._Johnson'>J. J. Johnson</option>
+<option value='Philly_Joe_Jones'>Philly Joe Jones</option>
+<option value='Billy_Eckstine'>Billy Eckstine</option>
+<option value='Herb_Ellis'>Herb Ellis</option>
+<option value='Bill_Evans'>Bill Evans</option>
+<option value='Ella_Fitzgerald'>Ella Fitzgerald</option>
+<option value='Roy_Haynes'>Roy Haynes</option>
+<option value='Barney_Kessel'>Barney Kessel</option>
+<option value='Carl_Fontana'>Carl Fontana</option>
+<option value='Curtis_Fuller'>Curtis Fuller</option>
+<option value='Dizzy_Gillespie'>Dizzy Gillespie</option>
+<option value='Dexter_Gordon'>Dexter Gordon</option>
+<option value='Wardell_Gray'>Wardell Gray</option>
+<option value='Al_Haig'>Al Haig</option>
+<option value='Sadik_Hakim'>Sadik Hakim</option>
+<option value='Barry_Harris'>Barry Harris</option>
+<option value='Percy_Heath'>Percy Heath</option>
+<option value='Milt_Hinton'>Milt Hinton</option>
+<option value='Milt_Jackson'>Milt Jackson</option>
+<option value='J._J._Johnson'>J. J. Johnson</option>
+<option value='Philly_Joe_Jones'>Philly Joe Jones</option>
+<option value='Duke_Jordan'>Duke Jordan</option>
+<option value='Lee_Konitz'>Lee Konitz</option>
+<option value='Stan_Levey'>Stan Levey</option>
+<option value='Lou_Levy'>Lou Levy</option>
+<option value='John_Lewis'>John Lewis</option>
+<option value='Dodo_Marmarosa'>Dodo Marmarosa</option>
+<option value='Frank_Marocco'>Frank Marocco</option>
+<option value='Pat_Martino'>Pat Martino</option>
+<option value='Howard_McGhee'>Howard McGhee</option>
+<option value='Charles_McPherson'>Charles McPherson</option>
+<option value='Charles_Mingus'>Charles Mingus</option>
+<option value='Blue_Mitchell'>Blue Mitchell</option>
+<option value='Thelonious_Monk'>Thelonious Monk</option>
+<option value='Wes_Montgomery'>Wes Montgomery</option>
+<option value='Fats_Navarro'>Fats Navarro</option>
+<option value='Charlie_Parker'>Charlie Parker</option>
+<option value='Art_Pepper'>Art Pepper</option>
+<option value='Joe_Pass'>Joe Pass</option>
+<option value='Oscar_Pettiford'>Oscar Pettiford</option>
+<option value='Tommy_Potter'>Tommy Potter</option>
+<option value='Bud_Powell'>Bud Powell</option>
+<option value='Jimmy_Raney'>Jimmy Raney</option>
+<option value='Max_Roach'>Max Roach</option>
+<option value='Red_Rodney'>Red Rodney</option>
+<option value='Sonny_Rollins'>Sonny Rollins</option>
+<option value='Frank_Rosolino'>Frank Rosolino</option>
+<option value='Horace_Silver'>Horace Silver</option>
+<option value='Ronnie_Singer'>Ronnie Singer</option>
+<option value='Sonny_Stitt'>Sonny Stitt</option>
+<option value='Lucky_Thompson'>Lucky Thompson</option>
+<option value='Lennie_Tristano'>Lennie Tristano</option>
+<option value='Sarah_Vaughan'>Sarah Vaughan</option>
+<option value='George_Wallington'>George Wallington</option>
+<option value='Chuck_Wayne'>Chuck Wayne</option>
+<option value='Mort_Weiss'>Mort Weiss</option>
+<option value='Shadow_Wilson'>Shadow Wilson</option>
+</select>
+
 
       <div class="span12 sigma-parent" id="sigma-example-parent">
          <div class="sigma-expand" id="sigma-example"></div>
@@ -21,7 +118,8 @@
 
 
 <script type="text/javascript">
-   function init() {
+   function init(path) {
+     document.getElementById('sigma-example').innerHTML = ""
       // Instanciate sigma.js and customize rendering :
       var sigInst = sigma.init(document.getElementById('sigma-example')).drawingProperties({
 defaultLabelColor: '#fff',
@@ -38,10 +136,10 @@ maxEdgeSize: 1
 }).mouseProperties({
 maxRatio: 32
 });
- 
+
 // Parse a GEXF encoded file to fill the graph
 // (requires "sigma.parseGexf.js" to be included)
-sigInst.parseGexf('data/jazzgraph.gexf');
+sigInst.parseGexf('gexf/' + path + ".gexf")
 
 
  // Bind events :
@@ -72,29 +170,6 @@ sigInst.bind('overnodes',function(event){
 sigInst.draw();
 }
 
-
-/*
-      // Start the ForceAtlas2 algorithm
-      // (requires "sigma.forceatlas2.js" to be included)
-      sigInst.startForceAtlas2();
-
-      var isRunning = true;
-      document.getElementById('stop-layout').addEventListener('click',function(){
-         if(isRunning){
-            isRunning = false;
-            sigInst.stopForceAtlas2();
-            document.getElementById('stop-layout').childNodes[0].nodeValue = 'Start Layout';
-            }else{
-            isRunning = true;
-            sigInst.startForceAtlas2();
-            document.getElementById('stop-layout').childNodes[0].nodeValue = 'Stop Layout';
-         }
-      },true);
-      document.getElementById('rescale-graph').addEventListener('click',function(){
-         sigInst.position(0,0,1).draw();
-      },true);
-   }
-*/
    if (document.addEventListener) {
       document.addEventListener('DOMContentLoaded', init, false);
       } else {

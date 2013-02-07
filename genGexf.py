@@ -1,0 +1,18 @@
+import sys
+import os
+
+if len(sys.argv) < 2:
+  print "Nom du fichier contenant la liste des artistes a preciser"
+else:
+  print sys.argv[1]
+  f = open(sys.argv[1], 'r')
+  reponse = f.readlines()
+
+  print "<select>"
+  for artiste in reponse:
+     artiste = artiste.replace('\n','')
+     print "<option value='"+ artiste.replace(" ","_") +"'>"+ artiste + "</option>"
+     #os.system("java -jar JazzGraph.jar '" + artiste + "' 20")
+  print "</select>"
+     
+  f.close()
