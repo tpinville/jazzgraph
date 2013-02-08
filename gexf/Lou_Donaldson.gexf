@@ -1,0 +1,3800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-08">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="5234" label="Seldon Powell">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="86.80521" y="61.349277" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="16759" label="Tadd Dameron">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-89.93769" y="-127.26881" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="24290" label="Daniel Moore">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="106.05818" y="489.85416" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="26822" label="Ted Dunbar">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="79.811356" y="466.60434" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="36934" label="Sonny Clark">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.16969696969697"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.191175359032501"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.207648"></viz:size>
+        <viz:position x="-241.96953" y="-35.937065" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="39005" label="Peck Morrison">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="130.40572" y="103.10476" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="39656" label="Sonny Rollins">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.3454545454545452"></attvalue>
+          <attvalue for="betweenesscentrality" value="275.5073875939829"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="21.020365"></viz:size>
+        <viz:position x="-145.83658" y="-133.79945" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="46861" label="Ray Charles">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.45"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.058001"></viz:size>
+        <viz:position x="-264.8217" y="23.43703" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="47401" label="Bernard Pretty Purdie">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="44.564228" y="6.4459124" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="57737" label="Bob Belden">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-189.5284" y="10.969967" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="64915" label="Jimmy Lewis">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-163.56245" y="127.73323" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="67666" label="Billy Gardner">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-239.22404" y="204.90007" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="71587" label="Baby Face Willette">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-258.85513" y="180.46362" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="72921" label="Jimmy Ponder">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-190.89705" y="199.43266" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="76295" label="Lloyd Mayers">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="74.28912" y="496.62006" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="78454" label="Bill Hardman">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="9.42476" y="29.952297" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="228"></viz:color>
+      </node>
+      <node id="85819" label="Kenny Washington">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="18.973707" y="-148.81522" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="90389" label="Idris Muhammad">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-80.36863" y="61.761154" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="109607" label="Cole Porter">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-59.12912" y="-146.12459" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="118597" label="Cornell Dupree">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="188.59836" y="408.41147" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="120323" label="Duke Ellington">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.816666666666666"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.232668"></viz:size>
+        <viz:position x="62.46805" y="-176.64081" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="128778" label="Earl May">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="277.66037" y="-31.672472" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="133395" label="Jeff Fuller">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="136.575" y="414.71045" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="133478" label="Jimmy Young">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-2.224273" y="406.71747" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="139566" label="Curtis Fuller">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.9272727272727272"></attvalue>
+          <attvalue for="betweenesscentrality" value="87.00495066349973"></attvalue>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="13.48022"></viz:size>
+        <viz:position x="-13.300577" y="-141.61176" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="228"></viz:color>
+      </node>
+      <node id="145307" label="Elmo Hope">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-173.03745" y="34.98855" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="149946" label="Donald Byrd">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.315151515151515"></attvalue>
+          <attvalue for="betweenesscentrality" value="445.98462957481655"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="27.839497"></viz:size>
+        <viz:position x="-118.43822" y="-252.31195" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="160081" label="Ben Dixon">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-176.29872" y="154.02388" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="162677" label="Dizzy Gillespie">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.2606060606060607"></attvalue>
+          <attvalue for="betweenesscentrality" value="798.6785199631396"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="41.947342"></viz:size>
+        <viz:position x="-5.930551" y="-214.79819" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="164372" label="Ben Kynard">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="192.18108" y="-197.73836" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="165640" label="Ben Tucker">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-246.05278" y="138.93213" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="169765" label="Eddie Jones">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-311.9375" y="120.41508" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="174674" label="Ricky West">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-71.21588" y="365.5887" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="176387" label="Charlie Rouse">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-208.72472" y="-312.8268" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="192530" label="Eric Figueroa">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="128.25487" y="-231.10861" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="201760" label="George Benson">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.757575757575758"></attvalue>
+          <attvalue for="betweenesscentrality" value="159.4511328948829"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="16.378086"></viz:size>
+        <viz:position x="155.18156" y="-35.990788" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="204850" label="Charles Earland">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-7.583604" y="368.8982" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="211758" label="Charlie Parker">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.1151515151515152"></attvalue>
+          <attvalue for="betweenesscentrality" value="371.6099219819267"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="24.86449"></viz:size>
+        <viz:position x="-97.36632" y="-170.44476" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="212408" label="Jamil Nasser">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="160.72191" y="395.91583" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="212637" label="Hilda Harris">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="109.11582" y="458.9045" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="218245" label="Joe Shepley">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="243.31258" y="45.27072" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="220128" label="David Spinozza">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="179.09831" y="107.32083" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="226908" label="Big John Patton">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.012121212121212"></attvalue>
+          <attvalue for="betweenesscentrality" value="8.666666666666666"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.346669"></viz:size>
+        <viz:position x="-208.27531" y="148.59352" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="228058" label="Lonnie Liston Smith">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.3878787878787877"></attvalue>
+          <attvalue for="betweenesscentrality" value="23.47124542124542"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.938856"></viz:size>
+        <viz:position x="293.1966" y="92.83744" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="228656" label="John Tropea">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="155.40807" y="347.1619" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="239169" label="Sam Jones">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-212.833" y="-7.509618" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="240561" label="Leon Spencer">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="69.07198" y="345.34244" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="250435" label="Wayne Shorter">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.606060606060606"></attvalue>
+          <attvalue for="betweenesscentrality" value="128.62472815466518"></attvalue>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="15.145021"></viz:size>
+        <viz:position x="52.18704" y="-70.89635" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="228"></viz:color>
+      </node>
+      <node id="254492" label="Raphael Cruz">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="215.80534" y="155.2498" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="255377" label="Pepper Adams">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.2606060606060607"></attvalue>
+          <attvalue for="betweenesscentrality" value="19.3007215007215"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.772034"></viz:size>
+        <viz:position x="-62.672966" y="-279.1986" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="256575" label="Percy Heath">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-187.8856" y="-164.06418" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="257524" label="Denzil Best">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="13.462324" y="-115.45572" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="265741" label="Horace Ott">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="175.9483" y="148.52364" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="267354" label="Horace Silver">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.5939393939393938"></attvalue>
+          <attvalue for="betweenesscentrality" value="208.24675600633523"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="18.329922"></viz:size>
+        <viz:position x="-129.2306" y="9.294504" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="273105" label="Dr. Lonnie Smith">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="133.52223" y="148.06323" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="275832" label="Ron Carter">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.9393939393939394"></attvalue>
+          <attvalue for="betweenesscentrality" value="120.3852198555438"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="14.815439"></viz:size>
+        <viz:position x="95.39629" y="-75.017845" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="276044" label="Sacha Distel">
+        <attvalues>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="5.0181818181818185"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.5"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.02"></viz:size>
+        <viz:position x="-315.90485" y="-166.741" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="281282" label="Hugh McCracken">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="131.3169" y="5.5060954" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="284622" label="Louis Stone">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="312.59064" y="233.88509" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="293321" label="Juan Tizol">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="69.37588" y="-267.13766" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="310419" label="Tony Baxter">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-152.64629" y="443.4515" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="317924" label="Peter Bernstein">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-153.62953" y="277.4532" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="321377" label="Neal Hefti">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-9.621992" y="-312.39633" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="324645" label="Ned Washington">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="54.580357" y="-25.075369" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="325637" label="Matthew Gee">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-262.47986" y="237.87592" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="335090" label="Jerry Jemmott">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="213.5121" y="43.073456" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="335431" label="Nicholas Payton">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="54.284748" y="406.19104" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="340958" label="Ray Armando">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="207.50594" y="76.40564" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="341422" label="Ray Barretto">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="69.86478" y="35.113358" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="341471" label="Eileen Gilbert">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="276.47305" y="171.44104" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="349404" label="Roy Montrell">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="81.44394" y="437.5707" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="372472" label="Richard Landrum">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-265.4486" y="75.16166" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="378624" label="Quincy Jones">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.2"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.088"></viz:size>
+        <viz:position x="-46.713047" y="-305.2926" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="390745" label="Alec Dorsey">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-147.66154" y="404.74164" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="398615" label="Oliver Nelson">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.43030303030303"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-283.27252" y="-21.483822" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="399004" label="Randy Johnston">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-121.99308" y="456.86606" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="401066" label="Michel Legrand">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.6666666666666666"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.026667"></viz:size>
+        <viz:position x="260.16437" y="-156.32298" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="407857" label="Ray Mantilla">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-46.47212" y="59.16176" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="414611" label="Melvin Sparks">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-154.85976" y="237.70607" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="424292" label="John Lewis">
+        <attvalues>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="4.03030303030303"></attvalue>
+          <attvalue for="betweenesscentrality" value="202.3981192770363"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="18.095976"></viz:size>
+        <viz:position x="-237.9365" y="-145.90088" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="478633" label="The 3 Sounds">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.9757575757575758"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="18.099228" y="502.355" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="486398" label="Mike Goldberg">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="159.28873" y="-216.16481" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="505154" label="Art Taylor">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-114.18167" y="-98.27918" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="511401" label="Arthur Johnston">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-240.19641" y="-90.79937" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="516046" label="Irving Spice">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="269.88922" y="21.33263" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="557927" label="Barbara Massey">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-52.645985" y="470.52814" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="578148" label="Dave Burns">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="162.97769" y="-180.09421" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="608258" label="Leo Morris">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="113.518074" y="76.17356" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="611141" label="Al Harewood">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-13.516961" y="49.083694" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="620658" label="Tommy Turrentine">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-178.40314" y="254.81688" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="622805" label="Stevie Wonder">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="122.81438" y="-188.68863" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="640279" label="Bruno Carr">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="192.25508" y="441.46597" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="643969" label="Buddy Lucas">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="197.07208" y="15.343914" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="652234" label="John Johnny Adriano Acea">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-314.66367" y="82.87999" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="661230" label="Melvin Lastie">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="165.12813" y="461.71823" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="661974" label="Gigi Gryce">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.2181818181818183"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.363145277661407"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.174527"></viz:size>
+        <viz:position x="-164.97736" y="-281.42096" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="676224" label="Danny Bank">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-286.5162" y="-112.44645" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="676409" label="Herman Foster">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="35.24701" y="348.52826" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="716671" label="Arthur BabeClarke">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="196.98753" y="203.27748" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="738855" label="Grant Green">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.375757575757576"></attvalue>
+          <attvalue for="betweenesscentrality" value="311.0896187146187"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="22.443665"></viz:size>
+        <viz:position x="-198.15897" y="87.05701" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="761064" label="Blue Mitchell">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-113.83253" y="60.13504" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="768027" label="Kenny Dorham">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.4363636363636365"></attvalue>
+          <attvalue for="betweenesscentrality" value="476.5996906904354"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="29.064108"></viz:size>
+        <viz:position x="-163.30042" y="-46.863163" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="768687" label="Paul Griffin">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="103.69768" y="330.36026" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="789775" label="Clifford Brown">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8848484848484848"></attvalue>
+          <attvalue for="betweenesscentrality" value="840.680552809953"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="43.627434"></viz:size>
+        <viz:position x="-214.32234" y="-234.8218" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="798326" label="Freddie Hubbard">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.278787878787879"></attvalue>
+          <attvalue for="betweenesscentrality" value="240.5299791072782"></attvalue>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="19.62126"></viz:size>
+        <viz:position x="50.283833" y="-123.795135" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="228"></viz:color>
+      </node>
+      <node id="800821" label="Don Patterson">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.3696969696969696"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-303.3024" y="187.58638" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="802745" label="Gene Harris">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="21.955233" y="549.86194" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="803162" label="Grady Tate">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="109.0815" y="-266.62045" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="803730" label="Garnett Brown">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.925"></attvalue>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.237001"></viz:size>
+        <viz:position x="203.612" y="-138.76042" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="228"></viz:color>
+      </node>
+      <node id="804391" label="Gene Ramey">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-262.4414" y="-62.59067" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="805560" label="Ernie Royal">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="96.81276" y="4.705525" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="808198" label="Lou Donaldson">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="2249.985849007498"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="5.4785447" y="205.36328" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="821384" label="Wilbur Bascomb, Jr.">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="247.10364" y="82.598236" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="824879" label="Horace Parlan">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-38.277542" y="369.4996" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="833150" label="Lionel Hampton">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.896969696969697"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="84.46179" y="-215.25404" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="845443" label="Philly Joe Jones">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.521212121212121"></attvalue>
+          <attvalue for="betweenesscentrality" value="92.11613029827313"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="13.684669"></viz:size>
+        <viz:position x="-205.4742" y="-107.05745" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="228"></viz:color>
+      </node>
+      <node id="848572" label="Phil Woods">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.066666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.437049062049062"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.097483"></viz:size>
+        <viz:position x="-81.72033" y="-321.01495" z="0.0"></viz:position>
+        <viz:color r="228" g="228" b="39"></viz:color>
+      </node>
+      <node id="851653" label="Richard Davis">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.5"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.02"></viz:size>
+        <viz:position x="198.83424" y="-94.27951" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="867173" label="Ralph Dorsey">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="22.062504" y="375.796" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="867803" label="George Joyner">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="216.3907" y="386.24872" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="868092" label="McCoy Tyner">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.496969696969697"></attvalue>
+          <attvalue for="betweenesscentrality" value="138.04326395884073"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="15.521765"></viz:size>
+        <viz:position x="123.35811" y="-130.57997" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="928942" label="Art Blakey">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8181818181818181"></attvalue>
+          <attvalue for="betweenesscentrality" value="1274.5752128265651"></attvalue>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="60.983326"></viz:size>
+        <viz:position x="-48.042103" y="-39.3899" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="228"></viz:color>
+      </node>
+      <node id="931895" label="Jimmie Young">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-30.32901" y="404.7518" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="932329" label="Andrew Simpkins">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-18.586153" y="540.80444" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="958002" label="Dave Bailey">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-127.308266" y="101.30145" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="959775" label="Victor Young">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="82.28612" y="-41.004475" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="1182084" label="Robert Ashton">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="218.625" y="417.59857" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1198120" label="Ed Jones">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-107.65025" y="484.67993" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1201675" label="Laymon Jackson">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-121.18615" y="-307.65546" z="0.0"></viz:position>
+        <viz:color r="39" g="228" b="39"></viz:color>
+      </node>
+      <node id="1210802" label="Rosalyn Brown">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="236.78065" y="330.70087" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1218898" label="Jimmie Yound">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="209.5748" y="352.52557" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1232278" label="Eddie Williams">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="110.12204" y="385.32715" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1236607" label="Fred Ballard">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-14.679717" y="475.2041" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1237101" label="Joe Ferguson">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="25.880465" y="408.22037" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1241848" label="William Sample">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="137.16478" y="446.07864" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1245351" label="A.C. Drummer, Jr.">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="56.02322" y="377.17105" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1245778" label="Jimmy Wormworth">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-32.61468" y="448.42136" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1255047" label="Bill Gardner">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="129.52722" y="362.96783" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1260133" label="Audrinne Ferguson">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="110.21849" y="428.84882" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1263330" label="John Drew Kelly">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="93.11699" y="362.32123" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1275380" label="Fritz Wise">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="223.89276" y="114.573616" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1279843" label="Robert Corely">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="163.59572" y="428.79495" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1327647" label="Jimmy Briggs">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="137.18661" y="324.37082" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1476696" label="Dorsey">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="50.908665" y="445.69302" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1497587" label="Rudy Nichols">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-88.224266" y="389.49908" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1518560" label="David Sackson">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-63.51247" y="440.7135" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1530144" label="Laurence Etkin">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-37.074284" y="497.19974" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1546263" label="David Braham">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-72.79139" y="494.71613" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1569726" label="Bill Dowdy">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="60.94167" y="538.22076" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1611633" label="Bob Ashton">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-288.9657" y="144.56073" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1612986" label="Joseph J. Shepley">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="231.81224" y="3.1113546" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="1627497" label="Walter Jojo Garth">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-94.866035" y="434.79553" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1638001" label="Paul G. Bogosian">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="172.38676" y="316.6517" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1660002" label="Fukushi Tainaka">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="81.855385" y="394.58386" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1740106" label="D. Washington">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-177.8088" y="413.66086" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1741048" label="Jacob Hunter">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-58.552895" y="398.22116" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1746195" label="Carl Williams">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="186.29532" y="376.2365" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1750562" label="Billy Davis">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-84.71863" y="463.80487" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1754159" label="Naomi Thomas">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-123.68495" y="424.84885" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1773985" label="William Phipps">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-112.140656" y="367.55072" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1794825" label="Jacqueline Copeland">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-1.8814074" y="447.14728" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1800706" label="Danny Burger">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="241.6231" y="366.16412" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="1956284" label="Elliot Rosoff">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="242.27484" y="-32.76454" z="0.0"></viz:position>
+        <viz:color r="228" g="39" b="39"></viz:color>
+      </node>
+      <node id="2146276" label="Kenny Seymour">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="23.649017" y="460.71417" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="2292921" label="Mildred Brown">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="50.47747" y="476.2387" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+      <node id="2293277" label="Danny Moore">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="136.37108" y="478.1097" z="0.0"></viz:position>
+        <viz:color r="39" g="39" b="228"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="36934" target="16759" label="Sonny Clark Trio 1957">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="36934" target="36934" label="Sonny Clark Trio 1957" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="36934" target="162677" label="Sonny Clark Trio 1957">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="36934" target="424292" label="Sonny Clark Trio 1957">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="36934" target="845443" label="Sonny Clark Trio 1957" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="16759" label="Aix-En-Provence">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="36934" label="The Sound of Sonny" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="39656" label="In Japan" weight="274.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="90389" label="Global Warming" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="109607" label="A Night at the Village Vanguard, Vol. 1" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="120323" label="Old Flames" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="145307" label="Moving Out" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="149946" label="Sonny Rollins, Vol. 1" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="162677" label="A Night at the Village Vanguard, Vol. 1" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="169765" label="Sonny Rollins/Thad Jones">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="211758" label="All the Things You Are" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="256575" label="Sonny Rollins and the Big Brass" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="267354" label="Sonny Rollins, Vol. 2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="275832" label="All the Things You Are" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="321377" label="The Sound of Sonny" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="324645" label="Sonny Rollins on Impulse!" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="378624" label="Sonny Rollins/Thad Jones">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="398615" label="Alfie" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="424292" label="Sonny Rollins and the Big Brass" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="505154" label="Thelonious Monk &amp; Sonny Rollins" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="511401" label="Old Flames" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="622805" label="Easy Living">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="676224" label="Alfie">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="768027" label="Moving Out" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="789775" label="Sonny Rollins Plus 4" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="798326" label="East Broadway Run Down">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="804391" label="Sonny Rollins, Vol. 1" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="845443" label="Tenor Madness" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="848572" label="Alfie" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="928942" label="Thelonious Monk &amp; Sonny Rollins" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="959775" label="The Standard Sonny Rollins">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="1611633" label="Alfie">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="46861" target="46861" label="Ray Charles &amp; Betty Carter" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="46861" target="109607" label="Ray Charles &amp; Betty Carter">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="46861" target="256575" label="Soul Meeting">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="46861" target="505154" label="Soul Meeting">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="120323" target="120323" label="Ella &amp; Duke at the Côte D'Azur" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="120323" target="803162" label="Ella &amp; Duke at the Côte D'Azur">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="36934" label="Bone &amp; Bari" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="39656" label="I Will Tell Her">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="78454" label="Crankin'">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="109607" label="The Curtis Fuller Jazztet" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="120323" label="Up Jumped Spring" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="139566" label="South American Cookin'" weight="95.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="162677" label="The Curtis Fuller Jazztet">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="211758" label="Imagination">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="239169" label="Fire and Filigree">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="255377" label="Four on the Outside" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="293321" label="Together in Monaco">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="321377" label="Keep It Simple">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="505154" label="Bone &amp; Bari" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="611141" label="Blues-ette" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="768027" label="I Will Tell Her">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="798326" label="The Boss of the Soul: Stream Trombone" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="868092" label="Imagination" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="958002" label="South American Cookin'" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="1275380" label="Keep It Simple">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="39656" label="Byrd in Paris" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="57737" label="Ethiopian Knights" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="72921" label="Fancy Free">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="109607" label="At Newport" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="120323" label="Mustang" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="139566" label="Star Eyes">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="149946" label="Mustang" weight="193.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="162677" label="Jazz in Paris: Donald Byrd Quintet Parisian Thoroughfare" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="176387" label="Byrd in Hand" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="211758" label="The Young Bloods" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="239169" label="Byrd in Hand" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="250435" label="Free Form" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="255377" label="Electric Byrd" weight="34.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="275832" label="Kofi" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="321377" label="The Cat Walk">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="324645" label="Byrd Blows on Beacon Hill">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="401066" label="The Creeper">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="424292" label="Jazz in Paris: Donald Byrd Quintet Parisian Thoroughfare">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="505154" label="Byrd in Hand" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="608258" label="Fancy Free">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="661974" label="At Newport" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="738855" label="I'm Tryin' to Get Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="789775" label="Byrd in Paris">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="803162" label="I'm Tryin' to Get Home" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="805560" label="I'm Tryin' to Get Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="845443" label="The Cat Walk">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="848572" label="The Young Bloods" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="868092" label="Mustang" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="959775" label="Byrd Blows on Beacon Hill">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="149946" target="1201675" label="Donald Byrd at the Half Note Cafe, Vol. 2" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="16759" label="Something Old, Something New" weight="17.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="39656" label="Sonny Side Up" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="47401" label="Digital at Montreux, 1980" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="85819" label="To Diz with Love: Diamond Jubilee Recordings" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="109607" label="Have Trumpet, Will Excite!" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="120323" label="An Electrifying Evening with the Dizzy Gillespie Quintet" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="128778" label="Bahiana">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="162677" label="Have Trumpet, Will Excite!" weight="410.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="192530" label="Villa Hidalgo" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="201760" label="To Diz with Love: Diamond Jubilee Recordings" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="211758" label="To Diz with Love: Diamond Jubilee Recordings" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="239169" label="Have Trumpet, Will Excite!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="255377" label="Live at the Village Vanguard" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="256575" label="School Days" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="257524" label="The Giants of Jazz" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="265741" label="Endlessly">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="267354" label="Live, 1957" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="293321" label="Afro" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="324645" label="The Giant" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="341422" label="Carnegie Hall Concert">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="378624" label="Live, 1957" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="401066" label="Cornucopia">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="424292" label="In Paris" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="486398" label="One Night in Washington" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="511401" label="Dizzy at Home and Abroad" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="578148" label="In Paris" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="622805" label="Closer to the Source" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="661974" label="The Greatest Trumpet of Them All" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="676224" label="Afro">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="768027" label="In Paris" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="789775" label="The Trumpet Summit Meets the Oscar Peterson Big Four">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="798326" label="The Trumpet Summit Meets the Oscar Peterson Big Four" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="803162" label="The Winter in Lisbon" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="803730" label="Live at the Village Vanguard" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="805560" label="Perceptions" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="848572" label="The New Continent" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="851653" label="Live at the Village Vanguard" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="928942" label="School Days" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="959775" label="The Giant" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="39656" label="Par Excellence" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="46861" label="I Got a Woman and Some Blues" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="90389" label="The Other Side of Abbey Road" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="109607" label="Par Excellence" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="128778" label="20/20">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="201760" label="Standing Together" weight="217.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="211758" label="Giblet Gravy">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="218245" label="Shape of Things to Come" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="220128" label="In Your Eyes">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="228058" label="It's Uptown">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="255377" label="Giblet Gravy" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="267354" label="Goodies">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="273105" label="It's Uptown" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="275832" label="Giblet Gravy" weight="21.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="321377" label="Par Excellence" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="324645" label="Big Boss Band" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="335090" label="The Other Side of Abbey Road" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="340958" label="In Concert: Carnegie Hall" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="341422" label="The Other Side of Abbey Road" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="341471" label="Giblet Gravy">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="378624" label="Give Me the Night" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="401066" label="White Rabbit" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="608258" label="Shape of Things to Come" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="611141" label="Par Excellence" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="622805" label="Tell It Like It Is" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="643969" label="Shape of Things to Come" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="716671" label="Tell It Like It Is">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="761064" label="It's Uptown" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="768027" label="Par Excellence">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="798326" label="The Other Side of Abbey Road" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="803730" label="Bad Benson">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="805560" label="Giblet Gravy">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="821384" label="Good King Bad" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="851653" label="Shape of Things to Come" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="868092" label="Tenderly">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="959775" label="Tenderly">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="1612986" label="Shape of Things to Come" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="16759" label="Bird on 52nd St." weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="109607" label="Jam Session" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="162677" label="Bird on 52nd St." weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="211758" label="Round Midnight" weight="42.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="256575" label="Charlie Parker Verve" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="257524" label="The Greatest Jazz Concert Ever" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="293321" label="The Greatest Jazz Concert Ever" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="324645" label="Jam Session">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="511401" label="Bird on 52nd St.">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="652234" label="Six Faces of Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="768027" label="Charlie Parker Verve" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="804391" label="Six Faces of Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="39656" label="Understanding">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="57737" label="Accent on the Blues" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="72921" label="That Certain Feeling">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="160081" label="Along Came John" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="226908" label="This One's for J.A." weight="47.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="250435" label="This One's for J.A." weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="372472" label="Boogaloo" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="414611" label="Soul Connection" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="620658" label="Blue John" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="738855" label="Along Came John" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="761064" label="Oh Baby!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226908" target="868092" label="Memphis to New York Spirit">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="120323" label="Make Someone Happy">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="228058" label="Transformation" weight="104.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="250435" label="Cosmic Funk">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="265741" label="Renaissance">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="267354" label="Expansions">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="273105" label="Silhouettes" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="284622" label="Exotic Mysteries/Loveland">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="340958" label="Visions of a New World">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="228058" target="516046" label="Exotic Mysteries/Loveland">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="139566" label="Schizophrenia" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="149946" label="Free Form" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="250435" label="Introducing Wayne Shorter" weight="105.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="275832" label="The All Seeing Eye" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="798326" label="Wayning Moments" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="868092" label="Night Dreamer" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="928942" label="Second Genesis" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="255377" target="120323" label="Out of This World" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="255377" target="149946" label="Out of This World" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="255377" target="255377" label="Out of This World" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="255377" target="424292" label="Jazzmen Detroit">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="255377" target="1201675" label="Out of This World">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="64915" label="That Healin' Feelin'" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="90389" label="That Healin' Feelin'">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="120323" label="Introducing the Horace Silver Trio">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="149946" label="6 Pieces of Silver" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="256575" label="Horace Silver Trio, Vol. 1: Spotlight on Drums" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="267354" label="Silver's Serenade" weight="147.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="275832" label="A Prescription for the Blues" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="505154" label="Silver's Blue" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="761064" label="Silver's Serenade" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="768027" label="Horace Silver and the Jazz Messengers" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="803730" label="Silver 'n Wood">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="804391" label="Senor Blues" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="928942" label="Horace Silver and the Jazz Messengers" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="39656" label="Live at Village West" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="109607" label="So What" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="120323" label="Ron Carter's Great Big Band">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="162677" label="Ron Carter's Great Big Band">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="211758" label="Carnaval">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="228058" label="Blue Note Sessions">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="250435" label="Ron Carter's Great Big Band">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="267354" label="Blue Note Sessions" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="275832" label="Eight Plus" weight="204.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="281282" label="Pastels" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="293321" label="Ron Carter's Great Big Band">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="324645" label="So What" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="424292" label="Blues Farm" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="803162" label="Uptown Conversation" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="848572" label="Anything Goes">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="868092" label="Standard Bearers">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="959775" label="So What" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="1612986" label="Parade" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="276044" target="256575" label="Afternoon in Paris" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="276044" target="276044" label="Afternoon in Paris" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="276044" target="424292" label="Afternoon in Paris" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="317924" target="109607" label="Live At Smalls">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="317924" target="317924" label="Live At Smalls" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="378624" label="Miles &amp; Quincy: Live At Montreux" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="803162" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="398615" target="398615" label="Meet Oliver Nelson/Main Stem">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="398615" target="768027" label="Meet Oliver Nelson/Main Stem">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="401066" target="401066" label="Dingo" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="401066" target="803730" label="Dingo">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="16759" label="The Wonderful World of Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="109607" label="Evolution II" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="120323" label="The American Jazz Orchestra">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="211758" label="Evening with Two Grand Pianos" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="256575" label="Grand Encounter" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="276044" label="Afternoon in Paris" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="293321" label="The American Jazz Orchestra">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="424292" label="Evolution II" weight="101.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="676224" label="The American Jazz Orchestra" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="478633" target="478633" label="LD+3">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="478633" target="802745" label="LD+3">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="478633" target="808198" label="LD+3" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="478633" target="932329" label="LD+3">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="478633" target="1569726" label="LD+3">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="661974" target="109607" label="At Newport" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="661974" target="149946" label="At Newport" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="661974" target="256575" label="When Farmer Met Gryce" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="661974" target="267354" label="When Farmer Met Gryce" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="661974" target="505154" label="When Farmer Met Gryce" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="661974" target="661974" label="At Newport" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="36934" label="Born to Be Blue" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="39656" label="Solid" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="46861" label="Blues for Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="57737" label="Alive!" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="64915" label="Green Is Beautiful" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="67666" label="Reaching Out" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="71587" label="Grant's First Stand" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="90389" label="Alive!" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="109607" label="I Want to Hold Your Hand" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="149946" label="Live at the Lighthouse">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="160081" label="Iron City" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="165640" label="Green Street" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="211758" label="The Latin Bit" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="226908" label="Iron City" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="239169" label="Born to Be Blue" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="317924" label="Solid">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="324645" label="I Want to Hold Your Hand" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="340958" label="Visions">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="372472" label="Green Is Beautiful">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="378624" label="Visions">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="424292" label="Idle Moments">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="611141" label="Grantstand" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="652234" label="The Latin Bit">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="738855" label="Brothers-4" weight="94.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="761064" label="Green Is Beautiful" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="800821" label="Brothers-4" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="868092" label="Solid" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="928942" label="Nigeria">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="958002" label="Green Street" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738855" target="959775" label="I Want to Hold Your Hand" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="39656" label="Jazz Contrasts" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="109607" label="Kenny Dorham Quintet" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="139566" label="Kenny Dorham Sings and Plays: This Is the Moment!" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="162677" label="'Round About Midnight at the Cafe Bohemia" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="165640" label="Osmosis">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="211758" label="Rollins Plays for Bird" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="239169" label="Kenny Dorham and the Jazz Prophets, Vol. 1" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="256575" label="Kenny Dorham Quintet" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="267354" label="Afro-Cuban" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="275832" label="West 42nd Street" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="324645" label="West 42nd Street" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="325637" label="The Swingers">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="398615" label="Meet Oliver Nelson/Main Stem">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="505154" label="Show Boat" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="511401" label="Jazz Contrasts" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="661974" label="Afro-Cuban" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="768027" label="Kenny Dorham and the Jazz Prophets, Vol. 1" weight="103.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="789775" label="Jazz Contrasts">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="845443" label="Whistle Stop" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="851653" label="Trompeta Toccata" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="928942" label="Afro-Cuban" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="958002" label="Osmosis">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="959775" label="Kenny Dorham Sings and Plays: This Is the Moment!" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="16759" label="At Basin Street" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="39656" label="At Basin Street" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="109607" label="At Basin Street" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="120323" label="Clifford Brown &amp; Max Roach">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="145307" label="New Star on the Horizon" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="176387" label="New Star on the Horizon" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="211758" label="Together: Recorded Live at Dolphy's Home, Los Angeles 1954">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="256575" label="New Star on the Horizon" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="267354" label="Alternate Takes">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="321377" label="Compact Jazz: Clifford Brown" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="324645" label="Brown and Roach Incorporated">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="378624" label="Clifford Brown Big Band in Paris" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="424292" label="New Star on the Horizon" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="661974" label="Clifford Brown Big Band in Paris" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="676224" label="Compact Jazz: Clifford Brown" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="789775" label="At Basin Street" weight="63.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="808198" label="New Star on the Horizon" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="845443" label="New Star on the Horizon" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="928942" label="New Star on the Horizon" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="959775" label="Clifford Brown &amp; Max Roach" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="5234" label="The Body and the Soul" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="57737" label="Monk, Miles, Trane &amp; Cannon">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="90389" label="New Colors" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="109607" label="Gettin' It Together" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="120323" label="The Artistry of Freddie Hubbard" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="139566" label="Gettin' It Together" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="149946" label="Minor Mishap">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="162677" label="Live at Concerts by the Sea" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="201760" label="Straight Life" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="211758" label="Feel the Wind">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="220128" label="Windjammer">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="239169" label="Open Sesame">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="250435" label="The Body and the Soul" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="255377" label="Minor Mishap" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="275832" label="Straight Life" weight="15.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="293321" label="The Artistry of Freddie Hubbard" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="324645" label="Back to Birdland" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="341422" label="Sky Dive" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="372472" label="Straight Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="401066" label="Skagly">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="407857" label="Windjammer">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="511401" label="Double Take">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="516046" label="First Light" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="622805" label="High Energy" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="768027" label="Goin' Up" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="789775" label="Live at Concerts by the Sea" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="798326" label="New Colors" weight="277.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="803730" label="Sky Dive" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="805560" label="The Body and the Soul" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="845443" label="Goin' Up" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="851653" label="The Hub of Hubbard">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="868092" label="Goin' Up" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="928942" label="Feel the Wind" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="959775" label="Back to Birdland" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800821" target="738855" label="Brothers-4" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800821" target="800821" label="Brothers-4" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="803730" target="324645" label="Jazz for a Sunday Afternoon">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="803730" target="803730" label="Jazz for a Sunday Afternoon" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="803730" target="851653" label="Jazz for a Sunday Afternoon" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="803730" target="959775" label="Jazz for a Sunday Afternoon">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="5234" label="Color as a Way of Life" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="16759" label="Forgotten Man" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="24290" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="26822" label="Pretty Things">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="36934" label="Lou Takes Off" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="39005" label="Blues Walk" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="39656" label="New Faces-New Sounds, Vol. 2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="46861" label="Light Foot">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="47401" label="Play the Right Thing" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="57737" label="The Scorpion: Live at the Cadillac Club">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="64915" label="Pretty Things" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="67666" label="Live: Fried Buzzard">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="71587" label="Here 'Tis">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="72921" label="Mr. Shing-A-Ling" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="76295" label="Rough House Blues">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="78454" label="Live: Fried Buzzard" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="85819" label="Caracas" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="90389" label="Live: Fried Buzzard" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="109607" label="Color as a Way of Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="118597" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="120323" label="Say It Loud!" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="128778" label="Cole Slaw">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="133395" label="Live in Bologna Timeless">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="133478" label="Color as a Way of Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="139566" label="Lou Takes Off">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="145307" label="The Lou Donaldson Quartet/Quintet/Sextet" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="149946" label="Wailing with Lou" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="160081" label="Good Gracious" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="162677" label="Lou Takes Off">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="164372" label="Birdseed">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="165640" label="Gravy Train" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="169765" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="174674" label="Different Scene" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="176387" label="New Faces-New Sounds, Vol. 2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="192530" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="201760" label="The Midnight Creeper" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="204850" label="Hot Dog" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="211758" label="Relaxing at Sea: Live on the QE2" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="212408" label="Lou Takes Off">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="212637" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="218245" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="220128" label="Sweet Lou" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="226908" label="Good Gracious" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="228058" label="The Midnight Creeper">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="228656" label="Sassy Soul Strut" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="239169" label="Sunny Side Up" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="240561" label="Pretty Things" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="250435" label="Lush Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="254492" label="Color as a Way of Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="255377" label="Lush Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="256575" label="The Lou Donaldson Quartet/Quintet/Sextet" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="257524" label="Live: Fried Buzzard" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="265741" label="Sweet Lou" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="267354" label="The Lou Donaldson Quartet/Quintet/Sextet" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="273105" label="The Midnight Creeper" weight="23.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="275832" label="Lush Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="276044" label="Lush Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="281282" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="284622" label="Color as a Way of Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="293321" label="Say It Loud!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="310419" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="317924" label="Birdseed" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="321377" label="Caracas">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="324645" label="Light Foot" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="325637" label="The Lou Donaldson Quartet/Quintet/Sextet">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="335090" label="Cosmos">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="335431" label="Relaxing at Sea: Live on the QE2" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="340958" label="Cosmos">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="341422" label="Blues Walk" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="341471" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="349404" label="Signifyin'">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="372472" label="Blowing in the Wind">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="378624" label="Sassy Soul Strut">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="390745" label="Gravy Train">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="398615" label="Rough House Blues" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="399004" label="Relaxing at Sea: Live on the QE2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="401066" label="Sophisticated Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="407857" label="Sentimental Journey" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="414611" label="Pretty Things" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="424292" label="New Faces-New Sounds, Vol. 2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="478633" label="LD+3">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="486398" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="505154" label="The Lou Donaldson Quartet/Quintet/Sextet" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="511401" label="Birdseed">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="516046" label="Color as a Way of Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="557927" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="578148" label="Rough House Blues">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="608258" label="The Midnight Creeper" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="611141" label="Sunny Side Up" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="620658" label="Hot Dog" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="622805" label="Sophisticated Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="640279" label="Cole Slaw">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="643969" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="652234" label="The Natural Soul">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="661230" label="Alligator Bogaloo">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="661974" label="New Faces-New Sounds, Vol. 2" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="676224" label="Rough House Blues" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="676409" label="Blues Walk" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="716671" label="Sweet Lou" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="738855" label="Good Gracious" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="761064" label="The Midnight Creeper" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="768027" label="Birdseed" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="768687" label="Sweet Lou" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="789775" label="New Faces-New Sounds, Vol. 2" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="798326" label="Lush Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="800821" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="802745" label="LD+3">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="803162" label="Rough House Blues">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="803730" label="Lush Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="804391" label="The Lou Donaldson Quartet/Quintet/Sextet">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="805560" label="Rough House Blues" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="808198" label="Live: Fried Buzzard" weight="137.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="821384" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="824879" label="Sunny Side Up" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="833150" label="Birdseed" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="845443" label="New Faces-New Sounds, Vol. 2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="848572" label="Relaxing at Sea: Live on the QE2" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="851653" label="Rough House Blues">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="867173" label="Birdseed" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="867803" label="Lou Takes Off">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="868092" label="Lush Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="928942" label="The Lou Donaldson Quartet/Quintet/Sextet" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="931895" label="Color as a Way of Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="932329" label="LD+3">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="958002" label="Blues Walk" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="959775" label="Light Foot" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1182084" label="Rough House Blues">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1198120" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1201675" label="Sunny Side Up" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1210802" label="Cosmos">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1218898" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1232278" label="Hot Dog" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1236607" label="The Scorpion: Live at the Cadillac Club">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1237101" label="Different Scene" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1241848" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1245351" label="Color as a Way of Life" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1245778" label="Light Foot">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1255047" label="Musty Rusty" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1260133" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1263330" label="Color as a Way of Life" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1275380" label="Swing and Soul">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1279843" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1327647" label="Cosmos" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1476696" label="Birdseed">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1497587" label="Birdseed" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1518560" label="Color as a Way of Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1530144" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1546263" label="Birdseed">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1569726" label="LD+3">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1611633" label="Rough House Blues">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1612986" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1627497" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1638001" label="Color as a Way of Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1660002" label="Birdseed" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1740106" label="Caracas">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1741048" label="Color as a Way of Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1746195" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1750562" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1754159" label="Cosmos">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1773985" label="Color as a Way of Life" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1794825" label="Color as a Way of Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1800706" label="Relaxing at Sea: Live on the QE2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="1956284" label="Color as a Way of Life">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="2146276" label="Different Scene">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="2292921" label="Cosmos">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="808198" target="2293277" label="Sweet Lou">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="85819" label="For the Love of Music">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="109607" label="Triple Play: Live at the Blue Note" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="120323" label="Triple Play: Live at the Blue Note" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="139566" label="Outrageous">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="162677" label="Triple Play: Live at the Blue Note" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="164372" label="Hamp's Big Band" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="211758" label="Outrageous">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="255377" label="Live at the Metropole Cafe, New York City" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="267354" label="Flyin' Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="275832" label="For the Love of Music" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="276044" label="Crazy Rhythm">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="293321" label="The Hampton-Tatum-Rich Trio">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="321377" label="You Better Know It!!!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="324645" label="Pleyel, 9 Mars 1971, Pt.1" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="378624" label="Flyin' Home" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="622805" label="For the Love of Music" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="798326" label="Made in Japan">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="803162" label="Triple Play: Live at the Blue Note" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="803730" label="Newport Uproar">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="833150" label="Triple Play: Live at the Blue Note" weight="290.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="959775" label="Live at the John Anson Ford Amphitheatre" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="16759" label="Drum Songs" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="36934" label="Showcase" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="39005" label="My Fire">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="85819" label="Gretsch Drum Night at Birdland" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="139566" label="Drums Around the World: Philly Joe Jones Big Band Sounds" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="162677" label="Gretsch Drum Night at Birdland" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="211758" label="Gretsch Drum Night at Birdland" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="239169" label="Drums Around the World: Philly Joe Jones Big Band Sounds">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="255377" label="Showcase" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="275832" label="Gretsch Drum Night at Birdland" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="372472" label="My Fire">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="424292" label="Drum Songs" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="761064" label="Showcase" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="845443" label="Gretsch Drum Night at Birdland" weight="39.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="845443" target="928942" label="Gretsch Drum Night at Birdland" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="848572" target="109607" label="Dizzy Gillespie Meets the Phil Woods Quintet">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="848572" target="149946" label="The Young Bloods" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="848572" target="162677" label="Dizzy Gillespie Meets the Phil Woods Quintet" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="848572" target="211758" label="The Young Bloods">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="848572" target="848572" label="The Young Bloods" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="851653" target="324645" label="Jazz for a Sunday Afternoon">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="851653" target="803730" label="Jazz for a Sunday Afternoon" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="851653" target="851653" label="Jazz for a Sunday Afternoon" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="851653" target="959775" label="Jazz for a Sunday Afternoon">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="57737" label="Asante" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="109607" label="Live at Newport">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="120323" label="Land of Giants" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="162677" label="Today and Tomorrow" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="250435" label="Extensions" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="254492" label="Autumn Mood">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="275832" label="13th House" weight="36.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="293321" label="McCoy Tyner Plays Ellington">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="321377" label="Double Trios">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="324645" label="Supertrios">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="401066" label="Prelude and Sonata">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="768027" label="McCoy Tyner &amp; the Latin All-Stars" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="789775" label="Things Ain't What They Used to Be">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="798326" label="Together" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="803730" label="Song of the New World" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="805560" label="Inner Voices">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="868092" label="Sama Layuca" weight="246.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="959775" label="At the Warsaw Jamboree" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="868092" target="1956284" label="13th House" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="39656" label="A Night in Tunisia 1957">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="78454" label="Art Blakey's Jazz Messengers with Thelonious Monk" weight="20.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="85819" label="Gretsch Drum Night at Birdland" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="109607" label="Live at Ronnie Scott's: Art Blakey and the Jazz Messengers DRG" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="120323" label="Caravan" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="139566" label="The African Beat" weight="25.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="149946" label="Ritual: The Modern Jazz Messengers" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="162677" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="15.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="176387" label="Les Liaisons Dangereuses">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="211758" label="A Night at Birdland, Vol. 2" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="250435" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="62.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="257524" label="Milestones in Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="267354" label="A Night at Birdland, Vol. 1" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="275832" label="Gretsch Drum Night at Birdland" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="293321" label="Caravan">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="324645" label="Hard Bop" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="341422" label="Holiday for Skins" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="407857" label="In My Prime, Vol. 1" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="424292" label="Milestones in Jazz" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="505154" label="Orgy in Rhythm, Vol. 1-2" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="661974" label="Drum Suite" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="738855" label="Hold On, I'm Coming">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="768027" label="At the Jazz Corner of the World, Vol. 1-2" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="789775" label="A Night at Birdland, Vol. 1" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="798326" label="Caravan" weight="20.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="803730" label="Hold On, I'm Coming">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="808198" label="A Night at Birdland, Vol. 1" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="845443" label="Gretsch Drum Night at Birdland" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="868092" label="A Jazz Message" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="928942" label="A Night at Birdland, Vol. 1" weight="251.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="959775" label="Hard Bop" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

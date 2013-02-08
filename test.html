@@ -1,125 +1,62 @@
-<html class="no-js" lang="en">
-   <head>
-        <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-   
-
-<script src="js/sigma.min.js"></script>
-<script src="js/sigma.forceatlas2.js"></script>
-</head>
-<body >
-<div class="container">
-   <div class="row">
-      <div class="span12 buttons-container">
-
-         <button class="btn" id="stop-layout">Stop Layout</button>
-
-         <button class="btn" id="rescale-graph">Rescale Graph</button>
-
-      </div>
-
-      <div class="span12 sigma-parent" id="sigma-example-parent">
-         <div class="sigma-expand" id="sigma-example"></div>
-      </div>
-   </div>
-
-
-<script type="text/javascript">
-   function init() {
-      // Instanciate sigma.js and customize it :
-      var sigInst = sigma.init(document.getElementById('sigma-example')).drawingProperties({
-         defaultLabelColor: '#fff'
-      });
-
-      // Generate a random graph with :
-      // . N nodes
-      // . E edges
-      // . C clusters
-      // . d the proportion of edges that connect two nodes
-      // from the same cluster
-      var i, N = 500, E = 3000, C = 5, d = 0.5, clusters = [];
-      for(i = 0; i < C; i++){
-         clusters.push({
-            'id': i,
-            'nodes': [],
-            'color': 'rgb('+Math.round(Math.random()*256)+','+
-            Math.round(Math.random()*256)+','+
-            Math.round(Math.random()*256)+')'
-         });
-      }
-
-      for(i = 0; i < N; i++){
-         var cluster = clusters[(Math.random()*C)|0];
-         sigInst.addNode('n'+i,{
-            'x': Math.random(),
-            'y': Math.random(),
-            'size': 0.5+4.5*Math.random(),
-            'color': cluster['color'],
-            'cluster': cluster['id']
-         });
-         cluster.nodes.push('n'+i);
-      }
-
-      for(i = 0; i < E; i++){
-         if(Math.random() < 1-d){
-            sigInst.addEdge(i,'n'+(Math.random()*N|0),'n'+(Math.random()*N|0));
-            }else{
-            var cluster = clusters[(Math.random()*C)|0], n = cluster.nodes.length;
-            sigInst.addEdge(i,cluster.nodes[Math.random()*n|0],cluster.nodes[Math.random()*n|0]);
-         }
-      }
-
-      // Start the ForceAtlas2 algorithm
-      // (requires "sigma.forceatlas2.js" to be included)
-      sigInst.startForceAtlas2();
-
-      var isRunning = true;
-      document.getElementById('stop-layout').addEventListener('click',function(){
-         if(isRunning){
-            isRunning = false;
-            sigInst.stopForceAtlas2();
-            document.getElementById('stop-layout').childNodes[0].nodeValue = 'Start Layout';
-            }else{
-            isRunning = true;
-            sigInst.startForceAtlas2();
-            document.getElementById('stop-layout').childNodes[0].nodeValue = 'Stop Layout';
-         }
-      },true);
-      document.getElementById('rescale-graph').addEventListener('click',function(){
-         sigInst.position(0,0,1).draw();
-      },true);
-   }
-
-   if (document.addEventListener) {
-      document.addEventListener('DOMContentLoaded', init, false);
-      } else {
-      window.onload = init;
-   }
-</script>
-
-<style type="text/css">
-   /* sigma.js context : */
-  .sigma-parent {
-    position: relative;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    background: #222;
-    height: 500px;
-  }
-  .sigma-expand {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  .buttons-container{
-    padding-bottom: 8px;
-    padding-top: 12px;
-  }
+<html>
+<head>
+<title>My Videos</title>
+<style>
+.titlec {
+  font-size: small;
+}
+ul.videos li {
+  float: left;
+  width: 10em;
+  margin-bottom: 1em;
+}
+ul.videos
+{
+  margin-bottom: 1em;
+  padding-left : 0em;
+  margin-left: 0em;
+  list-style: none;
+}
 </style>
+<script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+function loadVideo(playerUrl, autoplay) {
+  swfobject.embedSWF(
+      playerUrl + '&rel=1&border=0&fs=1&autoplay=' + 
+      (autoplay?1:0), 'player', '290', '250', '9.0.0', false, 
+      false, {allowfullscreen: 'true'});
+}
 
+function showMyVideos2(data) {
+  var feed = data.feed;
+  var entries = feed.entry || [];
+  var html = ['<ul class="videos">'];
+  for (var i = 0; i < entries.length; i++) {
+    var entry = entries[i];
+    var title = entry.title.$t.substr(0, 20);
+    var thumbnailUrl = entries[i].media$group.media$thumbnail[0].url;
+    var playerUrl = entries[i].media$group.media$content[0].url;
+    html.push('<li onclick="loadVideo(\'', playerUrl, '\', true)">',
+              '<span class="titlec">', title, '...</span><br /><img src="', 
+              thumbnailUrl, '" width="130" height="97"/>', '</span></li>');
+  }
+  html.push('</ul><br style="clear: left;"/>');
+  document.getElementById('videos2').innerHTML = html.join('');
+  if (entries.length > 0) {
+    loadVideo(entries[0].media$group.media$content[0].url, false);
+  }
+}
+</script>
+</head>
+<body>
+<div id="playerContainer" style="width: 20em; height: 180px; float: left;">
+    <object id="player"></object>
+</div>
+<div id="videos2"></div>
+<script 
+    type="text/javascript" 
+    src="http://gdata.youtube.com/feeds/api/videos?q=Miles Davis&alt=json-in-script&callback=showMyVideos2&max-results=3&format=5">
+
+</script>
 </body>
 </html>

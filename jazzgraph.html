@@ -50,7 +50,54 @@ function getImage(title)
 
     });
   });
+
+
+
 }
+   function getVideoYoutube(artist)
+   {
+      $.getJSON("http://gdata.youtube.com/feeds/api/videos?q="+ artist + "&alt=json-in-script&callback=?&max-results=12&format=5", function(data) 
+         {
+            var feed = data.feed;
+            var entries = feed.entry || [];
+            var html = ['<ul class="videos">'];
+            for (var i = 0; i < entries.length; i++) {
+               var entry = entries[i];
+               var title = entry.title.$t.substr(0, 20);
+               var thumbnailUrl = entries[i].media$group.media$thumbnail[0].url;
+               var playerUrl = entries[i].media$group.media$content[0].url;
+               html.push('<li onclick="loadVideo(\'', playerUrl, '\', true)">',
+                     '<span class="titlec">', title, '...</span><br /><img src="', 
+                     thumbnailUrl, '" width="130" height="97"/>', '</span></li>');
+            }
+            html.push('</ul><br style="clear: left;"/>');
+            document.getElementById('videos2').innerHTML = html.join('');
+            if (entries.length > 0) {
+               loadVideo(entries[0].media$group.media$content[0].url, false);
+            }
+         });
+   }
+
+   function getInfoAlbum(artist)
+   {
+      document.getElementById('albums').innerHTML = '<b>' + artist +' </b>';
+      var API_KEY = '';
+      var service_url = 'https://www.googleapis.com/freebase/v1/mqlread';
+      var query = {'type':'/music/artist','name': artist,'album':[]};
+      var params = {
+         'key': API_KEY,
+         'query': JSON.stringify(query)
+      };
+
+      $.getJSON(service_url + '?callback=?', params, function(response) {
+            var result = response.result;
+          $.each(result['album'] , function(key, val) 
+             {
+             $('<div>', {text:val}).appendTo("#albums");     
+             
+                });
+            });
+   }
  
  
  </script>
@@ -61,47 +108,31 @@ function getImage(title)
     
   <div class="container">
     <div class="row">
-<select onchange="
+Bebop :<select onchange="
 init(this[this.selectedIndex].value)
-;getImage(this[this.selectedIndex].value);">
- 
-<option value='Al_Haig'>Al Haig</option>
+;getVideoYoutube(this[this.selectedIndex].value);">
 <option value='Art_Blakey'>Art Blakey</option>
 <option value='Art_Pepper'>Art Pepper</option>
 <option value='Barney_Kessel'>Barney Kessel</option>
-<option value='Barry_Harris'>Barry Harris</option>
 <option value='Betty_Carter'>Betty Carter</option>
 <option value='Bill_Evans'>Bill Evans</option>
 <option value='Billy_Eckstine'>Billy Eckstine</option>
-<option value='Blue_Mitchell'>Blue Mitchell</option>
-<option value='Buddy_DeFranco'>Buddy DeFranco</option>
 <option value='Bud_Powell'>Bud Powell</option>
 <option value='Cannonball_Adderley'>Cannonball Adderley</option>
-<option value='Carl_Fontana'>Carl Fontana</option>
-<option value='Charles_McPherson'>Charles McPherson</option>
 <option value='Charles_Mingus'>Charles Mingus</option>
 <option value='Charlie_Christian'>Charlie Christian</option>
 <option value='Charlie_Parker'>Charlie Parker</option>
 <option value='Chet_Baker'>Chet Baker</option>
-<option value='Chuck_Wayne'>Chuck Wayne</option>
 <option value='Clifford_Brown'>Clifford Brown</option>
 <option value='Curtis_Fuller'>Curtis Fuller</option>
 <option value='Dexter_Gordon'>Dexter Gordon</option>
 <option value='Dizzy_Gillespie'>Dizzy Gillespie</option>
-<option value='Dodo_Marmarosa'>Dodo Marmarosa</option>
 <option value='Don_Byas'>Don Byas</option>
-<option value='Duke_Jordan'>Duke Jordan</option>
 <option value='Ella_Fitzgerald'>Ella Fitzgerald</option>
 <option value='Fats_Navarro'>Fats Navarro</option>
-<option value='Frank_Marocco'>Frank Marocco</option>
-<option value='Frank_Rosolino'>Frank Rosolino</option>
-<option value='George_Wallington'>George Wallington</option>
 <option value='Herb_Ellis'>Herb Ellis</option>
 <option value='Horace_Silver'>Horace Silver</option>
-<option value='Howard_McGhee'>Howard McGhee</option>
 <option value='Jimmy_Cobb'>Jimmy Cobb</option>
-<option value='Jimmy_Raney'>Jimmy Raney</option>
-<option value='J._J._Johnson'>J. J. Johnson</option>
 <option value='Joe_Pass'>Joe Pass</option>
 <option value='John_Coltrane'>John Coltrane</option>
 <option value='John_Lewis'>John Lewis</option>
@@ -110,34 +141,53 @@ init(this[this.selectedIndex].value)
 <option value='Kenny_Dorham'>Kenny Dorham</option>
 <option value='Lee_Konitz'>Lee Konitz</option>
 <option value='Lennie_Tristano'>Lennie Tristano</option>
-<option value='Lou_Levy'>Lou Levy</option>
 <option value='Lucky_Thompson'>Lucky Thompson</option>
 <option value='Max_Roach'>Max Roach</option>
 <option value='Miles_Davis'>Miles Davis</option>
-<option value='Milt_Hinton'>Milt Hinton</option>
 <option value='Milt_Jackson'>Milt Jackson</option>
-<option value='Mort_Weiss'>Mort Weiss</option>
-<option value='Oscar_Pettiford'>Oscar Pettiford</option>
 <option value='Pat_Martino'>Pat Martino</option>
 <option value='Paul_Chambers'>Paul Chambers</option>
-<option value='Percy_Heath'>Percy Heath</option>
 <option value='Philly_Joe_Jones'>Philly Joe Jones</option>
 <option value='Ray_Brown'>Ray Brown</option>
-<option value='Red_Rodney'>Red Rodney</option>
-<option value='Ronnie_Singer'>Ronnie Singer</option>
 <option value='Roy_Haynes'>Roy Haynes</option>
-<option value='Sadik_Hakim'>Sadik Hakim</option>
 <option value='Sarah_Vaughan'>Sarah Vaughan</option>
-<option value='Shadow_Wilson'>Shadow Wilson</option>
 <option value='Sonny_Rollins'>Sonny Rollins</option>
 <option value='Sonny_Stitt'>Sonny Stitt</option>
-<option value='Stan_Levey'>Stan Levey</option>
-<option value='Tadd_Dameron'>Tadd Dameron</option>
 <option value='Thelonious_Monk'>Thelonious Monk</option>
-<option value='Tommy_Potter'>Tommy Potter</option>
-<option value='Walter_Davis'>Walter Davis</option>
 <option value='Wardell_Gray'>Wardell Gray</option>
 <option value='Wes_Montgomery'>Wes Montgomery</option>
+</select> 
+Jazz Funk : <select onchange="
+init(this[this.selectedIndex].value)
+;getVideoYoutube(this[this.selectedIndex].value);">
+ 
+<option value='Billy_Cobham'>Billy Cobham</option>
+<option value='Bobby_Hutcherson'>Bobby Hutcherson</option>
+<option value='Bob_James'>Bob James</option>
+<option value='Brother_Jack_McDuff'>Brother Jack McDuff</option>
+<option value='Cannonball_Adderley'>Cannonball Adderley</option>
+<option value='Cedar_Walton'>Cedar Walton</option>
+<option value='Dizzy_Gillespie'>Dizzy Gillespie</option>
+<option value='Donald_Byrd'>Donald Byrd</option>
+<option value='Freddie_Hubbard'>Freddie Hubbard</option>
+<option value='George_Benson'>George Benson</option>
+<option value='Grant_Green'>Grant Green</option>
+<option value='Grover_Washington,_Jr.'>Grover Washington, Jr.</option>
+<option value='Hank_Crawford'>Hank Crawford</option>
+<option value='Herbie_Hancock'>Herbie Hancock</option>
+<option value='Horace_Silver'>Horace Silver</option>
+<option value='Jimmy_McGriff'>Jimmy McGriff</option>
+<option value='Jimmy_Smith'>Jimmy Smith</option>
+<option value='Joe_Farrell'>Joe Farrell</option>
+<option value='Lonnie_Liston_Smith'>Lonnie Liston Smith</option>
+<option value='Lou_Donaldson'>Lou Donaldson</option>
+<option value='Miles_Davis'>Miles Davis</option>
+<option value='Quincy_Jones'>Quincy Jones</option>
+<option value='Ron_Carter'>Ron Carter</option>
+<option value='Stanley_Turrentine'>Stanley Turrentine</option>
+<option value='Wayne_Shorter'>Wayne Shorter</option>
+<option value='Wes_Montgomery'>Wes Montgomery</option>
+<option value='Yusef_Lateef'>Yusef Lateef</option>
 </select>
   
   <div class="span12 sigma-parent" id="sigma-example-parent">
@@ -148,6 +198,8 @@ init(this[this.selectedIndex].value)
 <script src="js/sigma.parseGexf.js"></script>
 
 <script type="text/javascript">function init(path) {
+
+
   /**
    * First, let's instanciate sigma.js :
    */
@@ -247,13 +299,13 @@ init(this[this.selectedIndex].value)
 
 
 
-
+      //getInfoAlbum(libelle);
+      getVideoYoutube(libelle);
+      //getImage(libelle.replace(' ','_')
       popUp = $(
             '<div class="node-info-popup"></div>Albums'
       )
       .append(
-      getImage(libelle.replace(' ','_'))
-      ).append(
         // The GEXF parser stores all the attributes in an array named
         // 'attributes'. And since sigma.js does not recognize the key
         // 'attributes' (unlike the keys 'label', 'color', 'size' etc),
@@ -344,6 +396,13 @@ if (document.addEventListener) {
   </style>
 
  <div id="images">
+<div id="playerContainer" style="width: 20em; height: 180px; float: left;">
+       <object id="player"></object>
+    </div>
+  <div id="videos2">
+  </div>
+ </div>
+ <div id="albums">
  </div>
 <style type="text/css">
   /* sigma.js context : */
@@ -372,6 +431,34 @@ if (document.addEventListener) {
 
 
   </div>
+
+  <style>
+     .titlec {
+        font-size: small;
+     }
+     ul.videos li {
+        float: left;
+        width: 10em;
+        margin-bottom: 1em;
+     }
+     ul.videos
+     {
+        margin-bottom: 1em;
+        padding-left : 0em;
+        margin-left: 0em;
+        list-style: none;
+     }
+  </style>
+  <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
+  <script type="text/javascript">
+     function loadVideo(playerUrl, autoplay) {
+        swfobject.embedSWF(
+              playerUrl + '&rel=1&border=0&fs=1&autoplay=' + 
+              (autoplay?1:0), 'player', '290', '250', '9.0.0', false, 
+              false, {allowfullscreen: 'true'});
+     }
+
+</script>
 </body>
 </html>
 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-08">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="275832" label="Ron Carter">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="8.342044" y="-7.2119203" z="0.0"></viz:position>
+        <viz:color r="235" g="41" b="41"></viz:color>
+      </node>
+      <node id="424292" label="John Lewis">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="40.367107" y="7.1595716" z="0.0"></viz:position>
+        <viz:color r="235" g="41" b="41"></viz:color>
+      </node>
+      <node id="741325" label="Cedar Walton">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-11.063855" y="18.355867" z="0.0"></viz:position>
+        <viz:color r="235" g="41" b="41"></viz:color>
+      </node>
+      <node id="1323725" label="Ron Carter Duo">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-37.532806" y="-18.254915" z="0.0"></viz:position>
+        <viz:color r="235" g="41" b="41"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="275832" target="275832" label="Eight Plus" weight="204.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="424292" label="Blues Farm" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="741325" label="Heart &amp; Soul" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="275832" target="1323725" label="Heart &amp; Soul">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424292" target="424292" label="Evolution II" weight="101.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="741325" target="275832" label="Heart &amp; Soul" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="741325" target="424292" label="Heart &amp; Soul">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="741325" target="741325" label="Heart &amp; Soul" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="741325" target="1323725" label="Heart &amp; Soul">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

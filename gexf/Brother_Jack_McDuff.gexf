@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-08">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="118853" label="Jack McDuff">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="9.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="23.687078" y="118.78714" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="169124" label="Eddie Harris">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="93.70275" y="-32.908985" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="183191" label="John Hart">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="53.090187" y="-54.446083" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="201760" label="George Benson">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6428571428571428"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-78.407524" y="31.109344" z="0.0"></viz:position>
+        <viz:color r="211" g="34" b="34"></viz:color>
+      </node>
+      <node id="224106" label="John Burk">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-100.473015" y="5.6524215" z="0.0"></viz:position>
+        <viz:color r="211" g="34" b="34"></viz:color>
+      </node>
+      <node id="234318" label="Rudy Petschauer">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-37.588432" y="-46.464474" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="321377" label="Neal Hefti">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-113.10379" y="50.481556" z="0.0"></viz:position>
+        <viz:color r="211" g="34" b="34"></viz:color>
+      </node>
+      <node id="449169" label="Red Holloway">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-46.264046" y="11.821903" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="803162" label="Grady Tate">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-24.991543" y="-9.53798" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="816387" label="Leon Russell">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-71.265274" y="-15.002536" z="0.0"></viz:position>
+        <viz:color r="211" g="34" b="34"></viz:color>
+      </node>
+      <node id="846488" label="Mark Whitfield">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="80.85436" y="-2.0011263" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="847847" label="Jerry Weldon">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="60.74387" y="-21.688667" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="1520118" label="Frank Gravis">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="36.34131" y="-8.7790985" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="1573394" label="Andrew Beals">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="116.91359" y="2.2509315" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+      <node id="2635347" label="Brother Jack McDuff">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="7.1543217" y="-27.372328" z="0.0"></viz:position>
+        <viz:color r="34" g="211" b="211"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="118853" target="118853" label="Bringin' It Home" weight="15.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="169124" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="183191" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="201760" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="224106" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="234318" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="321377" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="449169" label="Bringin' It Home" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="803162" label="Bringin' It Home" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="816387" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="846488" label="Bringin' It Home" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="847847" label="Bringin' It Home" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="1520118" label="Bringin' It Home" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="1573394" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="118853" target="2635347" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="118853" label="Livin' Inside Your Love" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="201760" label="Standing Together" weight="217.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="224106" label="Givin' It Up" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="321377" label="Par Excellence" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="449169" label="The New Boss Guitar of George Benson" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="816387" label="Breezin'" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="118853" label="Bringin' It Home" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="169124" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="183191" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="201760" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="224106" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="234318" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="321377" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="449169" label="Bringin' It Home" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="803162" label="Bringin' It Home" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="816387" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="846488" label="Bringin' It Home" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="847847" label="Bringin' It Home" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="1520118" label="Bringin' It Home" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="1573394" label="Bringin' It Home">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2635347" target="2635347" label="Bringin' It Home" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-08">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="16759" label="Tadd Dameron">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-52.45922" y="162.50883" z="0.0"></viz:position>
+        <viz:color r="241" g="17" b="17"></viz:color>
+      </node>
+      <node id="65882" label="Bob James">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="33.32483" y="126.34691" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="72629" label="Billy Kilson">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="113.74617" y="-13.136824" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="101795" label="Kirk Whalum">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="131.152" y="111.47146" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="104388" label="Jack DeJohnette">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-114.98444" y="79.61699" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="171220" label="Eliane Elias">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="64.56495" y="90.55374" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="297886" label="Lisa Ekdahl">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="79.226166" y="38.78468" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="355052" label="Rick Braun">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="143.19487" y="65.21692" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="385322" label="Michael Colina">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="41.34925" y="62.69404" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="423829" label="Miles Davis">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7777777777777777"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-81.5454" y="82.29303" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="609397" label="Tom Kennedy">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="134.49905" y="22.555668" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="684920" label="Dave Grusin">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="102.99147" y="79.00547" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="685444" label="David McMurray">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="102.53987" y="142.97736" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="764702" label="Bill Evans">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7777777777777777"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-66.791725" y="121.36699" z="0.0"></viz:position>
+        <viz:color r="241" g="17" b="17"></viz:color>
+      </node>
+      <node id="851879" label="Richard Bona">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="22.780024" y="86.74411" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="934305" label="Brad Mehldau">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-10.938299" y="105.36496" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="939549" label="Dave Weckl">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="69.10321" y="172.09474" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="955883" label="Marc Johnson's Bass Desires">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="13.157406" y="180.68123" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+      <node id="957296" label="Herbie Hancock">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="28.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-46.35932" y="-30.860514" z="0.0"></viz:position>
+        <viz:color r="17" g="241" b="241"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="65882" target="16759" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="65882" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="72629" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="101795" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="104388" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="171220" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="297886" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="355052" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="385322" label="Portrait of Bill Evans" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="423829" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="609397" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="684920" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="685444" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="764702" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="851879" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="934305" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="939549" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="955883" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65882" target="957296" label="Portrait of Bill Evans" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="104388" target="104388" label="Blue Note Sessions" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="16759" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="65882" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="72629" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="101795" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="104388" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="171220" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="297886" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="355052" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="385322" label="Portrait of Bill Evans" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="423829" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="609397" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="684920" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="685444" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="764702" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="851879" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="934305" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="939549" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="955883" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="171220" target="957296" label="Portrait of Bill Evans" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="16759" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="65882" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="72629" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="101795" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="104388" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="171220" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="297886" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="355052" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="385322" label="Portrait of Bill Evans" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="423829" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="609397" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="684920" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="685444" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="764702" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="851879" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="934305" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="939549" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="955883" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="297886" target="957296" label="Portrait of Bill Evans" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="16759" label="'Round About Midnight">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="104388" label="Bitches Brew" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="423829" label="At Newport 1958" weight="274.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="764702" label="At Newport 1958" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="957296" label="Miles in Berlin" weight="68.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="764702" target="16759" label="New Jazz Conceptions" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="764702" target="104388" label="Bill Evans at the Montreux Jazz Festival" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="764702" target="423829" label="Portraiture" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="764702" target="764702" label="Conversations with Myself" weight="211.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="764702" target="957296" label="Re: Person I Knew" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="16759" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="65882" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="72629" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="101795" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="104388" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="171220" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="297886" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="355052" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="385322" label="Portrait of Bill Evans" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="423829" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="609397" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="684920" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="685444" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="764702" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="851879" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="934305" label="Alone Together" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="939549" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="955883" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="934305" target="957296" label="Portrait of Bill Evans" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="16759" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="65882" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="72629" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="101795" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="104388" label="Future 2 Future" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="171220" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="297886" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="355052" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="385322" label="Portrait of Bill Evans" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="423829" label="The Herbie Hancock Trio 1977" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="609397" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="684920" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="685444" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="764702" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="851879" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="934305" label="Portrait of Bill Evans" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="939549" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="955883" label="Portrait of Bill Evans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="957296" target="957296" label="Future 2 Future" weight="461.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

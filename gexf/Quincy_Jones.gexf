@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-08">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="68485" label="Bob Malach">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-29.829056" y="-16.955597" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="75441" label="Roland Dahinden">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="23.457018" y="132.36069" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="83454" label="Kenwood Dennard">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-69.384766" y="62.5586" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="118956" label="Conrad Herwig">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-106.65069" y="-77.10865" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="128269" label="Jack Walrath">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="72.430756" y="3.1724699" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="186708" label="Johnny Carisi">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="58.501713" y="-69.73802" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="187336" label="Gil Goldstein">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-16.894835" y="-40.650303" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="200885" label="Leonard Feather">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="87.566795" y="-55.0766" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="217066" label="John D'earth">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-85.424164" y="34.56176" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="238033" label="Delmar Brown">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="98.6888" y="-93.22333" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="249970" label="John Riley">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-32.12633" y="-94.65255" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="262292" label="Lew Soloff">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="50.623642" y="79.50067" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="276735" label="Howard Johnson">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="46.728336" y="18.959723" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="277154" label="Jerry Hey">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="133.58028" y="-7.1915493" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="293016" label="Ron Wallace">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-100.87403" y="4.4784255" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="302773" label="Roger Rosenberg">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="21.79999" y="92.153114" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="329114" label="Jerry Bergonzi">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="130.47238" y="34.599396" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="376688" label="David Taylor">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-55.669476" y="125.49633" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="378624" label="Quincy Jones">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-24.882742" y="24.691853" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="420322" label="Sal Giorgianni">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-51.985058" y="-125.57374" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="423829" label="Miles Davis">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="22.880754" y="-22.75803" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="491554" label="Mike Richmond">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-15.3469515" y="133.96332" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="511661" label="Tom Varner">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="113.442726" y="68.0411" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="539979" label="George Gruntz">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="47.968075" y="45.36373" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="551815" label="Gil Evans">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="58.43842" y="-35.66633" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="554414" label="Gil Evans Orchestra">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="29.191078" y="-78.179436" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="613887" label="Alex Foster">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-45.23238" y="-43.51866" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="624543" label="Tom Bones Malone">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-87.95392" y="-23.82715" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="681013" label="Dave Bargeron">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-0.4003718" y="-90.953224" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="692910" label="Manfred Schoof">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="75.99093" y="32.981537" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="761702" label="John Clark">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-136.1703" y="-10.154615" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="767404" label="Kenny Garrett">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="5.1869364" y="-59.839607" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="782996" label="Larry Schneider">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="11.953128" y="11.550097" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="788648" label="Earl McIntyre">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-73.55195" y="5.179227" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="791572" label="Benny Bailey">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="74.09698" y="61.96948" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="793756" label="Carlos Benavent">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="98.21521" y="14.43612" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="803162" label="Grady Tate">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-131.61386" y="31.474255" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="804097" label="George Adams">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="90.691345" y="-20.638838" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="813629" label="Wallace Roney">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-57.40579" y="-19.143826" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="857448" label="Marvin Stamm">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-41.057693" y="85.752464" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="1188694" label="Michel Weber">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-12.559823" y="-132.40715" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1204442" label="Alex Brofsky">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-123.7858" y="-45.62002" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1211263" label="Julian Cawdry">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-0.23838693" y="64.32915" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="1222709" label="Xavier Duss">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="62.68792" y="-115.971405" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1234919" label="Claudio Pontiggia">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="59.27394" y="119.70574" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1236010" label="Judith Wenziker">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-82.12396" y="-103.23325" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1403592" label="Reiner Erb">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-56.17508" y="-72.20863" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="1464584" label="Anne O'Brien">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="126.49934" y="-48.69193" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1468184" label="Hanspeter Frehner">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="22.314213" y="37.25642" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1540214" label="Xenia Schindler">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="25.810713" y="-128.28448" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="1615341" label="Christian Gavillet">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-25.76997" y="-67.263626" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="1620872" label="Claude Nobs">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="26.428286" y="62.1341" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="1682610" label="Tilman Zahn">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-90.49478" y="100.62716" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1716367" label="Dave Seghezzo">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="90.871925" y="98.914604" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="1735268" label="Christian Rabe">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-74.419586" y="-49.78675" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+      <node id="1751551" label="Ack Van Rooyen">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-8.228743" y="93.48974" z="0.0"></viz:position>
+        <viz:color r="170" g="31" b="31"></viz:color>
+      </node>
+      <node id="2287011" label="Miles Evans">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-115.69887" y="68.19391" z="0.0"></viz:position>
+        <viz:color r="31" g="170" b="170"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="378624" target="68485" label="Miles &amp; Quincy: Live At Montreux" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="75441" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="83454" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="118956" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="128269" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="186708" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="187336" label="Miles &amp; Quincy: Live At Montreux" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="200885" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="217066" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="238033" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="249970" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="262292" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="276735" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="277154" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="293016" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="302773" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="329114" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="376688" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="378624" label="Miles &amp; Quincy: Live At Montreux" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="420322" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="423829" label="Miles &amp; Quincy: Live At Montreux" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="491554" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="511661" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="539979" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="551815" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="554414" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="613887" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="624543" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="681013" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="692910" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="761702" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="767404" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="782996" label="Miles &amp; Quincy: Live At Montreux" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="788648" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="791572" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="793756" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="803162" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="804097" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="813629" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="857448" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1188694" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1204442" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1211263" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1222709" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1234919" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1236010" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1403592" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1464584" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1468184" label="Miles &amp; Quincy: Live At Montreux" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1540214" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1615341" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1620872" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1682610" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1716367" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1735268" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="1751551" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="378624" target="2287011" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="68485" label="Miles &amp; Quincy: Live At Montreux" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="75441" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="83454" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="118956" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="128269" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="186708" label="Miles &amp; Quincy: Live At Montreux" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="187336" label="Miles &amp; Quincy: Live At Montreux" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="200885" label="Star People" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="217066" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="238033" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="249970" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="262292" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="276735" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="277154" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="293016" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="302773" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="329114" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="376688" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="378624" label="Miles &amp; Quincy: Live At Montreux" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="420322" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="423829" label="At Newport 1958" weight="274.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="491554" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="511661" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="539979" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="551815" label="Star People" weight="27.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="554414" label="Miles &amp; Quincy: Live At Montreux" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="613887" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="624543" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="681013" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="692910" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="761702" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="767404" label="Miles &amp; Quincy: Live At Montreux" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="782996" label="Miles &amp; Quincy: Live At Montreux" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="788648" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="791572" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="793756" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="803162" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="804097" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="813629" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="857448" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1188694" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1204442" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1211263" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1222709" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1234919" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1236010" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1403592" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1464584" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1468184" label="Miles &amp; Quincy: Live At Montreux" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1540214" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1615341" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1620872" label="Miles &amp; Quincy: Live At Montreux" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1682610" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1716367" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1735268" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="1751551" label="Miles &amp; Quincy: Live At Montreux" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="2287011" label="Miles &amp; Quincy: Live At Montreux">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="857448" target="857448" label="Jazz for a Sunday Afternoon" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

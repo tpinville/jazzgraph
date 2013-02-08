@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-08">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="109607" label="Cole Porter">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="35.940994" y="29.813246" z="0.0"></viz:position>
+        <viz:color r="209" g="56" b="56"></viz:color>
+      </node>
+      <node id="111784" label="Lateef">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-46.97343" y="29.024689" z="0.0"></viz:position>
+        <viz:color r="209" g="56" b="56"></viz:color>
+      </node>
+      <node id="139566" label="Curtis Fuller">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="0.08166754" y="16.420374" z="0.0"></viz:position>
+        <viz:color r="209" g="56" b="56"></viz:color>
+      </node>
+      <node id="596922" label="Yusef Lateef">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-20.419954" y="-14.341838" z="0.0"></viz:position>
+        <viz:color r="209" g="56" b="56"></viz:color>
+      </node>
+      <node id="798326" label="Freddie Hubbard">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="21.665726" y="-5.9759665" z="0.0"></viz:position>
+        <viz:color r="209" g="56" b="56"></viz:color>
+      </node>
+      <node id="1911491" label="Fuller">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="9.63423" y="-54.949135" z="0.0"></viz:position>
+        <viz:color r="209" g="56" b="56"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="139566" target="109607" label="The Curtis Fuller Jazztet" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="111784" label="Gettin' It Together">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="139566" label="South American Cookin'" weight="95.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="596922" label="The Boss of the Soul: Stream Trombone" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="798326" label="The Boss of the Soul: Stream Trombone" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="1911491" label="Gettin' It Together">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="596922" target="109607" label="Gettin' It Together">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="596922" target="111784" label="Gettin' It Together">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="596922" target="139566" label="Gettin' It Together" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="596922" target="596922" label="Gettin' It Together" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="596922" target="798326" label="Gettin' It Together" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="596922" target="1911491" label="Gettin' It Together">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="109607" label="Gettin' It Together" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="111784" label="Gettin' It Together">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="139566" label="Gettin' It Together" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="596922" label="Gettin' It Together" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="798326" label="New Colors" weight="277.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="1911491" label="Gettin' It Together">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
