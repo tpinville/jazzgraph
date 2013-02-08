@@ -16,39 +16,39 @@ body{
 <body onload="prettyPrint();">
 <script src="js/jquery.min.js"></script>
  <script type="text/javascript">
-//
-
 
 function getImage(title)
 {
-document.getElementById('images').innerHTML = '';
-var txtHtml = "";
+  document.getElementById('images').innerHTML = '';
 
-$.getJSON("http://en.wikipedia.org/w/api.php?action=query&prop=images&titles="+title+"&format=json&callback=?", function(data)  {
- 
- $.each(data.query.pages , function(key, val) {
-   $.each(val.images , function(cle, valeur) {
-     
-                    $.getJSON("http://en.wikipedia.org/w/api.php?action=query&titles="+valeur.title.replace(" ","_") + "&prop=imageinfo&iiprop=url&format=json&callback=?", function(data)  {
-                     
-                     $.each(data.query.pages , function(key, val) {
+  $.getJSON("http://en.wikipedia.org/w/api.php?action=query&prop=images&titles="+title+"&format=json&callback=?", function(data)  
+  { 
+    $.each(data.query.pages , function(key, val) 
+    {      
+      if(val.images != undefined)
+      {
+        $.each(val.images , function(cle, valeur) 
+        {          
+          var nomImage = valeur.title.replace(" ","_");
 
-                       $.each(val.imageinfo , function(cle, valeur) {
-                          //txtHtml = '<img src='+ valeur.url + ' width=100 height=100/>';
-                           $("<img/>").attr("src", valeur.url).attr("width",220).attr("height",220).appendTo("#images");
-                           //$("<img/>").attr("src", valeur.url).attr("width",220).attr("height",220).appendTo("#images");
-                           //http://en.wikipedia.org/w/api.php?action=query&titles=".$term."&prop=images&format=json&imlimit=5
-                          });
+          if (nomImage.indexOf(title) > -1)
+          {
+            $.getJSON("http://en.wikipedia.org/w/api.php?action=query&titles="+ nomImage + "&prop=imageinfo&iiprop=url&format=json&callback=?", function(data) 
+            {
+              $.each(data.query.pages , function(key, val)
+              {
+                $.each(val.imageinfo , function(cle, valeur)
+                {
+                  // '<img src='+ valeur.url + ' width=100 height=100/>';
+                    $("<img/>").attr("src", valeur.url).attr("width",220).attr("height",220).appendTo("#images");
+                });
+              });
+            });
+          }
+        });
+      }
 
-                         });
-                       });
-                       //alert (valeur.title.replace(" ","_"));
-
-        if ( cle == 5 ) return false;
-   });
-
- });
-
+    });
   });
 }
  
@@ -330,9 +330,21 @@ if (document.addEventListener) {
   window.onload = init;
 }
 </script>
+
+  <style type="text/css">
+   #images{
+   position:absolute;
+    top:33px;
+     left:1020px;
+/*      width: 666px;
+      height: 200px;
+      border: 1px solid black;
+      */
+  }
+  </style>
+
  <div id="images">
  </div>
-
 <style type="text/css">
   /* sigma.js context : */
   .sigma-parent {
@@ -341,7 +353,8 @@ if (document.addEventListener) {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     background: #222;
-    height: 500px;
+    height: 550px;
+    width: 1000px;
   }
   .sigma-expand {
     position: absolute;
