@@ -1,62 +1,174 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>My Videos</title>
-<style>
-.titlec {
-  font-size: small;
+<title>Select Replacement Test</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<style type="text/css">
+body {
+font: 80% "Trebuchet MS", verdana, helvetica, arial, sans-serif;
 }
-ul.videos li {
-  float: left;
-  width: 10em;
-  margin-bottom: 1em;
+input {
+display: block;
+margin: 0 0 10px;
+border: 1px solid #666;
+color: #999;
 }
-ul.videos
-{
-  margin-bottom: 1em;
-  padding-left : 0em;
-  margin-left: 0em;
-  list-style: none;
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
 }
-</style>
-<script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
-<script type="text/javascript">
-function loadVideo(playerUrl, autoplay) {
-  swfobject.embedSWF(
-      playerUrl + '&rel=1&border=0&fs=1&autoplay=' + 
-      (autoplay?1:0), 'player', '290', '250', '9.0.0', false, 
-      false, {allowfullscreen: 'true'});
+label {
+display: block;
+         font-weight: bold;
+color: #666;
+}
+select {
+display: block;
+width: 300px;
+}
+ul.selectReplacement {
+margin: 0;
+padding: 0;
+height: 1.65em;
+width: 300px;
+}
+ul.selectReplacement li {
+background: #cf5a5a;
+color: #fff;
+cursor: pointer;
+display: none;
+         font-size: 11px;
+         line-height: 1.7em;
+         list-style: none;
+margin: 0;
+padding: 1px 12px;
+width: 276px;
+}
+ul.selectOpen li {
+display: block;
+}
+ul.selectReplacement li.selected {
+color: #fff;
+display: block;
+}
+ul.selectOpen li.selected {
+background: #9e0000;
+display: block;
+}
+ul.selectOpen li:hover,
+  ul.selectOpen li.hover,
+  ul.selectOpen li.selected:hover {
+background: #9e0000;
+color: #fff;
+  }
+
+select.replaced {
+    display: none;
 }
 
-function showMyVideos2(data) {
-  var feed = data.feed;
-  var entries = feed.entry || [];
-  var html = ['<ul class="videos">'];
-  for (var i = 0; i < entries.length; i++) {
-    var entry = entries[i];
-    var title = entry.title.$t.substr(0, 20);
-    var thumbnailUrl = entries[i].media$group.media$thumbnail[0].url;
-    var playerUrl = entries[i].media$group.media$content[0].url;
-    html.push('<li onclick="loadVideo(\'', playerUrl, '\', true)">',
-              '<span class="titlec">', title, '...</span><br /><img src="', 
-              thumbnailUrl, '" width="130" height="97"/>', '</span></li>');
+</style>
+<script type="text/javascript">
+function selectReplacement(obj) {
+  // append a class to the select
+  obj.className += ' replaced';
+  // create list for styling
+  var ul = document.createElement('ul');
+  ul.className = 'selectReplacement';
+  var opts = obj.options;
+  for (var i=0; i<opts.length; i++) {
+    var selectedOpt;
+    if (opts[i].selected) {
+      selectedOpt = i;
+      break;
+    } else {
+      selectedOpt = 0;
+    }
   }
-  html.push('</ul><br style="clear: left;"/>');
-  document.getElementById('videos2').innerHTML = html.join('');
-  if (entries.length > 0) {
-    loadVideo(entries[0].media$group.media$content[0].url, false);
+  for (var i=0; i<opts.length; i++) {
+    var li = document.createElement('li');
+    var txt = document.createTextNode(opts[i].text);
+    li.appendChild(txt);
+    li.selIndex = opts[i].index;
+    li.selectID = obj.id;
+    li.onclick = function() {
+      selectMe(this);
+    }
+    if (i == selectedOpt) {
+      li.className = 'selected';
+      li.onclick = function() {
+        this.parentNode.className += ' selectOpen';
+        this.onclick = function() {
+          selectMe(this);
+        }
+      }
+    }
+    if (window.attachEvent) {
+      li.onmouseover = function() {
+        this.className += ' hover';
+      }
+      li.onmouseout = function() {
+        this.className = 
+          this.className.replace(new RegExp(" hover\\b"), '');
+      }
+    }
+    ul.appendChild(li);
   }
+  // add the input and the ul
+  obj.parentNode.appendChild(ul);
+}
+function selectMe(obj) {
+  var lis = obj.parentNode.getElementsByTagName('li');
+  for (var i=0; i<lis.length; i++) {
+    if (lis[i] != obj) { // not the selected list item
+      lis[i].className='';
+      lis[i].onclick = function() {
+        selectMe(this);
+      }
+    } else {
+      obj.className='selected';
+      obj.parentNode.className = 
+        obj.parentNode.className.replace(new RegExp(" selectOpen\\b"), '');
+      obj.onclick = function() {
+        obj.parentNode.className += ' selectOpen';
+        this.onclick = function() {
+          selectMe(this);
+        }
+      }
+    }
+  }
+}
+function setForm() {
+  var s = document.getElementsByTagName('select');
+  for (var i=0; i<s.length; i++) {
+    selectReplacement(s[i]);
+  }
+}
+window.onload = function() {
+  setForm();
 }
 </script>
 </head>
 <body>
-<div id="playerContainer" style="width: 20em; height: 180px; float: left;">
-    <object id="player"></object>
-</div>
-<div id="videos2"></div>
-<script 
-    type="text/javascript" 
-    src="http://gdata.youtube.com/feeds/api/videos?q=Miles Davis&alt=json-in-script&callback=showMyVideos2&max-results=3&format=5">
+<h1>Select Replacement Test</h1>
+<form action="#" method="post">
+<fieldset>
+<legend>Sample Form</legend>
+<select id="something" name="something">
+<option value="1">This is option 1</option>
+<option value="2">This is option 2</option>
+<option value="3">This is option 3</option>
+<option value="4">This is option 4</option>
+<option value="5" selected="selected">This is option 5</option>
+<option value="6">This is option 6</option>
+<option value="7">This is option 7</option>
+<option value="8">This is option 8</option>
+</select>
+</fieldset>
+</form>
 
-</script>
+
+
+
 </body>
 </html>

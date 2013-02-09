@@ -1,116 +1,38 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-        <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <script src="js/prettify.js"></script>
   <script src="js/sigma.min.js"></script>
-<style type="text/css">
-/* RESET */
-body{
-
-}
-</style>
+  <script src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
+  <script type="text/javascript">    
+    var mapIdLabel = new Object();
+  </script>
+  <script src="js/sigma.parseGexf.js"></script>
+  <script src="js/jazzgraph.js"></script>
+  <script src="js/jazzgraph.style.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jazzgraph.css" media="screen" />
 </head>
-<body onload="prettyPrint();">
-<script src="js/jquery.min.js"></script>
- <script type="text/javascript">
-
-function getImage(title)
-{
-  document.getElementById('images').innerHTML = '';
-
-  $.getJSON("http://en.wikipedia.org/w/api.php?action=query&prop=images&titles="+title+"&format=json&callback=?", function(data)  
-  { 
-    $.each(data.query.pages , function(key, val) 
-    {      
-      if(val.images != undefined)
-      {
-        $.each(val.images , function(cle, valeur) 
-        {          
-          var nomImage = valeur.title.replace(" ","_");
-
-          if (nomImage.indexOf(title) > -1)
-          {
-            $.getJSON("http://en.wikipedia.org/w/api.php?action=query&titles="+ nomImage + "&prop=imageinfo&iiprop=url&format=json&callback=?", function(data) 
-            {
-              $.each(data.query.pages , function(key, val)
-              {
-                $.each(val.imageinfo , function(cle, valeur)
-                {
-                  // '<img src='+ valeur.url + ' width=100 height=100/>';
-                    $("<img/>").attr("src", valeur.url).attr("width",220).attr("height",220).appendTo("#images");
-                });
-              });
-            });
-          }
-        });
-      }
-
-    });
-  });
-
-
-
-}
-   function getVideoYoutube(artist)
-   {
-      $.getJSON("http://gdata.youtube.com/feeds/api/videos?q="+ artist + "&alt=json-in-script&callback=?&max-results=12&format=5", function(data) 
-         {
-            var feed = data.feed;
-            var entries = feed.entry || [];
-            var html = ['<ul class="videos">'];
-            for (var i = 0; i < entries.length; i++) {
-               var entry = entries[i];
-               var title = entry.title.$t.substr(0, 20);
-               var thumbnailUrl = entries[i].media$group.media$thumbnail[0].url;
-               var playerUrl = entries[i].media$group.media$content[0].url;
-               html.push('<li onclick="loadVideo(\'', playerUrl, '\', true)">',
-                     '<span class="titlec">', title, '...</span><br /><img src="', 
-                     thumbnailUrl, '" width="130" height="97"/>', '</span></li>');
-            }
-            html.push('</ul><br style="clear: left;"/>');
-            document.getElementById('videos2').innerHTML = html.join('');
-            if (entries.length > 0) {
-               loadVideo(entries[0].media$group.media$content[0].url, false);
-            }
-         });
-   }
-
-   function getInfoAlbum(artist)
-   {
-      document.getElementById('albums').innerHTML = '<b>' + artist +' </b>';
-      var API_KEY = '';
-      var service_url = 'https://www.googleapis.com/freebase/v1/mqlread';
-      var query = {'type':'/music/artist','name': artist,'album':[]};
-      var params = {
-         'key': API_KEY,
-         'query': JSON.stringify(query)
-      };
-
-      $.getJSON(service_url + '?callback=?', params, function(response) {
-            var result = response.result;
-          $.each(result['album'] , function(key, val) 
-             {
-             $('<div>', {text:val}).appendTo("#albums");     
-             
-                });
-            });
-   }
- 
- 
- </script>
+<body>
 <script type="text/javascript">
-  var mapIdLabel = new Object();
+var load = 0; // tout pourri
+
+if (document.addEventListener) {
+  document.addEventListener('DOMContentLoaded', init, false);
+      setForm();
+} 
+else{  
+  window.onload = function() {
+      init();
+  }
+  }
+
 </script>
-  
-    
-  <div class="container">
-    <div class="row">
-Bebop :<select onchange="
-init(this[this.selectedIndex].value)
-;getVideoYoutube(this[this.selectedIndex].value);">
+<div id="selectartists">
+<div id="bop">
+<select>
 <option value='Art_Blakey'>Art Blakey</option>
 <option value='Art_Pepper'>Art Pepper</option>
 <option value='Barney_Kessel'>Barney Kessel</option>
@@ -157,9 +79,83 @@ init(this[this.selectedIndex].value)
 <option value='Wardell_Gray'>Wardell Gray</option>
 <option value='Wes_Montgomery'>Wes Montgomery</option>
 </select> 
-Jazz Funk : <select onchange="
-init(this[this.selectedIndex].value)
-;getVideoYoutube(this[this.selectedIndex].value);">
+</div>
+<div id="hardbop">
+<select>
+<option value='Art_Blakey'>Art Blakey</option>
+<option value='Art_Farmer'>Art Farmer</option>
+<option value='Benny_Golson'>Benny Golson</option>
+<option value='Big_John_Patton'>Big John Patton</option>
+<option value='Billy_Higgins'>Billy Higgins</option>
+<option value='Bobby_Hutcherson'>Bobby Hutcherson</option>
+<option value='Booker_Ervin'>Booker Ervin</option>
+<option value='Brother_Jack_McDuff'>Brother Jack McDuff</option>
+<option value='Bud_Powell'>Bud Powell</option>
+<option value='Cal_Tjader'>Cal Tjader</option>
+<option value='Charles_Mingus'>Charles Mingus</option>
+<option value='Clifford_Brown'>Clifford Brown</option>
+<option value='Curtis_Fuller'>Curtis Fuller</option>
+<option value='Dexter_Gordon'>Dexter Gordon</option>
+<option value='Donald_Byrd'>Donald Byrd</option>
+<option value='Elmo_Hope'>Elmo Hope</option>
+<option value='Elvin_Jones'>Elvin Jones</option>
+<option value='Eric_Dolphy'>Eric Dolphy</option>
+<option value='Freddie_Hubbard'>Freddie Hubbard</option>
+<option value='Gary_Burton'>Gary Burton</option>
+<option value='George_Benson'>George Benson</option>
+<option value='Gigi_Gryce'>Gigi Gryce</option>
+<option value='Grant_Green'>Grant Green</option>
+<option value='Hank_Mobley'>Hank Mobley</option>
+<option value='Herb_Ellis'>Herb Ellis</option>
+<option value='Herbie_Hancock'>Herbie Hancock</option>
+<option value='Horace_Silver'>Horace Silver</option>
+<option value='Jackie_McLean'>Jackie McLean</option>
+<option value='Jay_Jay_Johnson'>Jay Jay Johnson</option>
+<option value='Jimmy_McGriff'>Jimmy McGriff</option>
+<option value='Jimmy_Smith'>Jimmy Smith</option>
+<option value='Joe_Henderson'>Joe Henderson</option>
+<option value='Joe_Pass'>Joe Pass</option>
+<option value='John_Coltrane'>John Coltrane</option>
+<option value='Kai_Winding'>Kai Winding</option>
+<option value='Kenny_Burrell'>Kenny Burrell</option>
+<option value='Kenny_Clarke'>Kenny Clarke</option>
+<option value='Kenny_Dorham'>Kenny Dorham</option>
+<option value='Kenny_Drew'>Kenny Drew</option>
+<option value='Larry_Coryell'>Larry Coryell</option>
+<option value='Larry_Goldings'>Larry Goldings</option>
+<option value='Lee_Konitz'>Lee Konitz</option>
+<option value='Lee_Morgan'>Lee Morgan</option>
+<option value='Les_Paul'>Les Paul</option>
+<option value='Lionel_Hampton'>Lionel Hampton</option>
+<option value='Lonnie_Liston'>Lonnie Liston</option>
+<option value='Lou_Donaldson'>Lou Donaldson</option>
+<option value='Max_Roach'>Max Roach</option>
+<option value='McCoy_Tyner'>McCoy Tyner</option>
+<option value='Miles_Davis'>Miles Davis</option>
+<option value='Milt_Jackson'>Milt Jackson</option>
+<option value='Ornette_Coleman'>Ornette Coleman</option>
+<option value='Paul_Chambers'>Paul Chambers</option>
+<option value='Philly_Joe_Jones'>Philly Joe Jones</option>
+<option value='Rahsaan_Roland_Kirk'>Rahsaan Roland Kirk</option>
+<option value='Ray_Brown'>Ray Brown</option>
+<option value='Red_Garland'>Red Garland</option>
+<option value='Ron_Carter'>Ron Carter</option>
+<option value='Russell_Malone'>Russell Malone</option>
+<option value='Sonny_Clark'>Sonny Clark</option>
+<option value='Sonny_Rollins'>Sonny Rollins</option>
+<option value='Sonny_Stitt'>Sonny Stitt</option>
+<option value='Stanley_Turrentine'>Stanley Turrentine</option>
+<option value='Steve_Turre'>Steve Turre</option>
+<option value='Thelonious_Monk'>Thelonious Monk</option>
+<option value='Wayne_Shorter'>Wayne Shorter</option>
+<option value='Wes_Montgomery'>Wes Montgomery</option>
+<option value='Wynton_Marsalis'>Wynton Marsalis</option>
+</select>
+
+</div>
+
+ <div id="funk">
+ <select>
  
 <option value='Billy_Cobham'>Billy Cobham</option>
 <option value='Bobby_Hutcherson'>Bobby Hutcherson</option>
@@ -189,276 +185,28 @@ init(this[this.selectedIndex].value)
 <option value='Wes_Montgomery'>Wes Montgomery</option>
 <option value='Yusef_Lateef'>Yusef Lateef</option>
 </select>
+   </div>
+ </div>
+
+<div class="container">
+    <div class="row">
   
   <div class="span12 sigma-parent" id="sigma-example-parent">
     <div class="sigma-expand" id="sigma-example"></div>
   </div>
 </div>
 
-<script src="js/sigma.parseGexf.js"></script>
-
-<script type="text/javascript">function init(path) {
-
-
-  /**
-   * First, let's instanciate sigma.js :
-   */
-   document.getElementById('sigma-example').innerHTML = '';
-  var sigInst = sigma.init($('#sigma-example')[0]).drawingProperties({
-   defaultLabelColor: '#fff',
-   defaultLabelSize: 14,
-   defaultLabelBGColor: '#fff',
-   defaultLabelHoverColor: '#000',
-   labelThreshold: 6,
-   defaultEdgeType: ''
-  }).graphProperties({
-   minNodeSize: 0.5,
-   maxNodeSize: 50,
-   minEdgeSize: 1,
-   maxEdgeSize: 1
-  });
-
-
-  // (requires "sigma.parseGexf.js" to be executed)
-   sigInst.parseGexf('gexf/' + path + ".gexf");
-
-  /**
-   * Now, here is the code that shows the popup :
-   */
-  (function(){
-    var popUp;
-    var albums = new Array();
-
-    // This function is used to generate the attributes list from the node attributes.
-    // Since the graph comes from GEXF, the attibutes look like:
-    // [
-    //   { attr: 'Lorem', val: '42' },
-    //   { attr: 'Ipsum', val: 'dolores' },
-    //   ...
-    //   { attr: 'Sit',   val: 'amet' }
-    // ]
-    function attributesToString(attr) {
-      return '<ul>' +
-        attr.map(function(o){
-          return '<li>' + o.attr + ' : ' + o.val + '</li>';
-        }).join('') +
-        '</ul>';
-    }
-
-    function albumsToString(attr) {
-      attr.sort();
-      return '' +
-        attr.map(function(o){
-          return '' + o + '<br>';
-        }).join('') +
-        '';
-    }
-
-
-
-    function showNodeInfo(event) {
-      popUp && popUp.remove();
-      
-      albums = new Array();
-      var arAlbums = new Array();
-      var nodes = event.content;
-      var neighbors = {};
-      var node;
-      var libelle = mapIdLabel[event.content[0]];
-      sigInst.iterEdges(function(e){
-         if(nodes.indexOf(e.source)>=0 || nodes.indexOf(e.target)>=0)
-         {
-            neighbors[e.source] = 1;
-            neighbors[e.target] = 1;
-
-            var artiste = '';
-
-            if (libelle == mapIdLabel[e.target])
-            {
-               artiste = mapIdLabel[e.source];
-            }
-            else
-               artiste = mapIdLabel[e.target];
-
-            if (arAlbums.indexOf(e.label) == -1)
-            {
-              albums.push('<b>' + artiste + ' : </b> ' + e.label);
-              arAlbums.push(e.label);
-            }
-         }
-         }).iterNodes(function(n){
-           node = n;
-
-            if(!neighbors[n.id]){
-            n.hidden = 1;
-            alert(n.hidden);
-            }else{
-            n.hidden = 0;
-            }
-      },[event.content[0]]).draw(2,2,2);
-
-
-
-      //getInfoAlbum(libelle);
-      getVideoYoutube(libelle);
-      //getImage(libelle.replace(' ','_')
-      popUp = $(
-            '<div class="node-info-popup"></div>Albums'
-      )
-      .append(
-        // The GEXF parser stores all the attributes in an array named
-        // 'attributes'. And since sigma.js does not recognize the key
-        // 'attributes' (unlike the keys 'label', 'color', 'size' etc),
-        // it stores it in the node 'attr' object :
-        //attributesToString( node['attr']['attributes'] )
-        albumsToString(albums)
-      ).attr(
-        'id',
-        'node-info'+sigInst.getID()
-      ).css({
-        'display': 'inline-block',
-        'border-radius': 3,
-        'padding': 5,
-        'background': '#222222',
-        'color': '#fff',
-        'font-family' :' Arial, Helvetica, sans-serif',
-        'font-size' : '10px',
-        'box-shadow': '0 0 4px #666',
-        'position': 'absolute',
-        'left': node.displayX,
-        'top': node.displayY+15
-      });
-
-      $('ul',popUp).css('margin','0 0 0 0px');
-
-      $('#sigma-example').append(popUp);
-    }
-
-    function hideNodeInfo(event) {
-      popUp && popUp.remove();
-      popUp = false;
-
-      sigInst.iterEdges(function(e){
-         e.hidden = 0;
-         }).iterNodes(function(n){
-            n.hidden = 0;
-            }).draw(2,2,2);
-    }
-
-    sigInst.bind('overnodes',showNodeInfo).bind('outnodes',hideNodeInfo);
-    /*
-sigInst.bind('overnodes',function(event){
-      var nodes = event.content;
-      var neighbors = {};
-      sigInst.iterEdges(function(e){
-         if(nodes.indexOf(e.source)>=0 || nodes.indexOf(e.target)>=0){
-         neighbors[e.source] = 1;
-         neighbors[e.target] = 1;
-         }
-         }).iterNodes(function(n){
-            if(!neighbors[n.id]){
-            alert(rr);
-            n.hidden = 1;
-            }else{
-            n.hidden = 0;
-            }
-            }).draw(2,2,2);
-      }).bind('outnodes',function(){
-         sigInst.iterEdges(function(e){
-            e.hidden = 0;
-            }).iterNodes(function(n){
-               n.hidden = 0;
-               }).draw(2,2,2);
-               });*/
-
-
-sigInst.draw();
-  })();
-}
-
-if (document.addEventListener) {
-  document.addEventListener('DOMContentLoaded', init, false);
-} else {
-  window.onload = init;
-}
-</script>
-
-  <style type="text/css">
-   #images{
-   position:absolute;
-    top:33px;
-     left:1020px;
-/*      width: 666px;
-      height: 200px;
-      border: 1px solid black;
-      */
-  }
-  </style>
-
- <div id="images">
-<div id="playerContainer" style="width: 20em; height: 180px; float: left;">
-       <object id="player"></object>
-    </div>
+<div id="images">
+  <div id="playerContainer">
+     <object id="player"></object>
+  </div>
   <div id="videos2">
   </div>
  </div>
  <div id="albums">
  </div>
-<style type="text/css">
-  /* sigma.js context : */
-  .sigma-parent {
-    position: relative;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    background: #222;
-    height: 550px;
-    width: 1000px;
-  }
-  .sigma-expand {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  .buttons-container{
-    padding-bottom: 8px;
-    padding-top: 12px;
-  }
-</style>
-
-
-
   </div>
 
-  <style>
-     .titlec {
-        font-size: small;
-     }
-     ul.videos li {
-        float: left;
-        width: 10em;
-        margin-bottom: 1em;
-     }
-     ul.videos
-     {
-        margin-bottom: 1em;
-        padding-left : 0em;
-        margin-left: 0em;
-        list-style: none;
-     }
-  </style>
-  <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
-  <script type="text/javascript">
-     function loadVideo(playerUrl, autoplay) {
-        swfobject.embedSWF(
-              playerUrl + '&rel=1&border=0&fs=1&autoplay=' + 
-              (autoplay?1:0), 'player', '290', '250', '9.0.0', false, 
-              false, {allowfullscreen: 'true'});
-     }
-
-</script>
 </body>
 </html>
 
