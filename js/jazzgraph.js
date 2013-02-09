@@ -1,6 +1,8 @@
 
 function init(path) {
 
+
+
   if ( load == 0)
   {
     load = 1;
@@ -10,6 +12,8 @@ function init(path) {
   if (path.type == 'DOMContentLoaded')
     path =  'John_Coltrane';
 
+  getInfoArtiste(path)
+  getVideoYoutube(path);
   /**
    * First, let's instanciate sigma.js :
    */
@@ -110,6 +114,7 @@ function init(path) {
 
 
       //getInfoAlbum(libelle);
+      getInfoArtiste(libelle)
       getVideoYoutube(libelle);
       //getImage(libelle.replace(' ','_')
       popUp = $(
@@ -272,3 +277,41 @@ function getInfoAlbum(artist)
       });
 }
 
+function getInfoArtiste(artist)
+{
+  document.getElementById('infoartiste').innerHTML = '<h1>' + artist.replace("_", " ") + '</h1>';
+  $.getJSON("http://api.discogs.com/database/search?q="+ artist +"&type=artist&callback=?", function(data) 
+  {
+    var artistid = data.data.results[0].id;
+
+    if (artistid != undefined)
+    {
+      $.getJSON("http://api.discogs.com/artists/"+ artistid +"?callback=?", function(data)      {
+
+  //      alert(data.data.images[0]);
+  //      $.each(data.data, function(c,v){
+  //        alert (c + '-' + v);
+  //      });
+          if (data.data.images[0] != undefined)
+          {
+            var imgprop = data.data.images[0];
+            var imgwidth = imgprop.width;
+            var imgheight = imgprop.height;
+            var fact =1;
+
+            if (imgwidth > 300)
+            {
+              fact =  imgwidth/300;
+              imgwidth = imgwidth / fact;
+              imgheight= imgheight/ fact;
+            }
+
+            $("<img/>").attr("src", imgprop.uri).attr("width",imgwidth).attr("height",imgheight).appendTo("#infoartiste");
+          }
+
+          if (data.data.profile != undefined)
+            $('<div>', {text:data.data.profile}).appendTo("#infoartiste");     
+        });
+    }
+  });
+}
