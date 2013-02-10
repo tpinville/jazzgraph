@@ -14,7 +14,7 @@ tips
     export sql avec sqlitestudio
     sur fichier sql
       %s/\]//g
-      %s/[//g
+      %s/\[//g
       %s/AUTOINCREMENT/AUTO_INCREMENT/g
         remplacer 
          artistId INTEGER REFERENCES Artists ( id )

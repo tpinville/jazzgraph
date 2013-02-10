@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="44290" label="Sonny Stitt">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="31.60144" y="-22.71118" z="0.0"></viz:position>
+        <viz:color r="251" g="62" b="62"></viz:color>
+      </node>
+      <node id="65595" label="Bob Haggart">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-0.08886874" y="0.063887164" z="0.0"></viz:position>
+        <viz:color r="251" g="62" b="62"></viz:color>
+      </node>
+      <node id="196934" label="Gene Krupa">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-34.38215" y="-47.853237" z="0.0"></viz:position>
+        <viz:color r="251" g="62" b="62"></viz:color>
+      </node>
+      <node id="234518" label="Louis Armstrong">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-31.48335" y="22.626348" z="0.0"></viz:position>
+        <viz:color r="251" g="62" b="62"></viz:color>
+      </node>
+      <node id="781172" label="Jimmy Smith">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="34.39381" y="47.844894" z="0.0"></viz:position>
+        <viz:color r="251" g="62" b="62"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="44290" target="44290" label="Deuces Wild" weight="440.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44290" target="65595" label="Sonny Sweets and Jaws: Live at Bubbas" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="65595" target="65595" label="Hag Leaps In" weight="28.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="196934" target="65595" label="Big Noise from Winnetka">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="196934" target="196934" label="Krupa &amp; Rich" weight="59.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="65595" label="Satchmo: A Musical Autobiography" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="234518" label="Satchmo in Style" weight="145.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="781172" target="65595" label="Crazy! Baby">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="781172" target="781172" label="Fourmost Return" weight="290.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

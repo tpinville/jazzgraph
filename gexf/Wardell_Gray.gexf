@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2013-02-08">
+  <meta lastmodifieddate="2013-02-10">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -20,30 +20,73 @@
       </attribute>
     </attributes>
     <nodes>
+      <node id="160198" label="Gene Ammons">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="1.5586374" y="43.04721" z="0.0"></viz:position>
+        <viz:color r="57" g="185" b="185"></viz:color>
+      </node>
+      <node id="163133" label="Benny Goodman">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="40.46314" y="29.292152" z="0.0"></viz:position>
+        <viz:color r="185" g="57" b="57"></viz:color>
+      </node>
       <node id="208404" label="Dexter Gordon">
         <attvalues>
           <attvalue for="eccentricity" value="1.0"></attvalue>
           <attvalue for="closnesscentrality" value="1.0"></attvalue>
-          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.0"></attvalue>
           <attvalue for="modularity_class" value="0"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="16.638508" y="3.2919364" z="0.0"></viz:position>
-        <viz:color r="193" g="38" b="38"></viz:color>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-107.952354" y="-19.453493" z="0.0"></viz:position>
+        <viz:color r="57" g="185" b="185"></viz:color>
       </node>
       <node id="235881" label="Wardell Gray">
         <attvalues>
-          <attvalue for="eccentricity" value="1.0"></attvalue>
-          <attvalue for="closnesscentrality" value="1.0"></attvalue>
-          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
-          <attvalue for="modularity_class" value="0"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
         </attvalues>
-        <viz:size value="10.0"></viz:size>
-        <viz:position x="-16.638508" y="-3.2919364" z="0.0"></viz:position>
-        <viz:color r="193" g="38" b="38"></viz:color>
+        <viz:size value="55.0"></viz:size>
+        <viz:position x="66.40956" y="-52.71014" z="0.0"></viz:position>
+        <viz:color r="185" g="57" b="57"></viz:color>
       </node>
     </nodes>
     <edges>
+      <edge source="160198" target="160198" label="The Chase!" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="160198" target="208404" label="The Chase!" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="160198" target="235881" label="The Chase!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="163133" label="Big Band Spectacular, Vols. 1-2" weight="176.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="235881" label="Stealin' Apples" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="160198" label="The Chase!" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="163133" label="Midnight Dream">
+        <attvalues></attvalues>
+      </edge>
       <edge source="208404" target="208404" label="The Resurgence of Dexter Gordon" weight="191.0">
         <attvalues></attvalues>
       </edge>

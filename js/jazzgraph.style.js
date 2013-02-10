@@ -56,7 +56,7 @@ function selectMe(obj) {
       }
     } else {
 
-      init(lis[i].innerHTML.replace(' ','_'));
+      init(lis[i].innerHTML.replace(' ','_'), 1);
       obj.className='selected';
       obj.parentNode.className = 
         obj.parentNode.className.replace(new RegExp(" selectOpen\\b"), '');
@@ -69,6 +69,7 @@ function selectMe(obj) {
     }
   }
 }
+
 function setForm() {
   var s = document.getElementsByTagName('select');
   for (var i=0; i<s.length; i++) {

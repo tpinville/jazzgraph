@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2013-02-08">
+  <meta lastmodifieddate="2013-02-10">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -19,7 +19,57 @@
         <default>0</default>
       </attribute>
     </attributes>
-    <nodes></nodes>
-    <edges></edges>
+    <nodes>
+      <node id="68780" label="Kenny Burrell">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-28.478853" y="10.618787" z="0.0"></viz:position>
+        <viz:color r="249" g="69" b="69"></viz:color>
+      </node>
+      <node id="227776" label="Lee Konitz">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-32.43005" y="-112.63832" z="0.0"></viz:position>
+        <viz:color r="249" g="69" b="69"></viz:color>
+      </node>
+      <node id="643549" label="Cal Tjader">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="60.98919" y="102.15192" z="0.0"></viz:position>
+        <viz:color r="249" g="69" b="69"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="68780" target="68780" label="Lucky So and So" weight="241.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="68780" target="227776" label="Guitar Forms" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="227776" target="227776" label="The Real Lee Konitz" weight="506.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="643549" target="68780" label="Soul Sauce" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="643549" target="643549" label="Cal Tjader Quartet" weight="208.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
   </graph>
 </gexf>

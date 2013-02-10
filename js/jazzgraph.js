@@ -1,16 +1,49 @@
+jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
+  return this.each(function(){
+      var clicks = 0, self = this;
+      jQuery(this).click(function(event){
+        clicks++;
+        if (clicks == 1) {
+        setTimeout(function(){
+          if(clicks == 1) {
+          console.log("single");
+          single_click_callback.call(self, event);
+          } else {
+          console.log("dble !");
+          double_click_callback.call(self, event);
+          }
+          clicks = 0;
+          }, timeout || 600);
+        }
+        });
+      });
+}
 
-function init(path) {
+function init(path, dbl=0) {
 
-
-
-  if ( load == 0)
+if ( load == 0)
   {
     load = 1;
     setForm();
   }
   // à l'init
   if (path.type == 'DOMContentLoaded')
+  {
     path =  'John_Coltrane';
+  }
+
+  if (dbl == 0)
+  {
+    console.log(dbl);
+    $('#sigma-example').single_double_click(function () {
+        console.log("click " + nomArtiste.replace(" ", "_"));
+        getInfoArtiste(nomArtiste.replace(" ", "_"))
+        getVideoYoutube(nomArtiste.replace(" ", "_"));
+      }, function () {
+        console.log("dbl click"+ nomArtiste.replace(" ", "_"));
+        init(nomArtiste.replace(" ", "_"), 1);
+    });
+  }
 
   getInfoArtiste(path)
   getVideoYoutube(path);
@@ -86,6 +119,7 @@ function init(path) {
             neighbors[e.target] = 1;
 
             var artiste = '';
+            nomArtiste = libelle;
 
             if (libelle == mapIdLabel[e.target])
             {
@@ -114,8 +148,6 @@ function init(path) {
 
 
       //getInfoAlbum(libelle);
-      getInfoArtiste(libelle)
-      getVideoYoutube(libelle);
       //getImage(libelle.replace(' ','_')
       popUp = $(
             '<div class="node-info-popup"></div>Albums'
@@ -147,7 +179,7 @@ function init(path) {
       $('ul',popUp).css('margin','0 0 0 0px');
 
       $('#sigma-example').append(popUp);
-    }
+    } 
 
     function hideNodeInfo(event) {
       popUp && popUp.remove();
@@ -292,7 +324,7 @@ function getInfoArtiste(artist)
   //      $.each(data.data, function(c,v){
   //        alert (c + '-' + v);
   //      });
-          if (data.data.images[0] != undefined)
+          if (data.data.images != undefined)
           {
             var imgprop = data.data.images[0];
             var imgwidth = imgprop.width;

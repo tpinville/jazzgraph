@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2013-02-08">
+  <meta lastmodifieddate="2013-02-10">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -19,7 +19,37 @@
         <default>0</default>
       </attribute>
     </attributes>
-    <nodes></nodes>
-    <edges></edges>
+    <nodes>
+      <node id="352164" label="Kai Winding">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="6.1860648E7" y="4.6395484E7" z="0.0"></viz:position>
+        <viz:color r="198" g="39" b="39"></viz:color>
+      </node>
+      <node id="958076" label="Woody Herman">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-6.1860648E7" y="-4.6395484E7" z="0.0"></viz:position>
+        <viz:color r="39" g="198" b="198"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="352164" target="352164" label="Cleveland June 1957" weight="91.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="958076" target="958076" label="Woody Live: East and West" weight="300.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
   </graph>
 </gexf>

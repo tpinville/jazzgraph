@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="77698" label="Bobby Hackett">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="38.42105"></viz:size>
+        <viz:position x="-45.70093" y="-97.90734" z="0.0"></viz:position>
+        <viz:color r="82" g="211" b="211"></viz:color>
+      </node>
+      <node id="124675" label="Jack Teagarden">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="9.5"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="70.0541" y="4.443886" z="0.0"></viz:position>
+        <viz:color r="211" g="82" b="82"></viz:color>
+      </node>
+      <node id="150372" label="Earl Hines Dixieland All-Stars">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="162.41014" y="93.6776" z="0.0"></viz:position>
+        <viz:color r="211" g="82" b="82"></viz:color>
+      </node>
+      <node id="163133" label="Benny Goodman">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.5"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="14.736842"></viz:size>
+        <viz:position x="-109.9358" y="-30.726404" z="0.0"></viz:position>
+        <viz:color r="82" g="211" b="211"></viz:color>
+      </node>
+      <node id="234518" label="Louis Armstrong">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="38.42105"></viz:size>
+        <viz:position x="-75.841064" y="30.970457" z="0.0"></viz:position>
+        <viz:color r="211" g="82" b="82"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="77698" target="77698" label="Jazz Ultimate (Original Jazz Sound)" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="77698" target="124675" label="Jazz Ultimate (Original Jazz Sound)" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124675" target="77698" label="Jazz Ultimate (Original Jazz Sound)" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124675" target="124675" label="Think Well of Me" weight="64.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124675" target="150372" label="At the Olympia Theatre, Paris, France - Nov. 6, 1957">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124675" target="234518" label="Jack Teagarden and His All Stars" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="150372" target="124675" label="At the Olympia Theatre, Paris, France - Nov. 6, 1957" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="150372" target="150372" label="At the Olympia Theatre, Paris, France - Nov. 6, 1957">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="77698" label="Live at Carnegie Hall (1938)">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="163133" label="Big Band Spectacular, Vols. 1-2" weight="176.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="124675" label="Satchmo: A Musical Autobiography" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="163133" label="The Great Chicago Concert 1956" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="234518" label="Satchmo in Style" weight="145.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

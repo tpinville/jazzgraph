@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="163133" label="Benny Goodman">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.5"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="72.30769"></viz:size>
+        <viz:position x="-7.442482" y="125.525406" z="0.0"></viz:position>
+        <viz:color r="190" g="43" b="43"></viz:color>
+      </node>
+      <node id="184502" label="Ella Fitzgerald">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.5"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="13.169023" y="309.32642" z="0.0"></viz:position>
+        <viz:color r="43" g="43" b="190"></viz:color>
+      </node>
+      <node id="234518" label="Louis Armstrong">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="79.52973" y="216.5916" z="0.0"></viz:position>
+        <viz:color r="43" g="43" b="190"></viz:color>
+      </node>
+      <node id="380700" label="Red Garland Trio">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.1666666666666665"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="241.75023" y="37.7431" z="0.0"></viz:position>
+        <viz:color r="43" g="190" b="43"></viz:color>
+      </node>
+      <node id="833150" label="Lionel Hampton">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="52.94194" y="190.02312" z="0.0"></viz:position>
+        <viz:color r="190" g="43" b="43"></viz:color>
+      </node>
+      <node id="882950" label="Red Garland">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="79.230774"></viz:size>
+        <viz:position x="172.38525" y="124.75234" z="0.0"></viz:position>
+        <viz:color r="43" g="190" b="43"></viz:color>
+      </node>
+      <node id="950571" label="Harry James">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="65.38461"></viz:size>
+        <viz:position x="-147.70537" y="200.29857" z="0.0"></viz:position>
+        <viz:color r="190" g="43" b="43"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="163133" target="163133" label="Big Band Spectacular, Vols. 1-2" weight="176.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="833150" label="Together Again! (1963 Reunion with Lionel Hampton, Teddy Wilson &amp; Gene Krupa)" weight="15.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="950571" label="Forever Gold: The Benny Goodman Story" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="163133" label="Ella Swings Brightly with Nelson" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="184502" label="Sings the Harold Arlen Song Book" weight="195.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="234518" label="Ella &amp; Louis Again" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="833150" label="Digital 3 at Montreux" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="950571" label="Sings the Duke Ellington Song Book">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="163133" label="The Great Chicago Concert 1956" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="184502" label="Ella &amp; Louis Again" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="234518" label="Satchmo in Style" weight="145.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="833150" label="20th Century Masters - The Christmas Collection: The Best of Louis Armstrong">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="950571" label="Happy Birthday, Louis! Armstrong &amp; His All-Stars">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="380700" target="380700" label="Traneing In" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="380700" target="882950" label="Traneing In" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="163133" label="Triple Play: Live at the Blue Note" weight="26.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="833150" label="Triple Play: Live at the Blue Note" weight="290.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="163133" label="Rediscovered Masters, Vol. 2" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="184502" label="Rediscovered Masters, Vol. 1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="380700" label="Traneing In" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="833150" label="Red Garland Revisited!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="882950" label="Soul Burnin'" weight="112.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="950571" target="163133" label="32nd Anniversary Night, Vol. 1" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="950571" target="184502" label="32nd Anniversary Night, Vol. 1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="950571" target="950571" label="32nd Anniversary Night, Vol. 1" weight="94.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -6,6 +6,7 @@
 from allmusic import *
 
 import sqlite3 as lite
+import MySQLdb as mdb
 import sys
 
 
@@ -214,7 +215,8 @@ def creditToDB(credit,albumId,cur, con):
     
 
 def searchResultsToDB(results):
-  con = lite.connect('allmusic.db')
+  con = lite.connect('data/allmusic.db')
+  #con = mdb.connect('localhost', 'root', '', 'jazzgraph');
   with con:
     cur = con.cursor()
     for result in results:

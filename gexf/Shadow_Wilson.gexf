@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2013-02-08">
+  <meta lastmodifieddate="2013-02-10">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -19,7 +19,176 @@
         <default>0</default>
       </attribute>
     </attributes>
-    <nodes></nodes>
-    <edges></edges>
+    <nodes>
+      <node id="39656" label="Sonny Rollins">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.1666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.166666666666666"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="41.69014"></viz:size>
+        <viz:position x="-146.40623" y="93.166214" z="0.0"></viz:position>
+        <viz:color r="185" g="66" b="66"></viz:color>
+      </node>
+      <node id="44290" label="Sonny Stitt">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.3333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="12.535212"></viz:size>
+        <viz:position x="-147.40375" y="157.00325" z="0.0"></viz:position>
+        <viz:color r="185" g="66" b="66"></viz:color>
+      </node>
+      <node id="68780" label="Kenny Burrell">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-39.733315" y="10.758079" z="0.0"></viz:position>
+        <viz:color r="66" g="185" b="185"></viz:color>
+      </node>
+      <node id="175553" label="John Coltrane">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.166666666666666"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="34.08451"></viz:size>
+        <viz:position x="-106.49885" y="13.6724" z="0.0"></viz:position>
+        <viz:color r="66" g="185" b="185"></viz:color>
+      </node>
+      <node id="489845" label="Milt Jackson">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.4999999999999998"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="21.408451"></viz:size>
+        <viz:position x="-12.402743" y="-10.301363" z="0.0"></viz:position>
+        <viz:color r="66" g="185" b="185"></viz:color>
+      </node>
+      <node id="490416" label="Thelonious Monk">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="11.833333333333332"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="3.2026262" y="124.877014" z="0.0"></viz:position>
+        <viz:color r="66" g="185" b="185"></viz:color>
+      </node>
+      <node id="542549" label="Gerry Mulligan">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.1666666666666665"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="132.16672" y="95.91826" z="0.0"></viz:position>
+        <viz:color r="66" g="185" b="185"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="39656" target="39656" label="In Japan" weight="274.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="44290" label="Sonny Side Up" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="68780" label="Alfie" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="175553" label="Tenor Madness" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="489845" label="Sonny Rollins with the Modern Jazz Quartet" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="490416" label="Thelonious Monk &amp; Sonny Rollins" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44290" target="39656" label="Sonny Side Up" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44290" target="44290" label="Deuces Wild" weight="440.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44290" target="490416" label="Sonny Stitt Meets Sadik Hakim">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="68780" target="68780" label="Lucky So and So" weight="241.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="68780" target="175553" label="Primal Blue" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="68780" target="489845" label="Ellington Is Forever, Vol. 1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="68780" target="490416" label="Blue Muse" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="44290" label="Tenor Conclave" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="68780" label="Blue Train" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="175553" label="In Europe" weight="242.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="489845" label="Bags &amp; Trane" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="490416" label="The New Wave in Jazz" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="39656" label="At the Kosei Nenkin" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="68780" label="Bean Bags" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="175553" label="A London Bridge" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="489845" label="The Very Tall Band: Live at the Blue Note" weight="245.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="490416" label="Explosive!" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="39656" label="Brilliant Corners" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="175553" label="Thelonious Monk with John Coltrane" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="489845" label="Genius of Modern Music, Vol. 1" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="490416" label="Genius of Modern Music, Vol. 1" weight="202.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="542549" label="Mulligan Meets Monk" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="542549" target="490416" label="Mulligan Meets Monk" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="542549" target="542549" label="Gerry Mulligan Meets Johnny Hodges" weight="22.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
   </graph>
 </gexf>

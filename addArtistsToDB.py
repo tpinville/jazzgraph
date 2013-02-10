@@ -20,7 +20,8 @@ DEBUG = True
 ignoredAlbumFlags = set(['Compilation','Bootleg','Video'])
 
 def addArtistToDb(artistName):
-  con = lite.connect('allmusic.db')
+  con = lite.connect('data/allmusic.db')
+  #con = mdb.connect('localhost', 'root', '', 'jazzgraph');
   with con:
     cur = con.cursor()
     artistResults = reqArtistByName(artistName)

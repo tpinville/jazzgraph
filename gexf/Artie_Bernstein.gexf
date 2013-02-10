@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2013-02-08">
+  <meta lastmodifieddate="2013-02-10">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -19,7 +19,43 @@
         <default>0</default>
       </attribute>
     </attributes>
-    <nodes></nodes>
-    <edges></edges>
+    <nodes>
+      <node id="792573" label="Benny Goodman Sextet">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-15.044826" y="-7.8313503" z="0.0"></viz:position>
+        <viz:color r="173" g="12" b="12"></viz:color>
+      </node>
+      <node id="805930" label="Charlie Christian">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="15.044826" y="7.8313503" z="0.0"></viz:position>
+        <viz:color r="173" g="12" b="12"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="792573" target="792573" label="Solo Flight: Live!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792573" target="805930" label="Solo Flight: Live!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="805930" target="792573" label="Solo Flight: Live!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="805930" target="805930" label="Solo Flight: Live!" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
   </graph>
 </gexf>

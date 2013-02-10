@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="163133" label="Benny Goodman">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="7.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-1.2342939" y="-2.276929" z="0.0"></viz:position>
+        <viz:color r="212" g="12" b="12"></viz:color>
+      </node>
+      <node id="234518" label="Louis Armstrong">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="56.61006" y="111.63918" z="0.0"></viz:position>
+        <viz:color r="12" g="212" b="212"></viz:color>
+      </node>
+      <node id="634674" label="Buck Clayton">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="85.672714" y="91.195694" z="0.0"></viz:position>
+        <viz:color r="12" g="212" b="212"></viz:color>
+      </node>
+      <node id="792507" label="Frank Sinatra">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="104.09846" y="-102.33937" z="0.0"></viz:position>
+        <viz:color r="212" g="12" b="12"></viz:color>
+      </node>
+      <node id="792573" label="Benny Goodman Sextet">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-133.22838" y="-32.651264" z="0.0"></viz:position>
+        <viz:color r="212" g="12" b="12"></viz:color>
+      </node>
+      <node id="805930" label="Charlie Christian">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-113.01698" y="-66.31824" z="0.0"></viz:position>
+        <viz:color r="212" g="12" b="12"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="163133" target="163133" label="Big Band Spectacular, Vols. 1-2" weight="176.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="634674" label="Forever Gold: The Benny Goodman Story" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="792573" label="In Stockholm 1959" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="805930" label="Big Band Spectacular, Vols. 1-2" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="163133" label="The Great Chicago Concert 1956" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="234518" label="Satchmo in Style" weight="145.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="634674" label="Satchmo Serenades" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="634674" target="634674" label="Swiss Radio Days Jazz Series, Vol. 7: Basel 1961" weight="76.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792507" target="163133" label="Swing Along with Me">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792507" target="792507" label="Maximum Sinatra" weight="148.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792573" target="163133" label="Solo Flight: Live!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792573" target="792573" label="Solo Flight: Live!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792573" target="805930" label="Solo Flight: Live!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="805930" target="163133" label="Solo Flight: Live!" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="805930" target="792573" label="Solo Flight: Live!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="805930" target="805930" label="Solo Flight: Live!" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

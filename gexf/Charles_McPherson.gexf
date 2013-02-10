@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2013-02-08">
+  <meta lastmodifieddate="2013-02-10">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -19,7 +19,77 @@
         <default>0</default>
       </attribute>
     </attributes>
-    <nodes></nodes>
-    <edges></edges>
+    <nodes>
+      <node id="9680" label="Charles Mingus">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="120.85507" y="41.216785" z="0.0"></viz:position>
+        <viz:color r="211" g="34" b="34"></viz:color>
+      </node>
+      <node id="81841" label="Kenny Drew">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="107.51191" y="-136.9934" z="0.0"></viz:position>
+        <viz:color r="211" g="34" b="34"></viz:color>
+      </node>
+      <node id="800100" label="Eric Dolphy">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="3.6050138" y="-13.276623" z="0.0"></viz:position>
+        <viz:color r="211" g="34" b="34"></viz:color>
+      </node>
+      <node id="833150" label="Lionel Hampton">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="113.56787" y="-80.891525" z="0.0"></viz:position>
+        <viz:color r="211" g="34" b="34"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="9680" target="9680" label="Lionel Hampton Presents Charles Mingus" weight="201.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="9680" target="800100" label="Town Hall Concert 1964" weight="37.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="9680" target="833150" label="Lionel Hampton Presents Charles Mingus" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="81841" target="81841" label="Pal Joey" weight="108.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="81841" target="833150" label="Afternoon in Europe">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800100" target="9680" label="Out There" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800100" target="800100" label="Softly, As in a Morning Sunrise" weight="143.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="833150" label="Triple Play: Live at the Blue Note" weight="290.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
   </graph>
 </gexf>

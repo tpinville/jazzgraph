@@ -31,12 +31,17 @@ body{
 #hardbop{
   position: absolute;
   top:0px;
-  left:350px;
+  left:400px;
+}
+#bop{
+  position: absolute;
+  top:0px;
+  left:200px;
 }
 #funk{
   position: absolute;
   top:0px;
-  left:700px;
+  left:600px;
 }
 /* sigma.js context : */
 .sigma-parent {
@@ -88,7 +93,7 @@ ul.selectReplacement li {
                              list-style: none;
                              margin: 0;
                              padding: 1px 12px;
-                             width: 276px;
+                             width: 150px;
 }
 ul.selectOpen li {
   display: block;

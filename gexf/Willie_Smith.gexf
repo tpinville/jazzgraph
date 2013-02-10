@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="120323" label="Duke Ellington">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8571428571428572"></attvalue>
+          <attvalue for="betweenesscentrality" value="21.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-116.265816" y="-227.91266" z="0.0"></viz:position>
+        <viz:color r="93" g="250" b="250"></viz:color>
+      </node>
+      <node id="144155" label="Duke Ellington &amp; His Orchestra">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.7142857142857144"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-98.80145" y="-114.10018" z="0.0"></viz:position>
+        <viz:color r="93" g="250" b="250"></viz:color>
+      </node>
+      <node id="184502" label="Ella Fitzgerald">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4285714285714286"></attvalue>
+          <attvalue for="betweenesscentrality" value="20.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="95.71429"></viz:size>
+        <viz:position x="24.05167" y="-79.956154" z="0.0"></viz:position>
+        <viz:color r="250" g="93" b="93"></viz:color>
+      </node>
+      <node id="196934" label="Gene Krupa">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5714285714285714"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-96.057884" y="-72.34513" z="0.0"></viz:position>
+        <viz:color r="250" g="93" b="93"></viz:color>
+      </node>
+      <node id="197043" label="Gene Krupa &amp; Buddy Rich">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5714285714285714"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-95.85719" y="-28.440342" z="0.0"></viz:position>
+        <viz:color r="250" g="93" b="93"></viz:color>
+      </node>
+      <node id="317093" label="Nat King Cole">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.625"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-220.27559" y="-153.02411" z="0.0"></viz:position>
+        <viz:color r="93" g="250" b="250"></viz:color>
+      </node>
+      <node id="539774" label="Buddy Rich">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5714285714285714"></attvalue>
+          <attvalue for="betweenesscentrality" value="12.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="61.428574"></viz:size>
+        <viz:position x="-186.5882" y="-59.576603" z="0.0"></viz:position>
+        <viz:color r="250" g="93" b="93"></viz:color>
+      </node>
+      <node id="792507" label="Frank Sinatra">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.4285714285714284"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-227.19029" y="-183.6537" z="0.0"></viz:position>
+        <viz:color r="93" g="250" b="250"></viz:color>
+      </node>
+      <node id="950571" label="Harry James">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8571428571428572"></attvalue>
+          <attvalue for="betweenesscentrality" value="9.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="48.57143"></viz:size>
+        <viz:position x="40.889744" y="-254.45036" z="0.0"></viz:position>
+        <viz:color r="93" g="250" b="250"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="120323" target="120323" label="Ella &amp; Duke at the Côte D'Azur" weight="241.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="120323" target="144155" label="Ella &amp; Duke at the Côte D'Azur" weight="19.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="120323" target="184502" label="Ella &amp; Duke at the Côte D'Azur" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="120323" target="950571" label="Piano in the Background" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="144155" target="120323" label="Afro-Bossa" weight="27.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="144155" target="144155" label="Afro-Bossa" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="120323" label="Ella &amp; Duke at the Côte D'Azur" weight="31.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="144155" label="Ella &amp; Duke at the Côte D'Azur" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="184502" label="Sings the Harold Arlen Song Book" weight="195.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="539774" label="Ella and Louis" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="950571" label="Sings the Duke Ellington Song Book">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="196934" target="120323" label="The Drum Battle: Gene Krupa and Buddy Rich at JATP" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="196934" target="184502" label="The Drum Battle: Gene Krupa and Buddy Rich at JATP" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="196934" target="196934" label="Krupa &amp; Rich" weight="59.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="196934" target="197043" label="Krupa &amp; Rich" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="196934" target="539774" label="Krupa &amp; Rich" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="197043" target="120323" label="The Drum Battle: Gene Krupa and Buddy Rich at JATP">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="197043" target="184502" label="The Drum Battle: Gene Krupa and Buddy Rich at JATP" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="197043" target="196934" label="The Drum Battle: Gene Krupa and Buddy Rich at JATP" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="197043" target="197043" label="The Drum Battle: Gene Krupa and Buddy Rich at JATP">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="197043" target="539774" label="The Drum Battle: Gene Krupa and Buddy Rich at JATP" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="317093" target="120323" label="Penthouse Serenade" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="317093" target="317093" label="Send for Me" weight="159.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="120323" label="Rags to Riches" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="184502" label="The Drum Battle: Gene Krupa and Buddy Rich at JATP" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="196934" label="Krupa &amp; Rich" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="197043" label="Krupa &amp; Rich" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="539774" label="Rich Ala Rahka" weight="147.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792507" target="120323" label="Sinatra and Swingin' Brass" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792507" target="792507" label="Maximum Sinatra" weight="148.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792507" target="950571" label="Maximum Sinatra" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="950571" target="120323" label="32nd Anniversary Night, Vol. 1" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="950571" target="184502" label="32nd Anniversary Night, Vol. 1">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="950571" target="792507" label="Trumpet Time Columbia" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="950571" target="950571" label="32nd Anniversary Night, Vol. 1" weight="94.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

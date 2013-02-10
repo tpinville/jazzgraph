@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="162762" label="Fats Waller">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-49.426723" y="144.70985" z="0.0"></viz:position>
+        <viz:color r="171" g="28" b="28"></viz:color>
+      </node>
+      <node id="346637" label="Roy Eldridge">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-82.421616" y="125.18254" z="0.0"></viz:position>
+        <viz:color r="171" g="28" b="28"></viz:color>
+      </node>
+      <node id="490416" label="Thelonious Monk">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-8.53426" y="127.231094" z="0.0"></viz:position>
+        <viz:color r="28" g="171" b="171"></viz:color>
+      </node>
+      <node id="504893" label="Tiny Grimes">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="125.60764" y="-26.462263" z="0.0"></viz:position>
+        <viz:color r="28" g="171" b="171"></viz:color>
+      </node>
+      <node id="737908" label="Donald Lambert">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="95.89952" y="-85.95308" z="0.0"></viz:position>
+        <viz:color r="28" g="171" b="171"></viz:color>
+      </node>
+      <node id="784260" label="Joe Guy">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-34.306305" y="-114.366005" z="0.0"></viz:position>
+        <viz:color r="28" g="171" b="171"></viz:color>
+      </node>
+      <node id="825032" label="Hot Lips Page">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="10.84392" y="4.6175685" z="0.0"></viz:position>
+        <viz:color r="28" g="171" b="171"></viz:color>
+      </node>
+      <node id="956262" label="Herbie Fields">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="37.822" y="-118.4694" z="0.0"></viz:position>
+        <viz:color r="28" g="171" b="171"></viz:color>
+      </node>
+      <node id="1521611" label="Rudy Williams">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-96.45337" y="-57.446186" z="0.0"></viz:position>
+        <viz:color r="28" g="171" b="171"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="162762" target="162762" label="The Amazing Mr. Waller, Vol. 2: Jiving with Fats Waller" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="162762" label="Little Jazz &amp; the Jimmy Ryan All-Stars" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="346637" label="Little Jazz &amp; the Jimmy Ryan All-Stars" weight="114.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="825032" label="Roy Eldridge in Sweden">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="162762" label="The Unique Thelonious Monk" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="490416" label="Genius of Modern Music, Vol. 1" weight="202.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="825032" target="162762" label="After Hours at Minton's">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="825032" target="490416" label="After Hours at Minton's" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="825032" target="504893" label="After Hours at Minton's" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="825032" target="737908" label="After Hours at Minton's" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="825032" target="784260" label="After Hours at Minton's" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="825032" target="825032" label="After Hours at Minton's" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="825032" target="956262" label="After Hours at Minton's" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="825032" target="1521611" label="After Hours at Minton's" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

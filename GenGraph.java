@@ -56,8 +56,14 @@ public class GenGraph {
         }
           
         String artist;
+        int delay = 15;
+        
         if (args.length > 0)            
+        {
             artist = args[0] ;
+            if (args.length > 1)
+                delay = Integer.parseInt(args[1]);                
+        }
         else
             artist = "Charles Mingus";   
         
@@ -89,8 +95,13 @@ public class GenGraph {
         
         
         
-        db.setNodeQuery("select id as id, label as label FROM Nodes where id in (SELECT targetid FROM Edges LEFT JOIN Artists ON sourceid = Artists.id where name like '"+ query + "')");
-        //db.setEdgeQuery("SELECT edges.source AS source, edges.target AS target, edges.name AS label, edges.weight AS weight FROM edges LIMIT 200");
+        db.setNodeQuery("select id as id, label as label FROM Nodes where id in "
+                + "(SELECT targetid FROM Edges LEFT JOIN Artists ON sourceid = Artists.id "
+                + "where name like '"+ query + "' "
+                + "UNION SELECT sourceid FROM Edges LEFT JOIN Artists ON targetid = Artists.id "
+                + "where name like '"+ query + "'"
+                + ")");
+        
         db.setEdgeQuery("SELECT sourceid AS source, targetid as target, label as label FROM Edges LEFT JOIN Artists "
                 + "ON sourceid = Artists.id ");
                 //+ "where sourceid in  (select id from Artists where name like '"+ query + "')");
@@ -168,7 +179,7 @@ public class GenGraph {
         model.getProperties().putValue(PreviewProperty.NODE_LABEL_FONT, model.getProperties().getFontValue(PreviewProperty.NODE_LABEL_FONT).deriveFont(8));
 
         //Layout for 1 minute
-        AutoLayout autoLayout = new AutoLayout(6    , TimeUnit.SECONDS);
+        AutoLayout autoLayout = new AutoLayout(delay    , TimeUnit.SECONDS);
         autoLayout.setGraphModel(graphModel);
         YifanHuLayout firstLayout = new YifanHuLayout(null, new StepDisplacement(1f));
         
