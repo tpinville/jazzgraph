@@ -56,7 +56,7 @@ public class GenGraph {
         }
           
         String artist;
-        int delay = 15;
+        int delay = 5;
         
         if (args.length > 0)            
         {
@@ -65,7 +65,7 @@ public class GenGraph {
                 delay = Integer.parseInt(args[1]);                
         }
         else
-            artist = "Charles Mingus";   
+            artist = "Duke Ellington";   
         
         String query = "%" + artist + "%";
         System.out.println(artist);
@@ -93,17 +93,21 @@ public class GenGraph {
         //db.setNodeQuery("SELECT nodes.id AS id, nodes.label AS label, nodes.url FROM nodes");
         //String artist = "Lee morgan%' OR name like 'Miles Davis%";
         
-        
-        
-        db.setNodeQuery("select id as id, label as label FROM Nodes where id in "
-                + "(SELECT targetid FROM Edges LEFT JOIN Artists ON sourceid = Artists.id "
-                + "where name like '"+ query + "' "
-                + "UNION SELECT sourceid FROM Edges LEFT JOIN Artists ON targetid = Artists.id "
+        String requete = "select id as id, label as label FROM Nodes where id in "
+                + "(SELECT sourceid FROM Edges LEFT JOIN Artists ON targetid = Artists.id "
                 + "where name like '"+ query + "'"
-                + ")");
+                + ")";
+
         
-        db.setEdgeQuery("SELECT sourceid AS source, targetid as target, label as label FROM Edges LEFT JOIN Artists "
-                + "ON sourceid = Artists.id ");
+        db.setNodeQuery(requete);
+        System.out.println(requete);
+        
+        requete = "SELECT sourceid AS source, targetid as target, label as label FROM Edges LEFT JOIN Artists "
+                + "ON sourceid = Artists.id ";
+        
+        db.setEdgeQuery(requete);
+        System.out.println(requete);
+        
                 //+ "where sourceid in  (select id from Artists where name like '"+ query + "')");
         
         ImporterEdgeList edgeListImporter = new ImporterEdgeList();
@@ -157,7 +161,7 @@ public class GenGraph {
         previewModel.getProperties().putValue(PreviewProperty.NODE_LABEL_PROPORTIONAL_SIZE, Boolean.TRUE);
         previewModel.getProperties().putValue(PreviewProperty.SHOW_EDGE_LABELS, Boolean.TRUE);
  
-
+        
         //Run modularity algorithm - community detection
         Modularity modularity = new Modularity();
         modularity.execute(graphModel, attributeModel);
@@ -193,7 +197,7 @@ public class GenGraph {
         //Export
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
         try {
-            ec.exportFile(new File("/home/tpinville/git/jazzgraph/gexf/"+artist.replace(" ", "_") +".gexf"));
+            ec.exportFile(new File("/home/tpinville/git/jazzgraph/web/gexf/"+artist.replace(" ", "_") +".gexf"));
         } catch (IOException ex) {
             ex.printStackTrace();
             return;

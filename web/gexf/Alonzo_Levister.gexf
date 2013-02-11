@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="175553" label="John Coltrane">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="14.340626" y="-30.403402" z="0.0"></viz:position>
+        <viz:color r="175" g="15" b="15"></viz:color>
+      </node>
+      <node id="380700" label="Red Garland Trio">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="50.124596" y="-20.321436" z="0.0"></viz:position>
+        <viz:color r="175" g="15" b="15"></viz:color>
+      </node>
+      <node id="882950" label="Red Garland">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="37.76982" y="-46.4799" z="0.0"></viz:position>
+        <viz:color r="175" g="15" b="15"></viz:color>
+      </node>
+      <node id="2556100" label="John Coltrane &amp; the Red Garland Trio">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="22.014101" y="6.826076" z="0.0"></viz:position>
+        <viz:color r="175" g="15" b="15"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="175553" target="175553" label="In Europe" weight="242.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="380700" label="Traneing In" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="882950" label="The Believer" weight="25.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="2556100" label="Traneing In">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="380700" target="175553" label="Traneing In" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="380700" target="380700" label="Traneing In" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="380700" target="882950" label="Traneing In" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="380700" target="2556100" label="Traneing In">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="175553" label="Traneing In" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="380700" label="Traneing In" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="882950" label="Soul Burnin'" weight="112.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="2556100" label="Traneing In">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2556100" target="175553" label="Traneing In" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2556100" target="380700" label="Traneing In" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2556100" target="882950" label="Traneing In" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2556100" target="2556100" label="Traneing In">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

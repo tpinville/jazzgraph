@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="12644" label="Stanley Turrentine">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="55.0"></viz:size>
+        <viz:position x="159.30615" y="-50.11766" z="0.0"></viz:position>
+        <viz:color r="192" g="31" b="31"></viz:color>
+      </node>
+      <node id="139566" label="Curtis Fuller">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="224.58528" y="-101.82328" z="0.0"></viz:position>
+        <viz:color r="192" g="31" b="31"></viz:color>
+      </node>
+      <node id="290464" label="Roy Haynes">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-240.62732" y="89.150055" z="0.0"></viz:position>
+        <viz:color r="31" g="192" b="192"></viz:color>
+      </node>
+      <node id="396372" label="Max Roach">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="28.58488" y="51.005486" z="0.0"></viz:position>
+        <viz:color r="192" g="31" b="31"></viz:color>
+      </node>
+      <node id="800100" label="Eric Dolphy">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="85.0"></viz:size>
+        <viz:position x="-171.66426" y="11.450156" z="0.0"></viz:position>
+        <viz:color r="31" g="192" b="192"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="12644" target="12644" label="Salt Song" weight="159.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="12644" target="139566" label="The Sugar Man" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="12644" target="396372" label="The Spoiler" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="139566" target="139566" label="South American Cookin'" weight="95.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="290464" label="Birds of a Feather: A Tribute to Charlie Parker" weight="102.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="800100" label="Life in Time: The Roy Haynes Story">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="396372" target="12644" label="Jazz In Paris: Parisian Sketches" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="396372" target="396372" label="Jazz In Paris: Parisian Sketches" weight="248.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="396372" target="800100" label="Percussion Bitter Sweet" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800100" target="290464" label="Out There" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800100" target="396372" label="Candid Dolphy" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800100" target="800100" label="Softly, As in a Morning Sunrise" weight="143.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

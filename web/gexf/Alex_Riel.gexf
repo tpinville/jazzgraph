@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="127949" label="Jackie McLean">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-118.11386" y="63.032463" z="0.0"></viz:position>
+        <viz:color r="199" g="7" b="7"></viz:color>
+      </node>
+      <node id="208404" label="Dexter Gordon">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-52.134327" y="-31.169682" z="0.0"></viz:position>
+        <viz:color r="199" g="7" b="7"></viz:color>
+      </node>
+      <node id="768027" label="Kenny Dorham">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-44.411392" y="162.5978" z="0.0"></viz:position>
+        <viz:color r="199" g="7" b="7"></viz:color>
+      </node>
+      <node id="793227" label="Ben Webster">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-28.004723" y="-64.808105" z="0.0"></viz:position>
+        <viz:color r="199" g="7" b="7"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="127949" target="127949" label="Swing, Swang, Swingin'" weight="187.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127949" target="208404" label="Montmartre Summit 1973" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127949" target="768027" label="Vertigo" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="208404" label="The Resurgence of Dexter Gordon" weight="191.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="127949" label="Matador" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="768027" label="Kenny Dorham and the Jazz Prophets, Vol. 1" weight="103.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="208404" label="Masters of Jazz, Vol. 5" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="793227" label="At the Renaissance" weight="140.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="68780" label="Kenny Burrell">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="6920.1436" y="1760.529" z="0.0"></viz:position>
+        <viz:color r="196" g="63" b="63"></viz:color>
+      </node>
+      <node id="110541" label="Chick Corea">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="6959.0435" y="1821.0718" z="0.0"></viz:position>
+        <viz:color r="196" g="63" b="63"></viz:color>
+      </node>
+      <node id="179698" label="Pat Metheny">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="7058.742" y="1743.6537" z="0.0"></viz:position>
+        <viz:color r="196" g="63" b="63"></viz:color>
+      </node>
+      <node id="290464" label="Roy Haynes">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="6994.657" y="1737.2037" z="0.0"></viz:position>
+        <viz:color r="196" g="63" b="63"></viz:color>
+      </node>
+      <node id="738182" label="Gary Burton">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="7106.8774" y="1856.9677" z="0.0"></viz:position>
+        <viz:color r="196" g="63" b="63"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="68780" target="68780" label="Lucky So and So" weight="241.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="68780" target="110541" label="Live at the Blue Note">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="68780" target="290464" label="A Night at the Vanguard" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="110541" label="An Corea/Hancock" weight="56.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="179698" label="Like Minds" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="290464" label="Like Minds" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="738182" label="Like Minds" weight="22.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="179698" target="110541" label="Like Minds" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="179698" target="179698" label="Like Minds" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="179698" target="290464" label="Like Minds" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="179698" target="738182" label="Like Minds" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="110541" label="Like Minds" weight="18.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="179698" label="Like Minds" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="290464" label="Birds of a Feather: A Tribute to Charlie Parker" weight="102.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="738182" label="Like Minds" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738182" target="68780" label="3 in Jazz" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738182" target="110541" label="Like Minds" weight="33.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738182" target="179698" label="Like Minds" weight="25.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738182" target="290464" label="Country Roads and Other Places" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738182" target="738182" label="For Hamp, Red, Bags, and Cal" weight="186.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

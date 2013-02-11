@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-11">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="343940" label="Ray Brown">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-104.04821" y="86.08262" z="0.0"></viz:position>
+        <viz:color r="250" g="33" b="33"></viz:color>
+      </node>
+      <node id="489316" label="Oscar Peterson">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-96.23639" y="-120.86128" z="0.0"></viz:position>
+        <viz:color r="250" g="33" b="33"></viz:color>
+      </node>
+      <node id="489845" label="Milt Jackson">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-46.220352" y="-12.043039" z="0.0"></viz:position>
+        <viz:color r="250" g="33" b="33"></viz:color>
+      </node>
+      <node id="833150" label="Lionel Hampton">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-192.34596" y="-26.008242" z="0.0"></viz:position>
+        <viz:color r="250" g="33" b="33"></viz:color>
+      </node>
+      <node id="2926541" label="Oscar Peterson &amp; the Very Tall Band">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-10.549293" y="-9.2906885" z="0.0"></viz:position>
+        <viz:color r="250" g="33" b="33"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="343940" target="343940" label="The Very Tall Band: Live at the Blue Note" weight="154.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="343940" target="489316" label="The Very Tall Band: Live at the Blue Note" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="343940" target="489845" label="The Very Tall Band: Live at the Blue Note" weight="21.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="343940" target="833150" label="Georgia on My Mind">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="343940" target="2926541" label="The Very Tall Band: Live at the Blue Note">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="343940" label="The Very Tall Band: Live at the Blue Note" weight="23.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="489316" label="The Very Tall Band: Live at the Blue Note" weight="45.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="489845" label="The Very Tall Band: Live at the Blue Note" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="833150" label="Ella &amp; Oscar">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="2926541" label="The Very Tall Band: Live at the Blue Note">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="343940" label="The Very Tall Band: Live at the Blue Note" weight="64.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="489316" label="The Very Tall Band: Live at the Blue Note" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="489845" label="The Very Tall Band: Live at the Blue Note" weight="245.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489845" target="2926541" label="The Very Tall Band: Live at the Blue Note">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="343940" label="Air Mail Special">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="489316" label="Air Mail Special" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="833150" target="833150" label="Triple Play: Live at the Blue Note" weight="290.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2926541" target="343940" label="The Very Tall Band: Live at the Blue Note" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2926541" target="489316" label="The Very Tall Band: Live at the Blue Note" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2926541" target="489845" label="The Very Tall Band: Live at the Blue Note" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2926541" target="2926541" label="The Very Tall Band: Live at the Blue Note">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

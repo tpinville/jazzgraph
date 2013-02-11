@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="200885" label="Leonard Feather">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-4237.1455" y="283.62332" z="0.0"></viz:position>
+        <viz:color r="87" g="248" b="248"></viz:color>
+      </node>
+      <node id="226380" label="Lee Morgan">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4166666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.8333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="17.857143"></viz:size>
+        <viz:position x="-4276.8813" y="339.53497" z="0.0"></viz:position>
+        <viz:color r="87" g="248" b="248"></viz:color>
+      </node>
+      <node id="250435" label="Wayne Shorter">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.3333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="11.428572"></viz:size>
+        <viz:position x="-4316.6826" y="259.978" z="0.0"></viz:position>
+        <viz:color r="248" g="87" b="87"></viz:color>
+      </node>
+      <node id="308664" label="Jymie Merritt">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-4362.93" y="220.83012" z="0.0"></viz:position>
+        <viz:color r="248" g="87" b="87"></viz:color>
+      </node>
+      <node id="490416" label="Thelonious Monk">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.6666666666666665"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="21.428572"></viz:size>
+        <viz:position x="-4280.558" y="396.34433" z="0.0"></viz:position>
+        <viz:color r="248" g="87" b="87"></viz:color>
+      </node>
+      <node id="597266" label="Art Blakey &amp; the Jazz Messengers">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.5"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="-4282.6533" y="280.2653" z="0.0"></viz:position>
+        <viz:color r="248" g="87" b="87"></viz:color>
+      </node>
+      <node id="599223" label="Adrien 75">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-4245.3394" y="234.82822" z="0.0"></viz:position>
+        <viz:color r="87" g="248" b="248"></viz:color>
+      </node>
+      <node id="765435" label="Bobby Timmons">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-4348.3457" y="233.20436" z="0.0"></viz:position>
+        <viz:color r="248" g="87" b="87"></viz:color>
+      </node>
+      <node id="768027" label="Kenny Dorham">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="15.714286"></viz:size>
+        <viz:position x="-4234.1084" y="371.3869" z="0.0"></viz:position>
+        <viz:color r="87" g="248" b="248"></viz:color>
+      </node>
+      <node id="780401" label="Cootie Williams">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-4308.2183" y="433.8829" z="0.0"></viz:position>
+        <viz:color r="248" g="87" b="87"></viz:color>
+      </node>
+      <node id="811692" label="The Jazz Messengers">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-4296.3706" y="232.19281" z="0.0"></viz:position>
+        <viz:color r="248" g="87" b="87"></viz:color>
+      </node>
+      <node id="928942" label="Art Blakey">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="21.000000000000004"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-4416.8057" y="341.172" z="0.0"></viz:position>
+        <viz:color r="248" g="87" b="87"></viz:color>
+      </node>
+      <node id="951384" label="Hank Mobley">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4166666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="15.714286"></viz:size>
+        <viz:position x="-4237.877" y="324.6441" z="0.0"></viz:position>
+        <viz:color r="87" g="248" b="248"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="226380" target="200885" label="Caramba!" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226380" target="226380" label="Charisma" weight="98.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226380" target="250435" label="Expoobident" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226380" target="308664" label="The Last Session" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226380" target="490416" label="Baltimore '68">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226380" target="765435" label="Lee-Way" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226380" target="928942" label="Expoobident" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="226380" target="951384" label="Charisma" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="200885" label="Schizophrenia" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="226380" label="Introducing Wayne Shorter" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="250435" label="Introducing Wayne Shorter" weight="105.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="308664" label="Wayning Moments">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="928942" label="Second Genesis" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="490416" label="Genius of Modern Music, Vol. 1" weight="202.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="597266" label="Art Blakey's Jazz Messengers with Thelonious Monk">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="768027" label="Genius of Modern Music, Vol. 1" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="780401" label="Genius of Modern Music, Vol. 1" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="490416" target="928942" label="Genius of Modern Music, Vol. 1" weight="27.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="200885" label="Buttercorn Lady" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="226380" label="The Big Beat" weight="15.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="250435" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="31.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="308664" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="490416" label="Art Blakey's Jazz Messengers with Thelonious Monk" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="597266" label="Art Blakey's Jazz Messengers with Thelonious Monk" weight="35.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="599223" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="765435" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="18.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="768027" label="Meet You at the Jazz Corner of the World Complete" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="780401" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="811692" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="928942" label="Art Blakey's Jazz Messengers with Thelonious Monk" weight="53.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="597266" target="951384" label="Meet You at the Jazz Corner of the World Complete" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="200885" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="226380" label="Meet You at the Jazz Corner of the World Complete" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="250435" label="Meet You at the Jazz Corner of the World Complete" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="308664" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="490416" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="597266" label="Meet You at the Jazz Corner of the World Complete" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="599223" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="765435" label="Meet You at the Jazz Corner of the World Complete" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="768027" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="780401" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="811692" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="928942" label="Meet You at the Jazz Corner of the World Complete" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="599223" target="951384" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="200885" label="Afro-Cuban">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="490416" label="Kenny Dorham Quintet" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="765435" label="'Round About Midnight at the Cafe Bohemia, Vols. 1-2" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="768027" label="Kenny Dorham and the Jazz Prophets, Vol. 1" weight="103.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="780401" label="'Round About Midnight at the Cafe Bohemia" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="928942" label="Afro-Cuban" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="768027" target="951384" label="Whistle Stop" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="200885" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="226380" label="Meet You at the Jazz Corner of the World Complete" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="250435" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="308664" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="490416" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="597266" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="599223" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="765435" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="768027" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="780401" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="811692" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="928942" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="811692" target="951384" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="200885" label="A Night at Birdland, Vol. 1" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="226380" label="At the Jazz Corner of the World, Vol. 1-2" weight="45.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="250435" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="62.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="308664" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="31.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="490416" label="Art Blakey's Jazz Messengers with Thelonious Monk" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="597266" label="Art Blakey's Jazz Messengers with Thelonious Monk" weight="81.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="599223" label="Meet You at the Jazz Corner of the World Complete">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="765435" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="37.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="768027" label="At the Jazz Corner of the World, Vol. 1-2" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="780401" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="811692" label="Swiss Radio Days Jazz Series, Vol. 6: Lausanne 1960, 2nd Set" weight="18.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="928942" label="A Night at Birdland, Vol. 1" weight="251.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="928942" target="951384" label="At the Jazz Corner of the World, Vol. 1-2" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="951384" target="200885" label="Hank Mobley and His All Stars" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="951384" target="226380" label="Third Season" weight="20.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="951384" target="250435" label="A Caddy for Daddy">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="951384" target="490416" label="Messages" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="951384" target="765435" label="Hank">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="951384" target="768027" label="Messages" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="951384" target="928942" label="Hank Mobley and His All Stars" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="951384" target="951384" label="Reach Out" weight="103.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

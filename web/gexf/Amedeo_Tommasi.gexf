@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-11">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="94210" label="Chet Baker">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="1.1056722" y="0.44152248" z="0.0"></viz:position>
+        <viz:color r="186" g="36" b="36"></viz:color>
+      </node>
+      <node id="640675" label="Bud Powell">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="116.78569" y="46.622066" z="0.0"></viz:position>
+        <viz:color r="186" g="36" b="36"></viz:color>
+      </node>
+      <node id="1726880" label="Chet Baker Sextet">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-118.09707" y="-47.145794" z="0.0"></viz:position>
+        <viz:color r="186" g="36" b="36"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="94210" target="94210" label="The Legacy, Vol. 4: Oh You Crazy Moon" weight="289.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94210" target="640675" label="You Can't Go Home Again" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94210" target="1726880" label="Chet Is Back!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="640675" target="640675" label="The Amazing Bud Powell, Vol. 2" weight="124.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1726880" target="94210" label="Chet Is Back!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1726880" target="1726880" label="Chet Is Back!">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

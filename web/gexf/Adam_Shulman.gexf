@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="124784" label="Larry Coryell">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-14.219856" y="-5.814319" z="0.0"></viz:position>
+        <viz:color r="200" g="10" b="10"></viz:color>
+      </node>
+      <node id="1588340" label="The Wide Hive Players">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="14.219856" y="5.814319" z="0.0"></viz:position>
+        <viz:color r="200" g="10" b="10"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="124784" target="124784" label="Count's Jam Band Reunion" weight="357.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="1588340" label="Larry Coryell with the Wide Hive Players">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1588340" target="124784" label="Larry Coryell with the Wide Hive Players" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1588340" target="1588340" label="Larry Coryell with the Wide Hive Players">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

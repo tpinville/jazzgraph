@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="39656" label="Sonny Rollins">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="55.0"></viz:size>
+        <viz:position x="696.9132" y="-2144.8796" z="0.0"></viz:position>
+        <viz:color r="33" g="175" b="175"></viz:color>
+      </node>
+      <node id="162677" label="Dizzy Gillespie">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="783.3579" y="-2280.5842" z="0.0"></viz:position>
+        <viz:color r="175" g="33" b="33"></viz:color>
+      </node>
+      <node id="662080" label="Gil Fuller">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="823.493" y="-2173.6416" z="0.0"></viz:position>
+        <viz:color r="175" g="33" b="33"></viz:color>
+      </node>
+      <node id="792507" label="Frank Sinatra">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="662.00793" y="-2058.454" z="0.0"></viz:position>
+        <viz:color r="33" g="175" b="175"></viz:color>
+      </node>
+      <node id="994943" label="The Monterey Jazz Festival Orchestra">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="859.0303" y="-2175.1538" z="0.0"></viz:position>
+        <viz:color r="175" g="33" b="33"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="39656" target="39656" label="In Japan" weight="274.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="162677" label="A Night at the Village Vanguard, Vol. 1" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="792507" label="Sonny Rollins with the Modern Jazz Quartet" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="39656" label="Sonny Side Up" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="162677" label="Have Trumpet, Will Excite!" weight="410.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="662080" label="Musician, Composer, Raconteur: Plays &amp; Raps in His Greatest Concert" weight="24.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="994943" label="With Gil Fuller and the Monterey Jazz Festival Orchestra">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="662080" target="162677" label="With Gil Fuller and the Monterey Jazz Festival Orchestra" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="662080" target="662080" label="With Gil Fuller and the Monterey Jazz Festival Orchestra" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="662080" target="994943" label="With Gil Fuller and the Monterey Jazz Festival Orchestra">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792507" target="792507" label="Maximum Sinatra" weight="148.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="994943" target="162677" label="With Gil Fuller and the Monterey Jazz Festival Orchestra" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="994943" target="662080" label="With Gil Fuller and the Monterey Jazz Festival Orchestra" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="994943" target="994943" label="With Gil Fuller and the Monterey Jazz Festival Orchestra">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

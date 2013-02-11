@@ -8,12 +8,12 @@ else:
   f = open(sys.argv[1], 'r')
   reponse = f.readlines()
 
-  print "<select>"
+#  print "<select>"
   for artiste in reponse:
      artiste = artiste.replace('\n','')
-     if( os.path.getsize("gexf/" + artiste.replace(" ","_") + ".gexf") > 1095):
-        print "<option value='"+ artiste.replace(" ","_") +"'>"+ artiste + "</option>"
-#     os.system("java -jar JazzGraph.jar '" + artiste + "' 20")
-  print "</select>"
+#     if( os.path.getsize("gexf/" + artiste.replace(" ","_") + ".gexf") > 1095):
+#        print "<option value='"+ artiste.replace(" ","_") +"'>"+ artiste + "</option>"
+     os.system("java -jar JazzGraph.jar '" + artiste + "' 20")
+#  print "</select>"
      
   f.close()

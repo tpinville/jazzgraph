@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="175553" label="John Coltrane">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.5"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="146.98428" y="-309.18475" z="0.0"></viz:position>
+        <viz:color r="181" g="29" b="29"></viz:color>
+      </node>
+      <node id="212612" label="Johnny Hartman">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="232.0186" y="-214.33504" z="0.0"></viz:position>
+        <viz:color r="181" g="29" b="29"></viz:color>
+      </node>
+      <node id="484396" label="Ornette Coleman">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.5"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="18.181818"></viz:size>
+        <viz:position x="14.684395" y="-230.33711" z="0.0"></viz:position>
+        <viz:color r="29" g="181" b="181"></viz:color>
+      </node>
+      <node id="796166" label="Don Cherry">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="42.727272"></viz:size>
+        <viz:position x="57.590385" y="-182.33868" z="0.0"></viz:position>
+        <viz:color r="29" g="181" b="181"></viz:color>
+      </node>
+      <node id="800100" label="Eric Dolphy">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="34.27899" y="-287.95193" z="0.0"></viz:position>
+        <viz:color r="181" g="29" b="29"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="175553" target="175553" label="In Europe" weight="242.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="212612" label="John Coltrane and Johnny Hartman" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="484396" label="The Avant-Garde">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="796166" label="The Avant-Garde" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175553" target="800100" label="In Europe" weight="19.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="212612" target="175553" label="John Coltrane and Johnny Hartman" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="212612" target="212612" label="John Coltrane and Johnny Hartman" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="484396" target="484396" label="Skies of America" weight="169.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="484396" target="796166" label="The Shape of Jazz to Come" weight="29.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="484396" target="800100" label="The Art of the Improvisers" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="796166" target="175553" label="The Avant-Garde" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="796166" target="484396" label="The Avant-Garde">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="796166" target="796166" label="The Avant-Garde" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800100" target="800100" label="Softly, As in a Morning Sunrise" weight="143.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

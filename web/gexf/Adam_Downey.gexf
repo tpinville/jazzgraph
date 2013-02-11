@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="227776" label="Lee Konitz">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="19.699846" y="10.705655" z="0.0"></viz:position>
+        <viz:color r="220" g="16" b="16"></viz:color>
+      </node>
+      <node id="775610" label="Chris Cheek">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-19.77657" y="10.563206" z="0.0"></viz:position>
+        <viz:color r="220" g="16" b="16"></viz:color>
+      </node>
+      <node id="1006162" label="Stephane Furic Leibovici">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="0.076706864" y="-21.254206" z="0.0"></viz:position>
+        <viz:color r="220" g="16" b="16"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="227776" target="227776" label="The Real Lee Konitz" weight="506.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="227776" target="775610" label="Jugendstil II" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="227776" target="1006162" label="Jugendstil II" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="775610" target="227776" label="Jugendstil II" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="775610" target="775610" label="Jugendstil II" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="775610" target="1006162" label="Jugendstil II" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1006162" target="227776" label="Jugendstil II" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1006162" target="775610" label="Jugendstil II" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1006162" target="1006162" label="Jugendstil II" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

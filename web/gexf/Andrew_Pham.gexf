@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-11">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="39656" label="Sonny Rollins">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5714285714285714"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.999999999999999"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="35.2"></viz:size>
+        <viz:position x="-116.70114" y="126.64496" z="0.0"></viz:position>
+        <viz:color r="30" g="225" b="225"></viz:color>
+      </node>
+      <node id="135391" label="Benny Golson">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7142857142857142"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="28.0"></viz:size>
+        <viz:position x="-182.26645" y="76.46989" z="0.0"></viz:position>
+        <viz:color r="225" g="30" b="30"></viz:color>
+      </node>
+      <node id="201760" label="George Benson">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7142857142857142"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.5"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="19.0"></viz:size>
+        <viz:position x="-211.89162" y="144.95715" z="0.0"></viz:position>
+        <viz:color r="225" g="30" b="30"></viz:color>
+      </node>
+      <node id="248392" label="Wes Montgomery">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.625"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-173.67415" y="155.89098" z="0.0"></viz:position>
+        <viz:color r="30" g="225" b="225"></viz:color>
+      </node>
+      <node id="381701" label="Red Garland Quintet">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.5714285714285716"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-346.5431" y="286.69345" z="0.0"></viz:position>
+        <viz:color r="30" g="225" b="225"></viz:color>
+      </node>
+      <node id="423829" label="Miles Davis">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.2857142857142858"></attvalue>
+          <attvalue for="betweenesscentrality" value="24.999999999999993"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-133.18362" y="287.5709" z="0.0"></viz:position>
+        <viz:color r="30" g="225" b="225"></viz:color>
+      </node>
+      <node id="424302" label="Miles Davis Quintet">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4285714285714286"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-219.49542" y="186.51907" z="0.0"></viz:position>
+        <viz:color r="30" g="225" b="225"></viz:color>
+      </node>
+      <node id="606283" label="Al Jarreau">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8571428571428572"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.5"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="11.8"></viz:size>
+        <viz:position x="-235.95596" y="111.03556" z="0.0"></viz:position>
+        <viz:color r="225" g="30" b="30"></viz:color>
+      </node>
+      <node id="738182" label="Gary Burton">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-36.08268" y="152.45099" z="0.0"></viz:position>
+        <viz:color r="30" g="225" b="225"></viz:color>
+      </node>
+      <node id="882950" label="Red Garland">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7142857142857142"></attvalue>
+          <attvalue for="betweenesscentrality" value="14.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="60.4"></viz:size>
+        <viz:position x="-300.6801" y="216.26422" z="0.0"></viz:position>
+        <viz:color r="30" g="225" b="225"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="39656" target="39656" label="In Japan" weight="274.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="135391" label="Now's the Time" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="423829" label="A Night at the Village Vanguard, Vol. 1" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="39656" target="882950" label="Tenor Madness" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135391" target="39656" label="The Many Moods of Benny Golson" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135391" target="135391" label="One Day, Forever" weight="147.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135391" target="423829" label="I Remember Miles">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135391" target="606283" label="New Time, New 'Tet" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="39656" label="Par Excellence" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="201760" label="Standing Together" weight="217.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="423829" label="Par Excellence" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="201760" target="606283" label="Givin' It Up" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="248392" target="39656" label="The Incredible Jazz Guitar of Wes Montgomery">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="248392" target="135391" label="Bags Meets Wes!" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="248392" target="201760" label="Fingerpickin'">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="248392" target="248392" label="Full House" weight="128.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="248392" target="423829" label="The Further Adventures of Jimmy and Wes" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="381701" target="381701" label="Dig It!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="381701" target="882950" label="Dig It!" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="39656" label="Relaxin' with the Miles Davis Quintet" weight="22.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="135391" label="The New Miles Davis Quintet">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="201760" label="Miles in the Sky" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="423829" label="At Newport 1958" weight="274.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="424302" label="Relaxin' with the Miles Davis Quintet" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="882950" label="Relaxin' with the Miles Davis Quintet" weight="21.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424302" target="39656" label="Relaxin' with the Miles Davis Quintet" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424302" target="135391" label="The New Miles Davis Quintet">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424302" target="423829" label="Relaxin' with the Miles Davis Quintet" weight="22.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424302" target="424302" label="Relaxin' with the Miles Davis Quintet" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="424302" target="882950" label="Relaxin' with the Miles Davis Quintet" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="606283" target="201760" label="Givin' It Up" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="606283" target="423829" label="Givin' It Up">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="606283" target="606283" label="Givin' It Up" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738182" target="39656" label="3 in Jazz" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738182" target="423829" label="Paris Encounter">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="738182" target="738182" label="For Hamp, Red, Bags, and Cal" weight="186.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="39656" label="Crossings">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="381701" label="Dig It!" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="423829" label="Red Garland Revisited!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="882950" target="882950" label="Soul Burnin'" weight="112.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

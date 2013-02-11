@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="50328" label="Sina Vodjani">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="17.817305" y="-4.355072" z="0.0"></viz:position>
+        <viz:color r="236" g="43" b="43"></viz:color>
+      </node>
+      <node id="124784" label="Larry Coryell">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="5.9534283" y="26.419138" z="0.0"></viz:position>
+        <viz:color r="236" g="43" b="43"></viz:color>
+      </node>
+      <node id="336394" label="Ronu Majumdar">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-21.111574" y="3.5093038" z="0.0"></viz:position>
+        <viz:color r="236" g="43" b="43"></viz:color>
+      </node>
+      <node id="583923" label="Abhijit Banerjee">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-2.6361427" y="-25.46406" z="0.0"></viz:position>
+        <viz:color r="236" g="43" b="43"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="50328" target="50328" label="Moonlight Whispers" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="50328" target="124784" label="Moonlight Whispers" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="50328" target="336394" label="Moonlight Whispers" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="50328" target="583923" label="Moonlight Whispers" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="50328" label="Moonlight Whispers" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="124784" label="Count's Jam Band Reunion" weight="357.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="336394" label="Moonlight Whispers" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="583923" label="Moonlight Whispers" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="336394" target="50328" label="Moonlight Whispers" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="336394" target="124784" label="Moonlight Whispers" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="336394" target="336394" label="Moonlight Whispers" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="336394" target="583923" label="Moonlight Whispers" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="583923" target="50328" label="Moonlight Whispers" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="583923" target="124784" label="Moonlight Whispers" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="583923" target="336394" label="Moonlight Whispers" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="583923" target="583923" label="Moonlight Whispers" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

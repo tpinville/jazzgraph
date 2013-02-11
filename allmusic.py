@@ -15,8 +15,6 @@ import sys
 # TODO A cacher quelquepart
 SEARCH_BASE = 'http://api.rovicorp.com/search/v2.1/music/search'
 CALL_API = 'http://developer.rovicorp.com/io-docs/call-api'
-API_KEY = 'brghmpbs732kts7npwjv649k'
-API_SECRET = '9cP9vZ2bST'
 SYN_TOKEN = '31c0044d7fd199270b22c67a1e8badca' # X-Ajax-Synchronization-Token dans le header la requete envoye par l'API console
 COOKIE = 'MASH=53d8ccb05f0f708689d52df6a6504b6f' # Cookie dans le header la requete envoye par l'API console
 
@@ -24,12 +22,14 @@ COOKIE = 'MASH=53d8ccb05f0f708689d52df6a6504b6f' # Cookie dans le header la requ
 API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
 API_SECRET = 'ZDvjkKDuhE'
 
-API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
-API_SECRET = 'ZDvjkKDuhE'
 API_KEY = 'h28eru7j3sqzymk77wgsfryc'
 API_SECRET = 'YQ82GUfC5T'
-SYN_TOKEN = 'a89e82eb522dad1ed627fa8e3069f600'
-COOKIE = 'MASH=a63c40c9f780a6549f38737f9ef719a6'
+API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
+API_SECRET = 'ZDvjkKDuhE'
+SYN_TOKEN = 'c9902763c35f4267700d10394ea84a86'
+API_KEY = 'brghmpbs732kts7npwjv649k'
+API_SECRET = '9cP9vZ2bST'
+COOKIE = 'MASH=8255afcf1900d5785c40571a6b8f72f3'
 
 # Seuil en dessous duquel les resultats sont ignores
 # 2 => ne filtre que le nom exact (i.e. John Coltrane, Miles Davis)

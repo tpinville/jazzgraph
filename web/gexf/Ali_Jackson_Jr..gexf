@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="187478" label="Eric Clapton">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-5.875705" y="152.52853" z="0.0"></viz:position>
+        <viz:color r="206" g="67" b="67"></viz:color>
+      </node>
+      <node id="583959" label="Willie Nelson">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-156.72739" y="62.334656" z="0.0"></viz:position>
+        <viz:color r="206" g="67" b="67"></viz:color>
+      </node>
+      <node id="961688" label="Wynton Marsalis">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-118.104965" y="190.74744" z="0.0"></viz:position>
+        <viz:color r="206" g="67" b="67"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="187478" target="187478" label="Play the Blues: Live from Jazz at Lincoln Center" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="187478" target="961688" label="Play the Blues: Live from Jazz at Lincoln Center" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="583959" target="583959" label="Two Men with the Blues" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="583959" target="961688" label="Two Men with the Blues" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="961688" target="187478" label="Play the Blues: Live from Jazz at Lincoln Center" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="961688" target="583959" label="Two Men with the Blues" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="961688" target="961688" label="Jump Start and Jazz" weight="208.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

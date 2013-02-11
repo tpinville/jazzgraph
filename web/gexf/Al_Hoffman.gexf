@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="82584" label="Billy Eckstine">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="74.8"></viz:size>
+        <viz:position x="766.94556" y="275.0045" z="0.0"></viz:position>
+        <viz:color r="25" g="25" b="195"></viz:color>
+      </node>
+      <node id="94210" label="Chet Baker">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="502.7589" y="226.13843" z="0.0"></viz:position>
+        <viz:color r="25" g="25" b="195"></viz:color>
+      </node>
+      <node id="184502" label="Ella Fitzgerald">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="8.333333333333334"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="970.0079" y="329.60733" z="0.0"></viz:position>
+        <viz:color r="195" g="25" b="25"></viz:color>
+      </node>
+      <node id="208404" label="Dexter Gordon">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.3333333333333333"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="663.9617" y="262.6203" z="0.0"></viz:position>
+        <viz:color r="25" g="25" b="195"></viz:color>
+      </node>
+      <node id="234518" label="Louis Armstrong">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.8333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="29.800001"></viz:size>
+        <viz:position x="1089.9628" y="249.20134" z="0.0"></viz:position>
+        <viz:color r="195" g="25" b="25"></viz:color>
+      </node>
+      <node id="259529" label="Lester Young">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.1666666666666665"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.3333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="13.6"></viz:size>
+        <viz:position x="1078.994" y="408.49173" z="0.0"></viz:position>
+        <viz:color r="195" g="25" b="25"></viz:color>
+      </node>
+      <node id="272567" label="Louis Prima">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="687.6806" y="187.99506" z="0.0"></viz:position>
+        <viz:color r="25" g="25" b="195"></viz:color>
+      </node>
+      <node id="415290" label="Oscar Peterson Trio">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.8333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="19.0"></viz:size>
+        <viz:position x="1156.6022" y="241.78596" z="0.0"></viz:position>
+        <viz:color r="195" g="25" b="25"></viz:color>
+      </node>
+      <node id="489316" label="Oscar Peterson">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.666666666666667"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="71.2"></viz:size>
+        <viz:position x="1166.8357" y="343.56644" z="0.0"></viz:position>
+        <viz:color r="195" g="25" b="25"></viz:color>
+      </node>
+      <node id="673360" label="Helen Forrest">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-191.05995" y="-62.61949" z="0.0"></viz:position>
+        <viz:color r="25" g="195" b="25"></viz:color>
+      </node>
+      <node id="792507" label="Frank Sinatra">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="562.83185" y="241.17712" z="0.0"></viz:position>
+        <viz:color r="25" g="25" b="195"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="82584" target="82584" label="Once More with Feeling" weight="95.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="82584" target="272567" label="Billy's Best!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94210" target="94210" label="The Legacy, Vol. 4: Oh You Crazy Moon" weight="289.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94210" target="792507" label="Chet Baker in Tokyo">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="82584" label="Get Happy!" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="184502" label="Sings the Harold Arlen Song Book" weight="195.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="234518" label="Ella &amp; Louis Again" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="259529" label="Ella at the Opera House" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="489316" label="Ella &amp; Louis Again" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="82584" label="The Chase!" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="208404" label="The Resurgence of Dexter Gordon" weight="191.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="792507" label="Clubhouse">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="184502" label="Ella &amp; Louis Again" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="234518" label="Satchmo in Style" weight="145.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="415290" label="Louis Armstrong Meets Oscar Peterson">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="489316" label="Ella &amp; Louis Again" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="259529" target="259529" label="In Washington, D.C. 1956, Vol. 5" weight="91.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="259529" target="415290" label="The President Plays with the Oscar Peterson Trio" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="259529" target="489316" label="The Jazz Giants '56" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="272567" target="272567" label="Let's Fly with Mary Poppins" weight="48.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="415290" target="234518" label="Louis Armstrong Meets Oscar Peterson" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="415290" target="259529" label="The President Plays with the Oscar Peterson Trio" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="415290" target="415290" label="Very Tall" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="415290" target="489316" label="Very Tall" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="184502" label="Ella &amp; Oscar" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="234518" label="Louis Armstrong Meets Oscar Peterson" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="259529" label="Satch and Josh" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="415290" label="Very Tall" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="489316" target="489316" label="The Very Tall Band: Live at the Blue Note" weight="45.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="673360" target="673360" label="The Complete Helen Forrest with Benny Goodman" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="792507" target="792507" label="Maximum Sinatra" weight="148.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

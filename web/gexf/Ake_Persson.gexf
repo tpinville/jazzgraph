@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="81796" label="Kenny Clarke">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-53.79948" y="-50.523224" z="0.0"></viz:position>
+        <viz:color r="45" g="182" b="182"></viz:color>
+      </node>
+      <node id="135243" label="Clarke-Boland Big Band">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-120.16242" y="-166.9784" z="0.0"></viz:position>
+        <viz:color r="45" g="182" b="182"></viz:color>
+      </node>
+      <node id="135391" label="Benny Golson">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="70.0"></viz:size>
+        <viz:position x="104.327415" y="96.72642" z="0.0"></viz:position>
+        <viz:color r="182" g="45" b="45"></viz:color>
+      </node>
+      <node id="290464" label="Roy Haynes">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="221.42555" y="205.90765" z="0.0"></viz:position>
+        <viz:color r="182" g="45" b="45"></viz:color>
+      </node>
+      <node id="789775" label="Clifford Brown">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.1666666666666665"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="25.0"></viz:size>
+        <viz:position x="187.18918" y="173.97702" z="0.0"></viz:position>
+        <viz:color r="182" g="45" b="45"></viz:color>
+      </node>
+      <node id="800375" label="Francis Boland">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-159.15337" y="-148.75015" z="0.0"></viz:position>
+        <viz:color r="45" g="182" b="182"></viz:color>
+      </node>
+      <node id="2554466" label="The Kenny Clarke &amp; Francy Boland Big Band">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-180.25185" y="-110.733215" z="0.0"></viz:position>
+        <viz:color r="45" g="182" b="182"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="81796" target="81796" label="Telefunken Blues" weight="62.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="81796" target="135243" label="Now Hear Our Meanin'" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="81796" target="800375" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="81796" target="2554466" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135243" target="81796" label="Faces" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135243" target="135243" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135243" target="800375" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135243" target="2554466" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135391" target="81796" label="New Time, New 'Tet">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135391" target="135391" label="One Day, Forever" weight="147.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="135391" target="789775" label="Up Jumped Benny" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="290464" label="Birds of a Feather: A Tribute to Charlie Parker" weight="102.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="135391" label="At Basin Street" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="290464" label="Sarah Vaughan with Clifford Brown" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="789775" label="At Basin Street" weight="63.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800375" target="81796" label="Faces" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800375" target="135243" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800375" target="800375" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="800375" target="2554466" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2554466" target="81796" label="Faces" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2554466" target="135243" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2554466" target="800375" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2554466" target="2554466" label="Faces">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

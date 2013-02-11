@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="44290" label="Sonny Stitt">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.625"></attvalue>
+          <attvalue for="betweenesscentrality" value="34.333333333333336"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-14.279164" y="-37.475815" z="0.0"></viz:position>
+        <viz:color r="63" g="63" b="201"></viz:color>
+      </node>
+      <node id="142307" label="Clayton">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-72.70177" y="-330.36258" z="0.0"></viz:position>
+        <viz:color r="63" g="63" b="201"></viz:color>
+      </node>
+      <node id="204901" label="Sarah Vaughan">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.375"></attvalue>
+          <attvalue for="betweenesscentrality" value="13.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="44.07767"></viz:size>
+        <viz:position x="106.58502" y="253.8446" z="0.0"></viz:position>
+        <viz:color r="201" g="63" b="63"></viz:color>
+      </node>
+      <node id="208404" label="Dexter Gordon">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.875"></attvalue>
+          <attvalue for="betweenesscentrality" value="8.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30.970875"></viz:size>
+        <viz:position x="55.82684" y="101.83147" z="0.0"></viz:position>
+        <viz:color r="63" g="201" b="63"></viz:color>
+      </node>
+      <node id="290464" label="Roy Haynes">
+        <attvalues>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.25"></attvalue>
+          <attvalue for="betweenesscentrality" value="4.5"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="21.796116"></viz:size>
+        <viz:position x="84.70432" y="180.76743" z="0.0"></viz:position>
+        <viz:color r="201" g="63" b="63"></viz:color>
+      </node>
+      <node id="346637" label="Roy Eldridge">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="24.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="72.91263"></viz:size>
+        <viz:position x="-68.76345" y="-230.88394" z="0.0"></viz:position>
+        <viz:color r="63" g="63" b="201"></viz:color>
+      </node>
+      <node id="658731" label="Gillespie">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-117.20378" y="-317.86084" z="0.0"></viz:position>
+        <viz:color r="63" g="63" b="201"></viz:color>
+      </node>
+      <node id="789775" label="Clifford Brown">
+        <attvalues>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="3.125"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.8333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="14.805826"></viz:size>
+        <viz:position x="45.755417" y="218.83801" z="0.0"></viz:position>
+        <viz:color r="201" g="63" b="63"></viz:color>
+      </node>
+      <node id="798326" label="Freddie Hubbard">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.875"></attvalue>
+          <attvalue for="betweenesscentrality" value="15.333333333333332"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="50.194176"></viz:size>
+        <viz:position x="-19.398346" y="162.18329" z="0.0"></viz:position>
+        <viz:color r="63" g="201" b="63"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="44290" target="44290" label="Deuces Wild" weight="440.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44290" target="208404" label="Move on Over">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44290" target="290464" label="Mellow">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="44290" target="346637" label="Only the Blues" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="142307" target="142307" label="The Trumpeters: Jazz Fest Masters">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="142307" target="346637" label="The Trumpeters: Jazz Fest Masters" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="142307" target="658731" label="The Trumpeters: Jazz Fest Masters">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="204901" target="204901" label="Sweet 'N' Sassy" weight="178.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="204901" target="290464" label="Sarah Vaughan with Clifford Brown" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="204901" target="789775" label="Sarah Vaughan with Clifford Brown" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="204901" target="798326" label="Sassy Swings Again">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="44290" label="Great Encounters">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="208404" label="The Resurgence of Dexter Gordon" weight="191.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="789775" label="Take the A Train">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="798326" label="Tangerine" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="204901" label="The Roy Haynes Trio" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="290464" target="290464" label="Birds of a Feather: A Tribute to Charlie Parker" weight="102.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="44290" label="Loose Walk" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="142307" label="The Trumpeters: Jazz Fest Masters">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="346637" label="Little Jazz &amp; the Jimmy Ryan All-Stars" weight="114.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="658731" label="The Trumpeters: Jazz Fest Masters">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="658731" target="142307" label="The Trumpeters: Jazz Fest Masters">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="658731" target="346637" label="The Trumpeters: Jazz Fest Masters" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="658731" target="658731" label="The Trumpeters: Jazz Fest Masters">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="204901" label="Sarah Vaughan with Clifford Brown" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="290464" label="Sarah Vaughan with Clifford Brown" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="789775" target="789775" label="At Basin Street" weight="63.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="44290" label="Eternal Triangle with Woody Shaw">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="290464" label="Sweet Return" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="789775" label="Live at Concerts by the Sea" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="798326" label="New Colors" weight="277.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

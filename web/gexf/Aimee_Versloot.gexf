@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-10">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="110204" label="Chris Minh Doky">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="53.39044" y="26.604797" z="0.0"></viz:position>
+        <viz:color r="72" g="229" b="229"></viz:color>
+      </node>
+      <node id="130401" label="Larry Goldings">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="68.61645" y="55.814228" z="0.0"></viz:position>
+        <viz:color r="72" g="229" b="229"></viz:color>
+      </node>
+      <node id="227776" label="Lee Konitz">
+        <attvalues>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-207.9446" y="-103.63924" z="0.0"></viz:position>
+        <viz:color r="229" g="72" b="72"></viz:color>
+      </node>
+      <node id="842492" label="Peter Erskine">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="85.88241" y="21.19241" z="0.0"></viz:position>
+        <viz:color r="72" g="229" b="229"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="110204" target="110204" label="Scenes from a Dream" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110204" target="130401" label="Scenes from a Dream" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110204" target="842492" label="Scenes from a Dream" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="130401" target="110204" label="Scenes from a Dream" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="130401" target="130401" label="Awareness" weight="76.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="130401" target="842492" label="Scenes from a Dream" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="227776" target="227776" label="The Real Lee Konitz" weight="506.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="842492" target="110204" label="Scenes from a Dream" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="842492" target="130401" label="Scenes from a Dream" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="842492" target="842492" label="Scenes from a Dream" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
