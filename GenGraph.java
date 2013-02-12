@@ -57,15 +57,18 @@ public class GenGraph {
           
         String artist;
         int delay = 5;
-        
+        String export = "gexf";
+                
         if (args.length > 0)            
         {
             artist = args[0] ;
             if (args.length > 1)
                 delay = Integer.parseInt(args[1]);                
+            if (args.length > 2)
+                export = args[2];
         }
         else
-            artist = "Duke Ellington";   
+            artist = "Ahmad Jamal";   
         
         String query = "%" + artist + "%";
         System.out.println(artist);
@@ -197,7 +200,7 @@ public class GenGraph {
         //Export
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
         try {
-            ec.exportFile(new File("/home/tpinville/git/jazzgraph/web/gexf/"+artist.replace(" ", "_") +".gexf"));
+            ec.exportFile(new File("/home/tpinville/git/jazzgraph/web/gexf/"+artist.replace(" ", "_") +"." + export));
         } catch (IOException ex) {
             ex.printStackTrace();
             return;

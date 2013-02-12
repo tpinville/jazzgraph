@@ -38,5 +38,10 @@ pour less graphs :
   partie javascript   
     sigma.js
 
-  partie génération   
-    pygexf
+pour generer graphes
+    python genGexf.py fichierListeArtistes
+      necessite GenGraph.jar avec comme lib : 
+          gephi-toolkit.jar pour gen gexf file
+          gson-2.2.2.jar
+          uk-ac-ox-oii-jsonexporter.jar issu de uk-ac-ox-oii-jsonexporter.nbm pour fichier json
+
