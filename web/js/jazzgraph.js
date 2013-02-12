@@ -333,14 +333,14 @@ function getInfoArtiste(artist)
             var imgheight = imgprop.height;
             var fact =1;
 
-            if (imgwidth > 300)
+            if (imgwidth > 200)
             {
-              fact =  imgwidth/300;
+              fact =  imgwidth/200;
               imgwidth = imgwidth / fact;
               imgheight= imgheight/ fact;
             }
 
-            $("<img/>").attr("src", imgprop.uri).attr("width",imgwidth).attr("height",imgheight).appendTo("#infoartiste");
+            $("<img/>").attr("src", imgprop.uri150).attr("width",imgwidth).attr("height",imgheight).appendTo("#infoartiste");
           }
 
           if (data.data.profile != undefined)
