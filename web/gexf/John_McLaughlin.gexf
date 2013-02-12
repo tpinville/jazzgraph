@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-11">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="18254" label="Paul Haines">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.9411764705882353"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-11.214653" y="219.42625" z="0.0"></viz:position>
+        <viz:color r="75" g="75" b="217"></viz:color>
+      </node>
+      <node id="82639" label="Paco de LucÃ­a">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.9411764705882353"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="124.52464" y="195.4953" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="110541" label="Chick Corea">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.588235294117647"></attvalue>
+          <attvalue for="betweenesscentrality" value="21.333333333333336"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="18.66817"></viz:size>
+        <viz:position x="173.50085" y="177.72305" z="0.0"></viz:position>
+        <viz:color r="75" g="217" b="75"></viz:color>
+      </node>
+      <node id="124784" label="Larry Coryell">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7058823529411764"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.3333333333333335"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="11.354402"></viz:size>
+        <viz:position x="207.81625" y="199.42523" z="0.0"></viz:position>
+        <viz:color r="75" g="217" b="75"></viz:color>
+      </node>
+      <node id="158780" label="Shakti">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0588235294117645"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-12.803221" y="-33.65477" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="175196" label="Carlos Santana">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.406321"></viz:size>
+        <viz:position x="-65.57529" y="101.264" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="208404" label="Dexter Gordon">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.9444444444444444"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="248.21819" y="116.75238" z="0.0"></viz:position>
+        <viz:color r="75" g="217" b="75"></viz:color>
+      </node>
+      <node id="223701" label="John McLaughlin">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.1764705882352942"></attvalue>
+          <attvalue for="betweenesscentrality" value="221.5"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="61.697273" y="70.79791" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="233862" label="Mahavishnu Orchestra">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.1176470588235294"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-51.918064" y="134.90465" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="250435" label="Wayne Shorter">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.9411764705882353"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.3333333333333333"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.13544"></viz:size>
+        <viz:position x="210.6344" y="152.14955" z="0.0"></viz:position>
+        <viz:color r="75" g="217" b="75"></viz:color>
+      </node>
+      <node id="295756" label="Santana">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-81.785126" y="68.51181" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="423829" label="Miles Davis">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8823529411764706"></attvalue>
+          <attvalue for="betweenesscentrality" value="11.166666666666666"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="14.537247"></viz:size>
+        <viz:position x="197.18001" y="127.65008" z="0.0"></viz:position>
+        <viz:color r="75" g="217" b="75"></viz:color>
+      </node>
+      <node id="600228" label="Al di Meola">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.9411764705882353"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="95.51397" y="205.74211" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="793506" label="Carla Bley">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8235294117647058"></attvalue>
+          <attvalue for="betweenesscentrality" value="34.33333333333333"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="23.950338"></viz:size>
+        <viz:position x="29.522383" y="241.94878" z="0.0"></viz:position>
+        <viz:color r="75" g="75" b="217"></viz:color>
+      </node>
+      <node id="793594" label="Shankar Mahadevan">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0588235294117645"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="21.615515" y="-60.79816" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="1380037" label="John McLaughlin Trio">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="172.62665" y="-12.790292" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="1478664" label="Free Spirits">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="193.74889" y="31.65673" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="2140132" label="John McLaughlin &amp; the 4th Dimension">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.1176470588235294"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="98.25297" y="-52.857487" z="0.0"></viz:position>
+        <viz:color r="217" g="75" b="75"></viz:color>
+      </node>
+      <node id="2768271" label="Five Peace Band">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.9411764705882353"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="146.8136" y="215.51904" z="0.0"></viz:position>
+        <viz:color r="75" g="217" b="75"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="18254" target="18254" label="Escalator Over the Hill" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="18254" target="223701" label="Escalator Over the Hill" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="18254" target="793506" label="Escalator Over the Hill" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="82639" target="82639" label="Guitar Trio: Paco de Lucia/John McLaughlin/Al Di Meola" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="82639" target="110541" label="Friday Night in San Francisco">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="82639" target="223701" label="Guitar Trio: Paco de Lucia/John McLaughlin/Al Di Meola" weight="17.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="82639" target="600228" label="Guitar Trio: Paco de Lucia/John McLaughlin/Al Di Meola" weight="17.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="82639" label="The Ultimate Adventure" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="110541" label="Past, Present &amp; Futures" weight="419.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="223701" label="Tones for Joan's Bones" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="250435" label="Piano Improvisations, Vol. 2" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="423829" label="A Week at the Blue Note" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="600228" label="Where Have I Known You Before" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="793506" label="Crystal Silence">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="110541" target="2768271" label="Five Peace Band: Live">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="82639" label="Return">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="110541" label="Live at the Village Gate" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="124784" label="Count's Jam Band Reunion" weight="357.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="223701" label="Planet End" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="250435" label="American Odyssey" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="423829" label="Monk, 'Trane, Miles &amp; Me" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="124784" target="600228" label="Return">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="158780" target="158780" label="Saturday Night in Bombay: Remember Shakti" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="158780" target="223701" label="Saturday Night in Bombay: Remember Shakti" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="158780" target="793594" label="Saturday Night in Bombay: Remember Shakti">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175196" target="175196" label="Love Devotion Surrender" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175196" target="223701" label="Love Devotion Surrender" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175196" target="233862" label="Love Devotion Surrender" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="175196" target="295756" label="Love Devotion Surrender">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="208404" label="The Resurgence of Dexter Gordon" weight="192.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="223701" label="The Other Side of Round Midnight">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="250435" label="The Other Side of Round Midnight" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="208404" target="423829" label="After Midnight" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="82639" label="Guitar Trio: Paco de Lucia/John McLaughlin/Al Di Meola" weight="23.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="110541" label="Friday Night in San Francisco" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="158780" label="Saturday Night in Bombay: Remember Shakti" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="175196" label="Love Devotion Surrender" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="223701" label="Saturday Night in Bombay: Remember Shakti" weight="176.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="233862" label="Adventures in Radioland" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="295756" label="Love Devotion Surrender">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="423829" label="Tokyo Live" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="600228" label="Guitar Trio: Paco de Lucia/John McLaughlin/Al Di Meola" weight="19.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="793506" label="After the Rain" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="793594" label="Saturday Night in Bombay: Remember Shakti" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="1380037" label="Live at the Royal Festival Hall" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="1478664" label="Tokyo Live" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="2140132" label="To the One" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="223701" target="2768271" label="Five Peace Band: Live">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="233862" target="223701" label="Adventures in Radioland" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="233862" target="233862" label="Adventures in Radioland" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="110541" label="Moto Grosso Feio" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="223701" label="Moto Grosso Feio" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="250435" label="Introducing Wayne Shorter" weight="105.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="250435" target="423829" label="Footprints Live!">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="295756" target="175196" label="Love Devotion Surrender" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="295756" target="223701" label="Love Devotion Surrender" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="295756" target="233862" label="Love Devotion Surrender" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="295756" target="295756" label="Love Devotion Surrender">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="110541" label="Bitches Brew" weight="22.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="175196" label="Evolution of the Groove" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="223701" label="Get Up with It" weight="27.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="250435" label="Miles in Berlin" weight="40.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="423829" target="423829" label="At Newport 1958" weight="275.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="600228" target="82639" label="Guitar Trio: Paco de Lucia/John McLaughlin/Al Di Meola" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="600228" target="110541" label="Friday Night in San Francisco">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="600228" target="223701" label="Guitar Trio: Paco de Lucia/John McLaughlin/Al Di Meola" weight="17.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="600228" target="600228" label="Guitar Trio: Paco de Lucia/John McLaughlin/Al Di Meola" weight="17.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793506" target="18254" label="Tropic Appetites" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793506" target="124784" label="The Watt Works Family Album">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793506" target="223701" label="Escalator Over the Hill" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793506" target="793506" label="Looking for America" weight="185.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793594" target="158780" label="Saturday Night in Bombay: Remember Shakti">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793594" target="223701" label="Saturday Night in Bombay: Remember Shakti" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793594" target="793594" label="Saturday Night in Bombay: Remember Shakti">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1380037" target="223701" label="Live at the Royal Festival Hall" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1380037" target="423829" label="Live at the Royal Festival Hall">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1380037" target="1380037" label="Live at the Royal Festival Hall" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1478664" target="223701" label="Tokyo Live" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1478664" target="423829" label="Tokyo Live">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1478664" target="1478664" label="Tokyo Live">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2140132" target="223701" label="To the One" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2140132" target="2140132" label="To the One" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2768271" target="110541" label="Five Peace Band: Live" weight="7.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2768271" target="223701" label="Five Peace Band: Live" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2768271" target="423829" label="Five Peace Band: Live">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2768271" target="2768271" label="Five Peace Band: Live">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

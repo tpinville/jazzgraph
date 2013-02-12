@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
-  <meta lastmodifieddate="2013-02-10">
+  <meta lastmodifieddate="2013-02-11">
     <creator>Gephi 0.8.1</creator>
     <description></description>
   </meta>
@@ -22,17 +22,72 @@
     <nodes>
       <node id="127044" label="Count Basie">
         <attvalues>
-          <attvalue for="eccentricity" value="0.0"></attvalue>
-          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
           <attvalue for="betweenesscentrality" value="0.0"></attvalue>
           <attvalue for="modularity_class" value="0"></attvalue>
         </attvalues>
         <viz:size value="10.0"></viz:size>
-        <viz:color r="167" g="4" b="4"></viz:color>
+        <viz:position x="-133.7928" y="1.0352963" z="0.0"></viz:position>
+        <viz:color r="208" g="19" b="19"></viz:color>
+      </node>
+      <node id="182855" label="David Murray">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="55.750618" y="121.62968" z="0.0"></viz:position>
+        <viz:color r="208" g="19" b="19"></viz:color>
+      </node>
+      <node id="614339" label="Albert Ayler">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="5.3496532" y="-8.406943" z="0.0"></viz:position>
+        <viz:color r="208" g="19" b="19"></viz:color>
+      </node>
+      <node id="1316253" label="Albert Ayler Quintet">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="72.64074" y="-114.17234" z="0.0"></viz:position>
+        <viz:color r="208" g="19" b="19"></viz:color>
       </node>
     </nodes>
     <edges>
       <edge source="127044" target="127044" label="Breakfast Dance and Barbecue" weight="354.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="614339" label="Afrique">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="182855" target="182855" label="Like a Kiss That Never Ends" weight="294.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="182855" target="614339" label="Tenors">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="614339" target="614339" label="Music Is the Healing Force of the Universe" weight="105.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="614339" target="1316253" label="At Slug's Saloon, Vol. 2" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1316253" target="614339" label="Stockholm, Berlin 1966" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1316253" target="1316253" label="Stockholm, Berlin 1966">
         <attvalues></attvalues>
       </edge>
     </edges>

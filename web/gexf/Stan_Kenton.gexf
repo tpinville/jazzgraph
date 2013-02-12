@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-11">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="7670" label="Stan Kenton &amp; His Orchestra">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-52.592274" y="325.82333" z="0.0"></viz:position>
+        <viz:color r="21" g="185" b="185"></viz:color>
+      </node>
+      <node id="17990" label="Teddy Wilson">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="128.17542" y="151.42244" z="0.0"></viz:position>
+        <viz:color r="185" g="21" b="21"></viz:color>
+      </node>
+      <node id="120323" label="Duke Ellington">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="110.95194" y="179.91557" z="0.0"></viz:position>
+        <viz:color r="185" g="21" b="21"></viz:color>
+      </node>
+      <node id="352164" label="Kai Winding">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-154.13951" y="223.50018" z="0.0"></viz:position>
+        <viz:color r="21" g="185" b="185"></viz:color>
+      </node>
+      <node id="539774" label="Buddy Rich">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="139.48586" y="196.27022" z="0.0"></viz:position>
+        <viz:color r="185" g="21" b="21"></viz:color>
+      </node>
+      <node id="743929" label="Stan Kenton">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="16.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-16.927887" y="216.07304" z="0.0"></viz:position>
+        <viz:color r="21" g="185" b="185"></viz:color>
+      </node>
+      <node id="2389428" label="The Stan Kenton Alumni Band">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-125.99261" y="121.46993" z="0.0"></viz:position>
+        <viz:color r="21" g="185" b="185"></viz:color>
+      </node>
+      <node id="2431554" label="Nat King Cole Trio">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.75"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-36.867565" y="79.56595" z="0.0"></viz:position>
+        <viz:color r="21" g="185" b="185"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="7670" target="7670" label="Live at the Macumba Club, Pt. 1 (1956)">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="7670" target="743929" label="Live at the Macumba Club, Pt. 1 (1956)" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="17990" target="17990" label="Air Mail Special" weight="124.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="17990" target="120323" label="Marian McPartland's Piano Jazz with Guest Teddy Wilson 1985" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="17990" target="743929" label="And Then They Wrote">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="120323" target="120323" label="Ella &amp; Duke at the Côte D'Azur" weight="241.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="120323" target="743929" label="Will Big Bands Ever Come Back?">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="352164" target="352164" label="Cleveland June 1957" weight="91.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="352164" target="743929" label="Trombone Panorama" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="17990" label="Zoot Sims: Air Mail Special">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="120323" label="Rags to Riches" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="539774" label="Rich Ala Rahka" weight="147.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="539774" target="743929" label="Swingin' New Big Band">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="743929" target="7670" label="More Mellophonium Moods" weight="18.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="743929" target="120323" label="Alternate Routes" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="743929" target="743929" label="The Ballad Style of Stan Kenton" weight="259.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="743929" target="2389428" label="Stan Kenton Alumni Live on the Road">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2389428" target="743929" label="Stan Kenton Alumni Live on the Road">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2389428" target="2389428" label="Stan Kenton Alumni Live on the Road">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2431554" target="743929" label="AFRS King Cole Trio Time Live, Vol. 1" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="2431554" target="2431554" label="The Complete Capitol Transcription Sessions" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

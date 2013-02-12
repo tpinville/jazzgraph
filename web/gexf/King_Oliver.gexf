@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-11">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="79016" label="Billie Holiday">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-96.532776" y="-69.0489" z="0.0"></viz:position>
+        <viz:color r="3" g="182" b="182"></viz:color>
+      </node>
+      <node id="94639" label="King Oliver">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="26.350323" y="32.308254" z="0.0"></viz:position>
+        <viz:color r="3" g="182" b="182"></viz:color>
+      </node>
+      <node id="127044" label="Count Basie">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.5"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="32.5"></viz:size>
+        <viz:position x="-149.55705" y="66.334724" z="0.0"></viz:position>
+        <viz:color r="182" g="3" b="3"></viz:color>
+      </node>
+      <node id="234518" label="Louis Armstrong">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.5"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="62.5"></viz:size>
+        <viz:position x="-33.83421" y="-143.1365" z="0.0"></viz:position>
+        <viz:color r="3" g="182" b="182"></viz:color>
+      </node>
+      <node id="267354" label="Horace Silver">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="124.31534" y="142.35191" z="0.0"></viz:position>
+        <viz:color r="3" g="182" b="182"></viz:color>
+      </node>
+      <node id="296745" label="Jimmy Dorsey">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="174.05466" y="23.70149" z="0.0"></viz:position>
+        <viz:color r="3" g="182" b="182"></viz:color>
+      </node>
+      <node id="798326" label="Freddie Hubbard">
+        <attvalues>
+          <attvalue for="eccentricity" value="1.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="2.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="40.0"></viz:size>
+        <viz:position x="-150.5558" y="-26.943537" z="0.0"></viz:position>
+        <viz:color r="3" g="182" b="182"></viz:color>
+      </node>
+      <node id="1775164" label="Count Basie Orchestra">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-118.5731" y="100.34324" z="0.0"></viz:position>
+        <viz:color r="182" g="3" b="3"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="79016" target="79016" label="God Bless the Child" weight="39.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="79016" target="94639" label="New Orleans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="79016" target="234518" label="New Orleans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94639" target="94639" label="Immortal King Oliver" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="94639" target="234518" label="Beyond Patina Jazz Masters: Joe King Oliver">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="94639" label="Basie Rides Again">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="127044" label="Breakfast Dance and Barbecue" weight="354.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="798326" label="Kansas City 7" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="1775164" label="Straight Ahead" weight="24.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="79016" label="New Orleans">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="94639" label="Satchmo: A Musical Autobiography" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="234518" target="234518" label="Satchmo in Style" weight="145.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="94639" label="A Prescription for the Blues">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="267354" target="267354" label="Silver's Serenade" weight="147.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="296745" target="94639" label="Dixie by Dorsey 1950">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="296745" target="296745" label="Tangerine" weight="40.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="79016" label="At Jazz Jamboree Warszawa '91: A Tribute to Miles" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="94639" label="Salute to Pops, Vol. 2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="234518" label="Salute to Pops, Vol. 2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="798326" target="798326" label="New Colors" weight="277.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1775164" target="94639" label="Basie Rides Again">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1775164" target="127044" label="Live in Japan '78" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1775164" target="1775164" label="Live in Japan '78" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

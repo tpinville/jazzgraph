@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-02-11">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="127044" label="Count Basie">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4285714285714286"></attvalue>
+          <attvalue for="betweenesscentrality" value="23.999999999999996"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="37.903973"></viz:size>
+        <viz:position x="-839.30286" y="88.283195" z="0.0"></viz:position>
+        <viz:color r="162" g="36" b="36"></viz:color>
+      </node>
+      <node id="162677" label="Dizzy Gillespie">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="21.816666666666666"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="35.365486"></viz:size>
+        <viz:position x="-734.289" y="81.39334" z="0.0"></viz:position>
+        <viz:color r="162" g="36" b="36"></viz:color>
+      </node>
+      <node id="163133" label="Benny Goodman">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.6428571428571428"></attvalue>
+          <attvalue for="betweenesscentrality" value="21.558333333333337"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="35.065132"></viz:size>
+        <viz:position x="-853.0535" y="194.92183" z="0.0"></viz:position>
+        <viz:color r="36" g="36" b="162"></viz:color>
+      </node>
+      <node id="184502" label="Ella Fitzgerald">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4285714285714286"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.1666666666666665"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11.356443"></viz:size>
+        <viz:position x="-795.03033" y="154.82707" z="0.0"></viz:position>
+        <viz:color r="162" g="36" b="36"></viz:color>
+      </node>
+      <node id="209773" label="Joe Pass">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.4833333333333334"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="14.049952"></viz:size>
+        <viz:position x="-787.6107" y="123.59715" z="0.0"></viz:position>
+        <viz:color r="162" g="36" b="36"></viz:color>
+      </node>
+      <node id="211758" label="Charlie Parker">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.8571428571428572"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.6333333333333337"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="14.224352"></viz:size>
+        <viz:position x="-771.8691" y="36.87035" z="0.0"></viz:position>
+        <viz:color r="162" g="36" b="36"></viz:color>
+      </node>
+      <node id="346637" label="Roy Eldridge">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.4285714285714286"></attvalue>
+          <attvalue for="betweenesscentrality" value="5.908333333333332"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="16.869415"></viz:size>
+        <viz:position x="-744.83746" y="152.09215" z="0.0"></viz:position>
+        <viz:color r="162" g="36" b="36"></viz:color>
+      </node>
+      <node id="591425" label="Benny Goodman &amp; His Orchestra">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7857142857142858"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.375"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.436"></viz:size>
+        <viz:position x="-882.9046" y="244.46912" z="0.0"></viz:position>
+        <viz:color r="36" g="36" b="162"></viz:color>
+      </node>
+      <node id="634674" label="Buck Clayton">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.9285714285714286"></attvalue>
+          <attvalue for="betweenesscentrality" value="1.0333333333333332"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="11.201421"></viz:size>
+        <viz:position x="-896.94763" y="134.55588" z="0.0"></viz:position>
+        <viz:color r="36" g="36" b="162"></viz:color>
+      </node>
+      <node id="788256" label="Barbara Carroll">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.7142857142857144"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-501.89557" y="342.20624" z="0.0"></viz:position>
+        <viz:color r="36" g="162" b="36"></viz:color>
+      </node>
+      <node id="793227" label="Ben Webster">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.5"></attvalue>
+          <attvalue for="betweenesscentrality" value="17.416666666666668"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30.249756"></viz:size>
+        <viz:position x="-652.9982" y="121.65756" z="0.0"></viz:position>
+        <viz:color r="36" g="162" b="36"></viz:color>
+      </node>
+      <node id="824866" label="Marian McPartland">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7142857142857142"></attvalue>
+          <attvalue for="betweenesscentrality" value="10.2"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="21.859188"></viz:size>
+        <viz:position x="-770.10474" y="205.9159" z="0.0"></viz:position>
+        <viz:color r="36" g="162" b="36"></viz:color>
+      </node>
+      <node id="859820" label="Mary Lou Williams">
+        <attvalues>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7857142857142858"></attvalue>
+          <attvalue for="betweenesscentrality" value="77.40833333333335"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-651.7165" y="279.84766" z="0.0"></viz:position>
+        <viz:color r="36" g="162" b="36"></viz:color>
+      </node>
+      <node id="948768" label="The Glenn Miller Orchestra">
+        <attvalues>
+          <attvalue for="eccentricity" value="2.0"></attvalue>
+          <attvalue for="closnesscentrality" value="1.7142857142857142"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-842.0369" y="270.92914" z="0.0"></viz:position>
+        <viz:color r="36" g="36" b="162"></viz:color>
+      </node>
+      <node id="1217579" label="Mary Lou Williams Quartet">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.6666666666666665"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-496.47992" y="273.8036" z="0.0"></viz:position>
+        <viz:color r="36" g="162" b="36"></viz:color>
+      </node>
+      <node id="1518414" label="Mary Lou Williams Collective">
+        <attvalues>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="2.7142857142857144"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-559.8346" y="386.65686" z="0.0"></viz:position>
+        <viz:color r="36" g="162" b="36"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="127044" target="127044" label="Breakfast Dance and Barbecue" weight="354.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="162677" label="The Gifted Ones" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="163133" label="The Timekeepers">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="184502" label="One O'Clock Jump" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="209773" label="The Gifted Ones" weight="19.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="211758" label="Count Basie Jam Session at the Montreux Jazz Festival 1975">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="346637" label="Count Basie Jam Session at the Montreux Jazz Festival 1975" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="634674" label="On the Road" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="127044" target="859820" label="At Newport with Dizzy Gillespie">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="127044" label="Something Old, Something New" weight="10.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="162677" label="Have Trumpet, Will Excite!" weight="410.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="163133" label="Dizzy at Home and Abroad" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="209773" label="The Gifted Ones" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="211758" label="To Diz with Love: Diamond Jubilee Recordings" weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="346637" label="Roy and Diz" weight="11.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="824866" label="Marian McPartland's Piano Jazz with Guest Dizzy Gillespie" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="162677" target="859820" label="At Newport" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="127044" label="Big Band Spectacular, Vols. 1-2" weight="12.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="163133" label="Big Band Spectacular, Vols. 1-2" weight="176.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="591425" label="Big Band Spectacular, Vols. 1-2" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="634674" label="Forever Gold: The Benny Goodman Story" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="859820" label="Big Band Spectacular, Vols. 1-2" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="163133" target="948768" label="Big Band Spectacular, Vols. 1-2" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="127044" label="Digital 3 at Montreux" weight="16.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="162677" label="Get Happy!" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="163133" label="Ella Swings Brightly with Nelson" weight="13.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="184502" label="Sings the Harold Arlen Song Book" weight="195.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="209773" label="Digital 3 at Montreux" weight="21.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="211758" label="Montreux '77" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="346637" label="Ella at the Opera House" weight="9.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="793227" label="Ella &amp; Duke at the Côte D'Azur" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="184502" target="859820" label="Ella Swings Lightly">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="209773" target="127044" label="Live at Yoshi's" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="209773" target="162677" label="Appassionato">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="209773" target="163133" label="Guitar Virtuoso" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="209773" target="184502" label="Guitar Virtuoso" weight="8.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="209773" target="209773" label="Live at Yoshi's, Vol. 2" weight="160.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="209773" target="211758" label="Guitar Virtuoso" weight="6.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="209773" target="591425" label="Intercontinental">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="209773" target="859820" label="Checkmate">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="162677" label="Bird on 52nd St." weight="14.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="211758" label="Round Midnight" weight="43.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="634674" label="Six Faces of Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="793227" label="Jam Session">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="211758" target="859820" label="Six Faces of Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="127044" label="The Trumpeters: Jazz Fest Masters" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="162677" label="The Trumpeters: Jazz Fest Masters" weight="23.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="163133" label="1957 Live">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="209773" label="Happy Time" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="346637" label="Little Jazz &amp; the Jimmy Ryan All-Stars" weight="114.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="634674" label="The Trumpeters: Jazz Fest Masters" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="793227" label="1957 Live" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="824866" label="Marian McPartland's Piano Jazz with Guest Roy Eldridge" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="346637" target="859820" label="Roy and Diz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="591425" target="127044" label="Benny in Brussels">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="591425" target="163133" label="Benny in Brussels" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="591425" target="591425" label="Benny in Brussels">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="591425" target="859820" label="Benny in Brussels">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="634674" target="127044" label="Swiss Radio Days Jazz Series, Vol. 7: Basel 1961" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="634674" target="211758" label="Goin' to Kansas City">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="634674" target="634674" label="Swiss Radio Days Jazz Series, Vol. 7: Basel 1961" weight="76.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="634674" target="859820" label="Goin' to Kansas City">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="788256" target="788256" label="Ladies of Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="788256" target="859820" label="Ladies of Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="127044" label="Art Tatum &amp; Ben Webster Quartet">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="162677" label="Live at Ronnie Scott's 1964: The Punch">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="163133" label="Ben &amp; Teddy">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="184502" label="Ben &amp; Teddy">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="211758" label="Live at Pio's">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="346637" label="Ben Webster and Associates" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="793227" label="At the Renaissance" weight="140.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="793227" target="859820" label="Town Hall '45: The Zodiac Suite" weight="5.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="824866" target="162677" label="Marian McPartland's Piano Jazz with Guest Dizzy Gillespie" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="824866" target="163133" label="Marian McPartland's Piano Jazz with Guest Teddy Wilson 1985" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="824866" target="346637" label="Marian McPartland's Piano Jazz with Guest Roy Eldridge" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="824866" target="591425" label="Marian McPartland's Piano Jazz with Guest Teddy Wilson">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="824866" target="824866" label="Jazz Keyboards of McPartland &amp; Others" weight="43.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="824866" target="859820" label="Marian McPartland's Piano Jazz with Guest Mary Lou Williams" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="859820" target="162677" label="Zoning" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="859820" target="788256" label="Ladies of Jazz">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="859820" target="793227" label="Town Hall '45: The Zodiac Suite" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="859820" target="824866" label="Marian McPartland's Piano Jazz with Guest Mary Lou Williams" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="859820" target="859820" label="Live at the Cookery" weight="98.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="859820" target="1518414" label="Zodiac Suite">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="948768" target="127044" label="Big Band Spectacular, Vols. 1-2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="948768" target="163133" label="Big Band Spectacular, Vols. 1-2" weight="3.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="948768" target="591425" label="Big Band Spectacular, Vols. 1-2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="948768" target="859820" label="Big Band Spectacular, Vols. 1-2">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="948768" target="948768" label="Big Band Spectacular, Vols. 1-2" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1217579" target="859820" label="Mary Lou Williams Quartet (featuring Don Byas)" weight="2.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1217579" target="1217579" label="Mary Lou Williams Quartet (featuring Don Byas)">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1518414" target="859820" label="Zodiac Suite" weight="4.0">
+        <attvalues></attvalues>
+      </edge>
+      <edge source="1518414" target="1518414" label="Zodiac Suite">
+        <attvalues></attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
