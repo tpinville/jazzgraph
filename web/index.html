@@ -12,6 +12,8 @@
     var nomArtiste = '';
   </script>
   <script src="js/sigma.parseGexf.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="js/jazzgraph.3d.js"></script>
   <script src="js/jazzgraph.js"></script>
   <script src="js/jazzgraph.style.js"></script>
   <link rel="stylesheet" type="text/css" href="css/jazzgraph.css" media="screen" />
@@ -19,6 +21,18 @@
 <body>
 <script type="text/javascript">
 var load = 0; // tout pourri
+
+function init(artiste, dbl, type)
+{
+  dbl = (dbl) ? dbl : 0;
+  type = (type) ? type : 0;
+  
+  if (type == 0)
+    initGexf(artiste, dbl) ;
+  else
+    initd3(artiste, dbl);
+
+}
 
 if (document.addEventListener) {
   document.addEventListener('DOMContentLoaded', init, false);
@@ -280,6 +294,8 @@ else{
 </div>
 
 <div id="images">
+<input type="radio" name="type" value="" onclick="init(nomArtiste, 1, 0);">sigma.js
+<input type="radio" name="type" value="" onclick="init(nomArtiste, 1,1);">d3.js
   <div id="infoartiste">
   </div>
   <div id="playerContainer">

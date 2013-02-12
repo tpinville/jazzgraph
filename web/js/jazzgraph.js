@@ -19,9 +19,8 @@ jQuery.fn.single_double_click = function(single_click_callback, double_click_cal
       });
 }
 
-function init(path, dbl) 
+function initGexf(path, dbl) 
 {
-dbl = (dbl) ? dbl : 0;
 
 if ( load == 0)
   {
@@ -29,7 +28,7 @@ if ( load == 0)
     setForm();
   }
   // à l'init
-  if (path.type == 'DOMContentLoaded')
+  if (path == '' || path.type == 'DOMContentLoaded')
   {
     path =  'John_Coltrane';
   }
@@ -349,3 +348,4 @@ function getInfoArtiste(artist)
     }
   });
 }
+

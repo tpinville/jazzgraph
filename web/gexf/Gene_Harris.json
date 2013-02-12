@@ -1,0 +1,11 @@
+{"nodes":[{"id":0, "label":"Ray Brown","x":-156.64864,"y":-60.984215,"size":10.0,"color":"rgb(27,172,172)","attributes":{"Eccentricity":"1.0","Closeness Centrality":"1.0","Betweenness Centrality":"0.0","Modularity Class":"0"}},
+{"id":1, "label":"Ray Brown Trio","x":-147.38176,"y":-80.83677,"size":10.0,"color":"rgb(27,172,172)","attributes":{"Eccentricity":"1.0","Closeness Centrality":"1.0","Betweenness Centrality":"0.0","Modularity Class":"0"}},
+{"id":2, "label":"The 3 Sounds","x":144.83238,"y":86.28265,"size":10.0,"color":"rgb(172,27,27)","attributes":{"Eccentricity":"1.0","Closeness Centrality":"1.0","Betweenness Centrality":"0.0","Modularity Class":"1"}},
+{"id":3, "label":"Lou Donaldson","x":159.17807,"y":55.53003,"size":10.0,"color":"rgb(172,27,27)","attributes":{"Eccentricity":"1.0","Closeness Centrality":"1.0","Betweenness Centrality":"0.0","Modularity Class":"1"}}],"edges":[{"source":0,"target":0,"weight":"154.0","id":"1"},
+{"source":0,"target":1,"weight":"22.0","id":"2"},
+{"source":1,"target":0,"weight":"12.0","id":"3"},
+{"source":1,"target":1,"weight":"6.0","id":"4"},
+{"source":2,"target":2,"weight":"1.0","id":"6"},
+{"source":2,"target":3,"weight":"3.0","id":"7"},
+{"source":3,"target":2,"weight":"1.0","id":"8"},
+{"source":3,"target":3,"weight":"137.0","id":"5"}]}

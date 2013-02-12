@@ -56,7 +56,8 @@ function selectMe(obj) {
       }
     } else {
 
-      init(lis[i].innerHTML.replace(' ','_'), 1);
+      nomArtiste = lis[i].innerHTML.replace(' ','_');
+      init(nomArtiste, 1);
       obj.className='selected';
       obj.parentNode.className = 
         obj.parentNode.className.replace(new RegExp(" selectOpen\\b"), '');
