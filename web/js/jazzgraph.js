@@ -19,7 +19,9 @@ jQuery.fn.single_double_click = function(single_click_callback, double_click_cal
       });
 }
 
-function init(path, dbl=0) {
+function init(path, dbl) 
+{
+dbl = (dbl) ? dbl : 0;
 
 if ( load == 0)
   {
