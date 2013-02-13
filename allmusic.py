@@ -19,17 +19,23 @@ SYN_TOKEN = '31c0044d7fd199270b22c67a1e8badca' # X-Ajax-Synchronization-Token da
 COOKIE = 'MASH=53d8ccb05f0f708689d52df6a6504b6f' # Cookie dans le header la requete envoye par l'API console
 
 
-API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
-API_SECRET = 'ZDvjkKDuhE'
 
-API_KEY = 'h28eru7j3sqzymk77wgsfryc'
-API_SECRET = 'YQ82GUfC5T'
-API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
-API_SECRET = 'ZDvjkKDuhE'
-SYN_TOKEN = 'c9902763c35f4267700d10394ea84a86'
 API_KEY = 'brghmpbs732kts7npwjv649k'
 API_SECRET = '9cP9vZ2bST'
-COOKIE = 'MASH=8255afcf1900d5785c40571a6b8f72f3'
+API_KEY = 'h28eru7j3sqzymk77wgsfryc'
+API_SECRET = 'YQ82GUfC5T'
+API_KEY = '7jy8fysyd4upjdegzmef8cw4'
+API_SECRET = 'rhytf32teS'
+API_KEY = 's9tgbfvjqhpbszfkyt5wym87'
+API_SECRET = 'jJd4UaW3jW'
+API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
+API_SECRET = 'ZDvjkKDuhE'
+API_KEY = 'pvspgubdv5q8grc8r9npb6eq'
+API_SECRET = 'ZDvjkKDuhE'
+API_KEY = 'fhhntqnvfaccgxxfcn6z3ve6'
+API_SECRET = '2j4Geq6N3k'
+SYN_TOKEN = '5dc19f1f0a5bc3aac4c1b5ff4f8226e3'
+COOKIE = 'MASH=74f9d3101f08e38588f401517047e5f7'
 
 # Seuil en dessous duquel les resultats sont ignores
 # 2 => ne filtre que le nom exact (i.e. John Coltrane, Miles Davis)
@@ -39,7 +45,10 @@ RELEVANCE_THRESHOLD = 2.0
 def relevant(result):
   """ Indique si le resultat d'une requete est suffisament pertinent
   """
-  return result['relevance'][0]['value'] >= RELEVANCE_THRESHOLD
+  if result == "":
+     return False
+  else :
+     return result['relevance'][0]['value'] >= RELEVANCE_THRESHOLD
 
 nameIdToStr = lambda nameId : 'MN'+str(nameId).zfill(10)
 
@@ -65,7 +74,7 @@ def basicRequest(endpointName):
    """
    requete = "curl -L '" + CALL_API + "' -d '" + endpointName +  "&params[clu]=&params[start]=&params[end]=&params[rep]=1&params[facet]=&params[filter]=&params[include]=&params[size]=20&params[offset]=0&params[country]=US&params[language]=en&params[format]=json&apiId=117&apiKey=" + API_KEY + "&apiSecret="+ API_SECRET + "&basicAuthName=&basicAuthPass='  --header 'Host: developer.rovicorp.com' --header 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:17.0) Gecko/17.0 Firefox/17.0' --header 'Accept: application/json, text/javascript, */*; q=0.01' --header 'Accept-Language: en-US,en;q=0.5' --header 'Accept-Encoding: gzip, deflate' --header 'Connection: keep-alive' --header 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' --header 'X-Ajax-Synchronization-Token: "+ SYN_TOKEN + "' --header 'X-Requested-With: XMLHttpRequest' --header 'Referer: http://developer.rovicorp.com/io-docs' --header 'Cookie: " + COOKIE + "' --header 'Pragma: no-cache' --header 'Cache-Control: no-cache'"
    reponse = os.popen(requete).read()
-   if reponse == 'There was an issue with your form submission':
+   if reponse == 'There was an issue with your form submission.':
       return None
    return reponse
 
@@ -160,15 +169,18 @@ def showResults(results):
   """
   for result in results:
     line = ''
-    if result.has_key('relevance'):
-      line = line + str(result['relevance'][0]['value'])+' : '
-    if result['type'] == 'artist': # Recherhe sur un artiste
-      line = line + result['name']['name'] + ' (' + result['name']['ids']['nameId'] + ')'
-    elif result['type'] == 'album': # Recherhe sur un album
-      line = line + result['album']['title'] + ' (' + result['album']['ids']['albumId'] + ')'
+    if result != "":
+       if result.has_key('relevance'):
+         line = line + str(result['relevance'][0]['value'])+' : '
+       if result['type'] == 'artist': # Recherhe sur un artiste
+         line = line + result['name']['name'] + ' (' + result['name']['ids']['nameId'] + ')'
+       elif result['type'] == 'album': # Recherhe sur un album
+         line = line + result['album']['title'] + ' (' + result['album']['ids']['albumId'] + ')'
+       else:
+         print '__ERR : type de recherche non pris en charge'
+         return None
     else:
-      print '__ERR : type de recherche non pris en charge'
-      return None
+       return None
     print line
 
 def showAlbum(album):
