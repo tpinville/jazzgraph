@@ -68,9 +68,11 @@ public class GenGraph {
                 export = args[2];
         }
         else
-            artist = "Ahmad Jamal";   
+            //artist = "'James Carter'";   
+            artist = "'Tony Williams', 'John Coltrane', 'Miles Davis', 'Elvin Jones', 'Charlie Parker'";   
         
-        String query = "%" + artist + "%";
+        //String query = "%" + artist + "%";
+        String query = artist ;
         System.out.println(artist);
         
         //Init a project - and therefore a workspace
@@ -96,17 +98,37 @@ public class GenGraph {
         //db.setNodeQuery("SELECT nodes.id AS id, nodes.label AS label, nodes.url FROM nodes");
         //String artist = "Lee morgan%' OR name like 'Miles Davis%";
         
-        String requete = "select id as id, label as label FROM Nodes where id in "
+        /*String requete = "select id as id, label as label FROM Nodes where id in "
                 + "(SELECT sourceid FROM Edges LEFT JOIN Artists ON targetid = Artists.id "
                 + "where name like '"+ query + "'"
-                + ")";
-
+                + ")";*/
+        
+        String requete = "SELECT p.artistid as id,"               
+                +"ar.name as label "  
+                +"FROM Credits c,LinksArtistCategory l,ArtistCategories ac, Albums a, AlbumPrimaryArtists p, Artists ar "
+                +"where a.id = c.albumid "
+                //+"and l.artistcategoryid = 2 "
+                +"and  c.artistid = l.artistid "
+                +"and ar.id = p.artistid "
+                +"and p.albumid = a.id "
+                +"and c.artistid in (select id from Artists where name in ("+ query +")) "
+               // +"and p.artistid in (select artistid from LinksArtistCategory where artistcategoryid = 2) "
+                +"group by c.artistid,a.id, p.artistid";         
         
         db.setNodeQuery(requete);
-        System.out.println(requete);
-        
-        requete = "SELECT sourceid AS source, targetid as target, label as label FROM Edges LEFT JOIN Artists "
-                + "ON sourceid = Artists.id ";
+        System.out.println(requete);        
+             
+        requete = "SELECT p.artistid as target, c.artistid as source, a.title as label "
+                +"FROM Credits c,LinksArtistCategory l,ArtistCategories ac, Albums a, AlbumPrimaryArtists p, Artists ar "                
+                +"where a.id = c.albumid "
+                //+"and l.artistcategoryid = 2 "
+                +"and a.id = c.albumid "
+                +"and  c.artistid = l.artistid "
+                +"and ar.id = p.artistid "
+                +"and p.albumid = a.id "
+                +"and c.artistid in (select id from Artists where name in ("+ query +")) "
+                //+"and p.artistid in (select artistid from LinksArtistCategory where artistcategoryid = 2) "
+                +""; 
         
         db.setEdgeQuery(requete);
         System.out.println(requete);
@@ -200,7 +222,9 @@ public class GenGraph {
         //Export
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
         try {
-            ec.exportFile(new File("/home/tpinville/git/jazzgraph/web/gexf/"+artist.replace(" ", "_") +"." + export));
+            //ec.exportFile(new File("/home/tpinville/git/jazzgraph/web/gexf/"+artist.replace(" ", "_") +"." + export));
+            ec.exportFile(new File("/home/tpinville/git/jazzgraph/web/gexf/John_Coltrane." + export));
+            ec.exportFile(new File("/home/tpinville/git/jazzgraph/web/gexf/Miles_Davis.json"));
         } catch (IOException ex) {
             ex.printStackTrace();
             return;
