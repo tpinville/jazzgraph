@@ -10,20 +10,30 @@ if ( ! $connection )
 // Connecte la base
 mysql_select_db($db) or die ("pas de connection");
 
-$arArtiste = "'Tony Williams', 'John Coltrane', 'Miles Davis', 'Elvin Jones', 'Charlie Parker'";
-$arArtiste = "'Ron Carter', '', 'Billy Cobham'";
+$arArtiste = "'Tony Williams', 'John Coltrane', 'Miles Davis', 'Charles Mingus', ''";
+//$arArtiste = "'Ron Carter', '', 'James Carter'";
 
 $requete = "select id from Artists where name in (".$arArtiste.")";
 $q = mysql_query($requete); 
 $i = 0;
 $tabColor = array();
 
-
 while($r = mysql_fetch_assoc($q)) 
 {
   $tabColor[$r['id']] = $i;
-  $i = $i +100;
+  $i = $i + 1;
 }
+
+$step = 255 /$i;
+$c1_r = 0;
+$c1_g = 0;
+$c1_b = 0;
+
+$c2_r = 255;
+$c2_g = 255;
+$c2_b = 255;
+
+
 
 $filtre = 2;
 
@@ -46,12 +56,19 @@ $rows = array();
 $i = 0;
 $arrCorrId = array();
 //  while ($r = mysql_fetch_array($q))
+//
 
 while($r = mysql_fetch_assoc($q)) 
 {
-  $arrCorrId[$r['id']] = $i;
-  $r['color'] = 'rgb('.$tabColor[$r['artistid']].',125,125)';
+   $arrCorrId[$r['id']] = $i;
+   $color = array();
+   $color['r'] =   floor($tabColor[$r['artistid']]*$step * ($c2_r-$c1_r)/255 )+$c1_r;
+   $color['g'] =   floor($tabColor[$r['artistid']]*$step * ($c2_g-$c1_g)/255 )+$c1_g;
+   $color['b'] =   floor($tabColor[$r['artistid']]*$step * ($c2_b-$c1_b)/255 )+$c1_b;
+
+  $r['color'] = $color;
   $r['id'] = $i*1;
+
   $rows['nodes'][] = $r;    
   $i++;
 } 
@@ -79,6 +96,7 @@ while($r = mysql_fetch_assoc($q))
   {
     $r['source'] = $arrCorrId[$r['source']];
     $r['target'] = $arrCorrId[$r['target']];
+
     $rows['edges'][] = $r;    
     $i++;
   }
