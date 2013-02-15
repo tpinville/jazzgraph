@@ -19,6 +19,7 @@ def convertJson(path):
 
 if len(sys.argv) < 2:
   print "Nom du fichier contenant la liste des artistes a preciser"
+  #convertJson('web/gexf/Miles_Davis.json')
 else:
   print sys.argv[1]
   f = open(sys.argv[1], 'r')

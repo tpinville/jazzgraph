@@ -61,14 +61,15 @@ if ( load == 0)
    defaultEdgeType: ''
   }).graphProperties({
    minNodeSize: 0.5,
-   maxNodeSize: 50,
+   maxNodeSize: 5,
    minEdgeSize: 1,
    maxEdgeSize: 1
   });
 
 
   // (requires "sigma.parseGexf.js" to be executed)
-   sigInst.parseGexf('gexf/' + path + ".gexf");
+   //sigInst.parseGexf('gexf/' + path + ".gexf");
+   sigInst.parseJSON("http://localhost/getJson.php");
 
   /**
    * Now, here is the code that shows the popup :

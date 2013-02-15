@@ -30,21 +30,22 @@ if ( load == 0)
   getInfoArtiste(artiste)
   getVideoYoutube(artiste);
 
-  var width = 1000,
-      height = 800;
+  var width = 800,
+      height = 600;
 
   var color = d3.scale.category20();
 
   var force = d3.layout.force()
-      .charge(-1200)
-      .linkDistance(300)
+      .charge(-60)
+      .linkDistance(120)
       .size([width, height]);
 
   var svg = d3.select("#sigma-example").append("svg")
       .attr("width", width)
       .attr("height", height);
 
-  d3.json("gexf/" + artiste + ".json", function(error, graph) {
+  //d3.json("gexf/" + artiste + ".json", function(error, graph) {
+  d3.json("http://localhost/getJson.php", function(error, graph) {
     force
         .nodes(graph.nodes)
         .links(graph.edges)
