@@ -89,7 +89,7 @@ if ( load == 0)
   console.log(path);
   if (path == '' || path.type == 'DOMContentLoaded')
   {
-    path =  'John_Coltrane';
+    path =  '131227';
   }
 
   if (dbl == 0)
@@ -117,10 +117,10 @@ if ( load == 0)
    defaultLabelBGColor: '#fff',
    defaultLabelHoverColor: '#000',
    labelThreshold: 6,
-   defaultEdgeType: ''
+   defaultEdgeType: 'curv'
   }).graphProperties({
-   minNodeSize: 0.5,
-   maxNodeSize: 5,
+   minNodeSize: 1,
+   maxNodeSize: 10,
    minEdgeSize: 1,
    maxEdgeSize: 1
   });
@@ -128,7 +128,7 @@ if ( load == 0)
 
   // (requires "sigma.parseGexf.js" to be executed)
   //sigInst.parseGexf('gexf/' + path + ".gexf");
-   sigInst.parseJSON("http://localhost/getJson.php");
+   sigInst.parseJSON("http://localhost/getJson.php?ids=" + path);
 
 
   /**

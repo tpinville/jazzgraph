@@ -15,7 +15,7 @@ sigma.publicPrototype.parseJSON = function(jsonPath) {
          mapIdLabel[id] = label; //rajout TOP
 
          //viz
-         var size = 1;
+         var size = parseFloat(nodeNode.size);
          var x = 100 - 200*Math.random();
          var y = 100 - 200*Math.random();
          var color = '#'+sigma.tools.rgbToHex(parseFloat(nodeNode.color.r), parseFloat(nodeNode.color.g), parseFloat(nodeNode.color.b))

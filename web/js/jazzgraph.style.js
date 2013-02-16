@@ -17,9 +17,11 @@ function selectReplacement(obj) {
   for (var i=0; i<opts.length; i++) {
     var li = document.createElement('li');
     var txt = document.createTextNode(opts[i].text);
+    li.idArtiste=opts[i].value;
     li.appendChild(txt);
     li.selIndex = opts[i].index;
     li.selectID = obj.id;
+
     li.onclick = function() {
       selectMe(this);
     }
@@ -47,6 +49,7 @@ function selectReplacement(obj) {
   obj.parentNode.appendChild(ul);
 }
 function selectMe(obj) {
+  console.log(obj);
   var lis = obj.parentNode.getElementsByTagName('li');
   for (var i=0; i<lis.length; i++) {
     if (lis[i] != obj) { // not the selected list item
@@ -57,7 +60,7 @@ function selectMe(obj) {
     } else {
 
       nomArtiste = lis[i].innerHTML.replace(' ','_');
-      init(nomArtiste, 1);
+      init(lis[i].idArtiste, 1);
       obj.className='selected';
       obj.parentNode.className = 
         obj.parentNode.className.replace(new RegExp(" selectOpen\\b"), '');
