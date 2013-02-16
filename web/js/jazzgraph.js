@@ -77,36 +77,44 @@ function initGexf1(path, dbl)
    }
     
 
-function initGexf(path, dbl) 
+function initGexf(arArtistes, dbl) 
 {
 
-if ( load == 0)
+  clearTimeout(idTimeout);
+
+  if ( load == 0)
   {
     load = 1;
     setForm();
   }
   // à l'init
-  console.log(path);
-  if (path == '' || path.type == 'DOMContentLoaded')
+  if (arArtistes == '' || arArtistes.type == 'DOMContentLoaded')
   {
-    path =  '131227';
+    idArtistes =  '175553,9680';
+    nomArtiste = 'John Coltrane';
+  }
+  else
+  {
+    nomArtiste = mapIdLabel[arArtistes[0]];
+    idArtistes = arArtistes.join(',');
   }
 
   if (dbl == 0)
   {
     console.log(dbl);
     $('#sigma-example').single_double_click(function () {
-        console.log("click " + nomArtiste.replace(" ", "_"));
-        getInfoArtiste(nomArtiste.replace(" ", "_"))
-        getVideoYoutube(nomArtiste.replace(" ", "_"));
+        getInfoArtiste(nomArtiste)
+        getVideoYoutube(nomArtiste);
       }, function () {
-        console.log("dbl click"+ nomArtiste.replace(" ", "_"));
-        init(nomArtiste.replace(" ", "_"), 1);
+        init(nomArtiste, 1);
     });
   }
 
-  getInfoArtiste(path)
-  getVideoYoutube(path);
+  if (nomArtiste != undefined)
+  {
+    getInfoArtiste(nomArtiste);
+    getVideoYoutube(nomArtiste);
+  }
   /**
    * First, let's instanciate sigma.js :
    */
@@ -128,7 +136,7 @@ if ( load == 0)
 
   // (requires "sigma.parseGexf.js" to be executed)
   //sigInst.parseGexf('gexf/' + path + ".gexf");
-   sigInst.parseJSON("http://localhost/getJson.php?ids=" + path);
+   sigInst.parseJSON("getJson.php?ids=" + idArtistes);
 
 
   /**
@@ -201,7 +209,6 @@ if ( load == 0)
 
             if(!neighbors[n.id]){
             n.hidden = 1;
-            alert(n.hidden);
             }else{
             n.hidden = 0;
             }
@@ -280,13 +287,30 @@ sigInst.bind('overnodes',function(event){
                }).draw(2,2,2);
                });*/
 
-   sigInst.draw();
 
-   setTimeout(function() {
-   sigInst.stopForceAtlas2();                               
-   sigInst.draw();
-        }, 1000);
+
   })();
+
+    var isRunning = true;
+
+   idTimeout = setTimeout(function() {
+        sigInst.stopForceAtlas2();
+   sigInst.draw();
+        isRunning = false;
+        document.getElementById('stop-layout').childNodes[0].nodeValue = 'Start Layout';
+        }, 10000);
+
+    document.getElementById('stop-layout').addEventListener('click',function(){
+        if(isRunning){
+        isRunning = false;
+        sigInst.stopForceAtlas2();
+        document.getElementById('stop-layout').childNodes[0].nodeValue = 'Start Layout';
+        }else{
+        isRunning = true;
+        sigInst.startForceAtlas2();
+        document.getElementById('stop-layout').childNodes[0].nodeValue = 'Stop Layout';
+        }
+        },true);
 }
 
 
@@ -379,7 +403,7 @@ function getInfoAlbum(artist)
 
 function getInfoArtiste(artist)
 {
-  document.getElementById('infoartiste').innerHTML = '<h1>' + artist.replace("_", " ") + '</h1>';
+  document.getElementById('infoartiste').innerHTML = '<h1>' + artist + '</h1>';
   $.getJSON("http://api.discogs.com/database/search?q="+ artist +"&type=artist&callback=?", function(data) 
   {
     var artistid = data.data.results[0].id;
@@ -414,5 +438,24 @@ function getInfoArtiste(artist)
         });
     }
   });
+}
+
+
+function getSelectValue(selectId)
+{
+  var elmt = document.getElementById(selectId);
+  if(elmt.multiple == false)
+  {
+    return elmt.options[elmt.selectedIndex].value;
+  }
+  var values = new Array();
+  for(var i=0; i< elmt.options.length; i++)
+  {
+    if(elmt.options[i].selected == true)
+    {
+      values[values.length] = elmt.options[i].value; 
+    }
+  } 
+  return values;  
 }
 

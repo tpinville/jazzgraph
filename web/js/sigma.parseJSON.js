@@ -63,5 +63,7 @@ sigma.publicPrototype.parseJSON = function(jsonPath) {
         //console.log(i, edgeNode.source, edgeNode.target, edge);
         sigmaInstance.addEdge(i, edgeNode.source, edgeNode.target, edge);
       };
+
+      sigmaInstance.startForceAtlas2();
   });
 };

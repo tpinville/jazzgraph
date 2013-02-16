@@ -25,31 +25,19 @@ body{
 }
 #selectartists{
   position:absolute;
-  z-index:1000;
-  left:10px;
-}
-#hardbop{
-  position: absolute;
-  top:0px;
-  left:400px;
-}
-#bop{
-  position: absolute;
-  top:0px;
-  left:200px;
-}
-#funk{
-  position: absolute;
-  top:0px;
-  left:600px;
+  top:5%;
+  left:0px;
+  height: 100%;
+  width:10%;
 }
 /* sigma.js context : */
 .sigma-parent {
   position: absolute;
-  top:40px;
+  top:5%;
+  left:11%;
    background: #000;
-   height: 90%;
-   width: 75%;
+   height: 85%;
+   width: 63%;
 }
 .sigma-expand {
   position: absolute;

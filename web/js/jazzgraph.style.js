@@ -77,6 +77,6 @@ function selectMe(obj) {
 function setForm() {
   var s = document.getElementsByTagName('select');
   for (var i=0; i<s.length; i++) {
-    selectReplacement(s[i]);
+//    selectReplacement(s[i]);
   }
 }
