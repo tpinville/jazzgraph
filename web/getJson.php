@@ -2,6 +2,9 @@
 require 'conf.php';
 require 'jsonwrapper/jsonwrapper.php';
 
+
+
+/*
 $db="jazzgraph";
 
 $connection = mysql_connect($GLOBALS["url"],$GLOBALS["user"],$GLOBALS["password"]);
@@ -41,37 +44,6 @@ if ($_GET['ids'] != "")
   $artiste = $_GET['ids'];
   $arArtiste = split(",", $artiste);
 
-  $couleurs = array(
-            array('r' => 192, 'g' => 0,'b' => 64),
-            array('r' => 153, 'g' => 255,'b' => 51),
-            array('r' => 51, 'g' => 153,'b' => 153),
-            array('r' => 238, 'g' => 255,'b' => 127),
-            array('r' => 128, 'g' => 0,'b' => 128),
-            array('r' => 40, 'g' => 131,'b' => 184),
-            array('r' => 184, 'g' => 177,'b' => 40),
-            array('r' => 245, 'g' => 101,'b' => 44),
-            array('r' => 128, 'g' => 0,'b' => 128),
-            array('r' => 0, 'g' => 128,'b' => 128),
-            array('r' => 0, 'g' => 0,'b' => 128),
-            array('r' => 128, 'g' => 128,'b' => 128),
-            array('r' => 128, 'g' => 0,'b' => 0),
-            array('r' => 128, 'g' => 128,'b' => 0),
-            array('r' => 0, 'g' => 128,'b' => 0),
-            array('r' => 128, 'g' => 0,'b' => 128),
-            array('r' => 0, 'g' => 128,'b' => 128),
-            array('r' => 0, 'g' => 0,'b' => 128),
-            array('r' => 255, 'g' => 0,'b' => 0),
-            array('r' => 0, 'g' => 255,'b' => 0),
-            array('r' => 0, 'g' => 0,'b' => 255),
-            array('r' => 255, 'g' => 255,'b' => 0),
-            array('r' => 0, 'g' => 255,'b' => 255),
-            array('r' => 255, 'g' => 0,'b' => 255),
-            array('r' => 192, 'g' => 192,'b' => 192),
-            array('r' => 128, 'g' => 128,'b' => 128),
-            array('r' => 128, 'g' => 0,'b' => 0),
-            array('r' => 128, 'g' => 128,'b' => 0));
-
-  $tabColor = array();
   $i=0;
   foreach($arArtiste as $val)
   {
@@ -135,31 +107,6 @@ if ($_GET['ids'] != "")
   //foreach ($ as $a)
   }
 
-  /*
-  $listAlbums = array();
-  $requete = "SELECT albumid FROM Credits WHERE artistid in ($artiste) group by albumid";
-  $q = mysql_query($requete); 
-  while($r = mysql_fetch_assoc($q)) 
-    $listAlbums[] = $r['albumid'];
-
-
-  $i=0;
-  foreach($listAlbums as $album)
-  {
-    $requete = "SELECT  p.artistid as source, c.artistid as target, al.title as label 
-      FROM Credits c 
-      join Artists a on c.artistid = a.id
-      join Albums al on al.id = c.albumid
-      Join AlbumPrimaryArtists p on p.albumid = al.id
-      JOIN LinksArtistCategory l on l.artistid = c.artistid  
-      where al.id = $album
-      and l.artistCategoryId = $filtre
-       group by source, target, label";
-
-
-  }*/
-
-
   $requete = "SELECT p.artistid as source, c.artistid as target, a.title as label "
     ."FROM Credits c, Albums a, AlbumPrimaryArtists p, Artists ar "                
   //  ."JOIN LinksArtistCategory on LinksArtistCategory.artistid = Credits.artistid "
@@ -188,5 +135,92 @@ if ($_GET['ids'] != "")
     }
 
 }
-  print json_encode($rows);
+
+ */
+global $couleurs;
+  $couleurs = array(
+            array('r' => 192, 'g' => 0,'b' => 64),
+            array('r' => 153, 'g' => 255,'b' => 51),
+            array('r' => 51, 'g' => 153,'b' => 153),
+            array('r' => 238, 'g' => 255,'b' => 127),
+            array('r' => 128, 'g' => 0,'b' => 128),
+            array('r' => 40, 'g' => 131,'b' => 184),
+            array('r' => 184, 'g' => 177,'b' => 40),
+            array('r' => 245, 'g' => 101,'b' => 44),
+            array('r' => 128, 'g' => 0,'b' => 128),
+            array('r' => 0, 'g' => 128,'b' => 128),
+            array('r' => 0, 'g' => 0,'b' => 128),
+            array('r' => 128, 'g' => 128,'b' => 128),
+            array('r' => 128, 'g' => 0,'b' => 0),
+            array('r' => 128, 'g' => 128,'b' => 0),
+            array('r' => 0, 'g' => 128,'b' => 0),
+            array('r' => 128, 'g' => 0,'b' => 128),
+            array('r' => 0, 'g' => 128,'b' => 128),
+            array('r' => 0, 'g' => 0,'b' => 128),
+            array('r' => 255, 'g' => 0,'b' => 0),
+            array('r' => 0, 'g' => 255,'b' => 0),
+            array('r' => 0, 'g' => 0,'b' => 255),
+            array('r' => 255, 'g' => 255,'b' => 0),
+            array('r' => 0, 'g' => 255,'b' => 255),
+            array('r' => 255, 'g' => 0,'b' => 255),
+            array('r' => 192, 'g' => 192,'b' => 192),
+            array('r' => 128, 'g' => 128,'b' => 128),
+            array('r' => 128, 'g' => 0,'b' => 0),
+            array('r' => 128, 'g' => 128,'b' => 0));
+
+
+$idArtiste = "9680";
+global $arArtiste ;
+$arArtiste = split(",", $_GET['ids']);
+
+$globJson = array();
+$globJson = json_decode(FILE_get_contents ("json/".$arArtiste[0] .".json"),true);
+
+global $indexColor;
+$indexColor =0;
+
+function changeColor($row)
+{
+   global $indexColor,$couleurs;
+   $row['color'] = $couleurs[$indexColor];
+   return $row;
+}
+
+
+function verifSize($row)
+{
+   global $arArtiste;
+   if (in_array($row['id'] , $arArtiste))
+      $row['size'] = 5;
+
+   return $row;
+}
+
+//   $globJson['nodes'][$arArtiste[0]]['color'  = 
+
+$i=0;
+foreach($arArtiste as $id)
+{
+   if ($i > 0)
+   {
+      $json = json_decode(FILE_get_contents ("json/$id.json"),true);
+      if (count($globJson) <1)
+      {
+         $globJson  = $json;
+      }
+      elseif (is_array($json) && count($json)> 1)
+      {   
+         $indexColor++;
+         $json['nodes'] = array_map("changeColor", $json['nodes']);
+         
+         $globJson['nodes'] = array_merge($globJson['nodes'], $json['nodes']);
+         $globJson['edges'] = array_merge($globJson['edges'], $json['edges']);
+      }
+   }
+ $i++;
+}
+
+$globJson['nodes'] = array_map("verifSize", $globJson['nodes']);
+
+  print json_encode($globJson);
 ?>
