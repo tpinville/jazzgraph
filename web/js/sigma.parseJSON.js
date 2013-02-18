@@ -4,6 +4,18 @@ sigma.publicPrototype.parseJSON = function(jsonPath) {
   var j = 0;
 
   jQuery.getJSON(jsonPath, function(data) {
+        
+
+      listArtists = data.artistes;
+      if (listArtists != undefined)
+      {
+        $(function() {
+          $( "#listArtists" ).autocomplete({
+  source: listArtists 
+  });
+          });
+      }
+
       for (i=0; i<data.nodes.length; i++)
       {
         var nodeNode = data.nodes[i];

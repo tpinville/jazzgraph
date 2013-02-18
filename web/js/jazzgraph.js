@@ -1,3 +1,9 @@
+var load = 0; // tout pourri
+var idTimeout = 0;
+var listArtists = ["John Coltrane", "Miles Davis", "Charles Mingus"
+];
+
+
 jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
   return this.each(function(){
       var clicks = 0, self = this;
@@ -19,6 +25,17 @@ jQuery.fn.single_double_click = function(single_click_callback, double_click_cal
       });
 }
 
+function init(artiste, dbl, type)
+{
+  dbl = (dbl) ? dbl : 0;
+  type = (type) ? type : 0;
+  
+  if (type == 0)
+    initGexf(artiste, dbl) ;
+  else
+    initd3(artiste, dbl);
+
+}
 
 function initGexf1(path, dbl)
 {
@@ -136,7 +153,9 @@ function initGexf(arArtistes, dbl)
 
   // (requires "sigma.parseGexf.js" to be executed)
   //sigInst.parseGexf('gexf/' + path + ".gexf");
-   sigInst.parseJSON("getJson.php?ids=" + idArtistes);
+  console.log(idArtistes);
+   //sigInst.parseJSON("getJson.php?ids=" + idArtistes);
+   sigInst.parseJSON("json/9680.json");
 
 
   /**
@@ -459,3 +478,11 @@ function getSelectValue(selectId)
   return values;  
 }
 
+if (document.addEventListener) {
+  document.addEventListener('DOMContentLoaded', init, false);
+} 
+else{  
+  window.onload = function() {
+      init();
+  }
+  }

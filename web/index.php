@@ -45,9 +45,11 @@ function getSelectBox($type)
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" type="text/css" href="css/jazzgraph.css" media="screen" />
   <script src="js/prettify.js"></script>
   <script src="js/sigma.min.js"></script>
   <script src="js/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
   <script type="text/javascript" src="http://swfobject.googlecode.com/svn/trunk/swfobject/swfobject.js"></script>
   <script type="text/javascript">    
     var mapIdLabel = new Object();
@@ -56,52 +58,32 @@ function getSelectBox($type)
   <script src="js/sigma.parseGexf.js"></script>
   <script src="js/sigma.parseJSON.js"></script>
   <script src="d3.v3.js"></script>
-  <script src="js/jazzgraph.3d.js"></script>
   <script src="js/jazzgraph.js"></script>
+  <script src="js/jazzgraph.3d.js"></script>
   <script src="js/jazzgraph.style.js"></script>
   <script src="js/sigma.forceatlas2.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/jazzgraph.css" media="screen" />
 </head>
 <body>
-<script type="text/javascript">
-var load = 0; // tout pourri
-var idTimeout = 0;
-
-function init(artiste, dbl, type)
-{
-  dbl = (dbl) ? dbl : 0;
-  type = (type) ? type : 0;
-  
-  if (type == 0)
-    initGexf(artiste, dbl) ;
-  else
-    initd3(artiste, dbl);
-
-}
-
-if (document.addEventListener) {
-  document.addEventListener('DOMContentLoaded', init, false);
-      setForm();
-} 
-else{  
-  window.onload = function() {
-      init();
-  }
-  }
-
-
-</script>
 <div id="selectartists">
-
-<select multiple size=40 id="jazzartists">
+<div class="styled-select">
+<select  multiple size=40 id="jazzartists">
 <?=getSelectBox('');?>
 </select>
+ </div>
+<br/>
 
-<button onclick="init(getSelectValue('jazzartists'),1);">GO ! (Dexter) </button>
-   
+<div align=center>
+<button class="medium awesome" onclick="init(getSelectValue('jazzartists'),1);">GO ! (Dexter) </button>
+<br/>   
 <div class="span12 buttons-container">
-<button class="btn" id="stop-layout">Stop Layout</button>
+<button class="medium awesome" id="stop-layout">Stop Layout</button>
 </div>
+</div>
+<!--  <div class="ui-widget">
+  <label for="listArtists">Artistes </label>
+  <input id="listArtists" />
+  </div>-->
+
  </div>
 
 <div class="container">
