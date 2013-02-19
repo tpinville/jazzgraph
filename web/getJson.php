@@ -1,6 +1,7 @@
 <?
 require 'conf.php';
 require 'jsonwrapper/jsonwrapper.php';
+require_once 'jsonwrapper/JSON/JSON.php';
 
 
 
@@ -173,8 +174,10 @@ $idArtiste = "9680";
 global $arArtiste ;
 $arArtiste = split(",", $_GET['ids']);
 
+     $services_json = new Services_JSON();
 $globJson = array();
 $globJson = json_decode(FILE_get_contents ("json/".$arArtiste[0] .".json"),true);
+//   $globJson = $services_json->decode(FILE_get_contents ("json/".$arArtiste[0] .".json"),true);
 
 global $indexColor;
 $indexColor =0;
@@ -203,7 +206,8 @@ foreach($arArtiste as $id)
 {
    if ($i > 0)
    {
-      $json = json_decode(FILE_get_contents ("json/$id.json"),true);
+ //    $json = $services_json->decode(FILE_get_contents ("json/$id.json"),true);
+      $json = (array)json_decode(FILE_get_contents ("json/$id.json"),true);
       if (count($globJson) <1)
       {
          $globJson  = $json;
@@ -220,7 +224,7 @@ foreach($arArtiste as $id)
  $i++;
 }
 
-$globJson['nodes'] = array_map("verifSize", $globJson['nodes']);
+$globJson['nodes'] = array_map("verifSize", (array)$globJson['nodes']);
 
   print json_encode($globJson);
 ?>

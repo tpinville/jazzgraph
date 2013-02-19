@@ -635,7 +635,7 @@ class Services_JSON
                             return $arr;
 
                         } else {
-                            return $obj;
+                            return (array)$obj;
 
                         }
                     }
@@ -752,7 +752,7 @@ class Services_JSON
                         return $arr;
 
                     } elseif (reset($stk) == SERVICES_JSON_IN_OBJ) {
-                        return $obj;
+                        return (array)$obj;
 
                     }
 

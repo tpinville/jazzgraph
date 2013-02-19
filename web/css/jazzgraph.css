@@ -10,6 +10,7 @@ body{
   top:20px;
   left: 75%;
   width:23%;
+  font-size: 11px;
 }
 #playerContainer
 {
@@ -114,53 +115,54 @@ display: none;
 }
 
 .styled-select select {
-  background: transparent;
-  padding: 5px;
-  height:500px;
-  border: 0px solid #CCC;
+/*  background: transparent;*/
+  padding: 0px;
+  font-size: 12px;
+  background: #222;
+  color: #FFF;
+  border: 1px solid #222;
   outline:0px;
-  -webkit-appearance: none;
-  border-radius: 10px;
+ /* border-radius: 10px;*/
+/*  -webkit-appearance: none;*/
 }
 .styled-select option {
   background: #222;
-  padding: 5px;
-  border: 0px solid #CCC;
-  font-size: 11px;
+  padding: 0px;
+  border: 1px solid #222;
   color: #FFF;
-  outline:0px;
-  -webkit-appearance: none;
+/*  outline:0px;*/
+/*  -webkit-appearance: none;*/
 }
 
-.awesome, .awesome:visited {
-background: #222 url(alert-overlay.png) repeat-x; 
-display: inline-block; 
-padding: 5px 10px 6px; 
-color: #fff; 
+
+.button {
+  border-top: 1px solid #96d1f8;
+background: #65a9d7;
+background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+background: -o-linear-gradient(top, #3e779d, #65a9d7);
+padding: 5px 10px;
+         -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+         border-radius: 8px;
+         -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+         -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+         box-shadow: rgba(0,0,0,1) 0 1px 0;
+         text-shadow: rgba(0,0,0,.4) 0 1px 0;
+color: white;
+       font-size: 14px;
+       font-family: Georgia, serif;
        text-decoration: none;
-       -webkit-border-radius: 5px;
-       -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-       text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-       border-bottom: 1px solid rgba(0,0,0,0.25);
-      position: relative;
-      cursor: pointer;
+       vertical-align: middle;
 }
-
-.awesome:hover              { background-color: #111; color: #fff; }
-.awesome:active             { top: 1px; }
-.small.awesome, .small.awesome:visited      { font-size: 11px; padding: 0px; }
-.awesome, .awesome:visited,
-  .medium.awesome, .medium.awesome:visited    { font-size: 13px; ; line-height: 1; text-shadow: 0 -1px 1px rgba(0,0,0,0.25); }
-  .large.awesome, .large.awesome:visited      { font-size: 14px; padding: 8px 14px 9px; }
-
-  .green.awesome, .green.awesome:visited    { background-color: #91bd09; }
-  .green.awesome:hover            { background-color: #749a02; }
-  .blue.awesome, .blue.awesome:visited    { background-color: #2daebf; }
-  .blue.awesome:hover             { background-color: #007d9a; }
-  .red.awesome, .red.awesome:visited      { background-color: #e33100; }
-  .red.awesome:hover              { background-color: #872300; }
-  .magenta.awesome, .magenta.awesome:visited    { background-color: #a9014b; }
-  .magenta.awesome:hover              { background-color: #630030; }
-  .orange.awesome, .orange.awesome:visited    { background-color: #ff5c00; }
-  .orange.awesome:hover             { background-color: #d45500; }
-
+.button:hover {
+  border-top-color: #28597a;
+background: #28597a;
+color: #ccc;
+}
+.button:active {
+  border-top-color: #1b435e;
+background: #1b435e;
+}

@@ -1,36 +1,38 @@
 
 
-function initd3(artiste, dbl) 
+function initd3(arArtistes, dbl) 
 {
-
-if ( load == 0)
-  {
-    load = 1;
-    setForm();
-  }
   // à l'init
-  if (artiste == '' || artiste.type == 'DOMContentLoaded')
+  if (arArtistes == '' || arArtistes.type == 'DOMContentLoaded')
   {
-    artiste=  'Miles_Davis';
+    idArtistes =  '175553,9680';
+    nomArtiste = 'John Coltrane';
+  }
+  else
+  {
+    nomArtiste = mapIdLabel[arArtistes[0]];
+    idArtistes = arArtistes.join(',');
   }
 
   if (dbl == 0)
   {
     console.log(dbl);
     $('#sigma-example').single_double_click(function () {
-        console.log("click " + nomArtiste.replace(" ", "_"));
-        getInfoArtiste(nomArtiste.replace(" ", "_"))
-        getVideoYoutube(nomArtiste.replace(" ", "_"));
+        getInfoArtiste(nomArtiste)
+        getVideoYoutube(nomArtiste);
       }, function () {
-        console.log("dbl click"+ nomArtiste.replace(" ", "_"));
-        init(nomArtiste.replace(" ", "_"), 1);
+        init(nomArtiste, 1);
     });
   }
-   document.getElementById('sigma-example').innerHTML = '';
-  getInfoArtiste(artiste)
-  getVideoYoutube(artiste);
 
-  var width = 800,
+  if (nomArtiste != undefined)
+  {
+    getInfoArtiste(nomArtiste);
+    getVideoYoutube(nomArtiste);
+  }
+   document.getElementById('sigma-example').innerHTML = '';
+
+  var width = 1000,
       height = 600;
 
   var color = d3.scale.category20();
@@ -45,7 +47,7 @@ if ( load == 0)
       .attr("height", height);
 
   //d3.json("gexf/" + artiste + ".json", function(error, graph) {
-  d3.json("http://localhost/getJson.php", function(error, graph) {
+  d3.json("getJson.php?ids=" + idArtistes, function(error, graph) {
     force
         .nodes(graph.nodes)
         .links(graph.edges)

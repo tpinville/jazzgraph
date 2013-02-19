@@ -4,6 +4,17 @@ var listArtists = ["John Coltrane", "Miles Davis", "Charles Mingus"
 ];
 
 
+$(document).ready(function() {
+    $("select[multiple]").asmSelect({
+      sortable: true,
+      highlight: true,
+      hideWhenAdded:true,
+      animate: true,
+      addItemTarget: 'top',
+      removeLabel: 'X'
+      });
+});
+
 jQuery.fn.single_double_click = function(single_click_callback, double_click_callback, timeout) {
   return this.each(function(){
       var clicks = 0, self = this;
@@ -42,12 +53,6 @@ function initGexf(arArtistes, dbl)
 
   clearTimeout(idTimeout);
 
-
-  if ( load == 0)
-  {
-    load = 1;
-    setForm();
-  }
   // à l'init
   if (arArtistes == '' || arArtistes.type == 'DOMContentLoaded')
   {
@@ -106,7 +111,33 @@ function initGexf(arArtistes, dbl)
   /**
    * Now, here is the code that shows the popup :
    */
-  (function(){
+    /*
+sigInst.bind('overnodes',function(event){
+      var nodes = event.content;
+      var neighbors = {};
+      sigInst.iterEdges(function(e){
+         if(nodes.indexOf(e.source)>=0 || nodes.indexOf(e.target)>=0){
+         neighbors[e.source] = 1;
+         neighbors[e.target] = 1;
+         }
+         }).iterNodes(function(n){
+            if(!neighbors[n.id]){
+            alert(rr);
+            n.hidden = 1;
+            }else{
+            n.hidden = 0;
+            }
+            }).draw(2,2,2);
+      }).bind('outnodes',function(){
+         sigInst.iterEdges(function(e){
+            e.hidden = 0;
+            }).iterNodes(function(n){
+               n.hidden = 0;
+               }).draw(2,2,2);
+               });*/
+
+
+
     var popUp;
     var albums = new Array();
 
@@ -151,14 +182,25 @@ function initGexf(arArtistes, dbl)
          {
             neighbors[e.source] = 1;
             neighbors[e.target] = 1;
+         }
+         }).iterNodes(function(n){
+           node = n;
 
+            if(!neighbors[n.id]){
+            n.hidden = 1;
+            }else{
+            n.hidden = 0;
+            }
+      }).draw(2,2,2);
+
+      sigInst.iterEdges(function(e){
+         if(nodes.indexOf(e.source)>=0 || nodes.indexOf(e.target)>=0)
+         {
             var artiste = '';
             nomArtiste = libelle;
 
             if (libelle == mapIdLabel[e.target])
-            {
                artiste = mapIdLabel[e.source];
-            }
             else
                artiste = mapIdLabel[e.target];
 
@@ -170,18 +212,8 @@ function initGexf(arArtistes, dbl)
          }
          }).iterNodes(function(n){
            node = n;
-
-            if(!neighbors[n.id]){
-            n.hidden = 1;
-            }else{
-            n.hidden = 0;
-            }
       },[event.content[0]]).draw(2,2,2);
 
-
-
-      //getInfoAlbum(libelle);
-      //getImage(libelle.replace(' ','_')
       popUp = $(
             '<div class="node-info-popup"></div>Albums'
       )
@@ -224,36 +256,7 @@ function initGexf(arArtistes, dbl)
             n.hidden = 0;
             }).draw(2,2,2);
     }
-
     sigInst.bind('overnodes',showNodeInfo).bind('outnodes',hideNodeInfo);
-    /*
-sigInst.bind('overnodes',function(event){
-      var nodes = event.content;
-      var neighbors = {};
-      sigInst.iterEdges(function(e){
-         if(nodes.indexOf(e.source)>=0 || nodes.indexOf(e.target)>=0){
-         neighbors[e.source] = 1;
-         neighbors[e.target] = 1;
-         }
-         }).iterNodes(function(n){
-            if(!neighbors[n.id]){
-            alert(rr);
-            n.hidden = 1;
-            }else{
-            n.hidden = 0;
-            }
-            }).draw(2,2,2);
-      }).bind('outnodes',function(){
-         sigInst.iterEdges(function(e){
-            e.hidden = 0;
-            }).iterNodes(function(n){
-               n.hidden = 0;
-               }).draw(2,2,2);
-               });*/
-
-
-
-  })();
 
     var isRunning = true;
 
@@ -322,7 +325,7 @@ function getImage(title)
 
 function getVideoYoutube(artist)
 {
-  $.getJSON("http://gdata.youtube.com/feeds/api/videos?q=jazz "+ artist + "&alt=json-in-script&callback=?&max-results=12&format=5", function(data) 
+  $.getJSON("http://gdata.youtube.com/feeds/api/videos?q=album "+ artist + "&alt=json-in-script&callback=?&max-results=6&format=5", function(data) 
       {
       var feed = data.feed;
       var entries = feed.entry || [];
