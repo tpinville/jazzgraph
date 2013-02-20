@@ -140,7 +140,7 @@ if ($_GET['ids'] != "")
  */
 global $couleurs;
   $couleurs = array(
-            array('r' => 192, 'g' => 0,'b' => 64),
+            array('r' => 128, 'g' => 0,'b' => 0),
             array('r' => 153, 'g' => 255,'b' => 51),
             array('r' => 51, 'g' => 153,'b' => 153),
             array('r' => 238, 'g' => 255,'b' => 127),
@@ -166,26 +166,29 @@ global $couleurs;
             array('r' => 255, 'g' => 0,'b' => 255),
             array('r' => 192, 'g' => 192,'b' => 192),
             array('r' => 128, 'g' => 128,'b' => 128),
-            array('r' => 128, 'g' => 0,'b' => 0),
+            array('r' => 192, 'g' => 0,'b' => 64),
             array('r' => 128, 'g' => 128,'b' => 0));
 
 
-$idArtiste = "9680";
 global $arArtiste ;
 $arArtiste = split(",", $_GET['ids']);
+global $indexColor;
+global $idArtiste;
+$indexColor =0;
 
-     $services_json = new Services_JSON();
+
 $globJson = array();
 $globJson = json_decode(FILE_get_contents ("json/".$arArtiste[0] .".json"),true);
+$idArtiste = $arArtiste[0] ;
+$globJson['nodes'] = array_map("changeColor", $globJson['nodes']);
 //   $globJson = $services_json->decode(FILE_get_contents ("json/".$arArtiste[0] .".json"),true);
 
-global $indexColor;
-$indexColor =0;
 
 function changeColor($row)
 {
-   global $indexColor,$couleurs;
-   $row['color'] = $couleurs[$indexColor];
+   global $indexColor,$couleurs;//,$idArtiste, $arArtiste;
+
+      $row['color'] = $couleurs[$indexColor];
    return $row;
 }
 
@@ -215,6 +218,7 @@ foreach($arArtiste as $id)
       elseif (is_array($json) && count($json)> 1)
       {   
          $indexColor++;
+         $idArtiste = $id;
          $json['nodes'] = array_map("changeColor", $json['nodes']);
          
          $globJson['nodes'] = array_merge($globJson['nodes'], $json['nodes']);

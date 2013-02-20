@@ -77,6 +77,11 @@ function getSelectBox($ids)
 <br/>   
 <div >
 <a href="#" class="button" id="stop-layout">Stop Layout</a>
+<br/>   
+<br/>   
+<br/>   
+
+<a href="#" class="button"  onclick="init('',1,0,1);" id="graph">Show Graph</a>
 </div>
 </div>
 <!--  <div class="ui-widget">

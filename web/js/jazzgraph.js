@@ -23,10 +23,8 @@ jQuery.fn.single_double_click = function(single_click_callback, double_click_cal
         if (clicks == 1) {
         setTimeout(function(){
           if(clicks == 1) {
-          console.log("single");
           single_click_callback.call(self, event);
           } else {
-          console.log("dble !");
           double_click_callback.call(self, event);
           }
           clicks = 0;
@@ -36,19 +34,20 @@ jQuery.fn.single_double_click = function(single_click_callback, double_click_cal
       });
 }
 
-function init(artiste, dbl, type)
+function init(artiste, dbl, type, all)
 {
   dbl = (dbl) ? dbl : 0;
   type = (type) ? type : 0;
+  all = (all) ? all : 0;
   
   if (type == 0)
-    initGexf(artiste, dbl) ;
+    initGexf(artiste, dbl, all) ;
   else
     initd3(artiste, dbl);
 
 }
 
-function initGexf(arArtistes, dbl) 
+function initGexf(arArtistes, dbl, all) 
 {
 
   clearTimeout(idTimeout);
@@ -61,18 +60,18 @@ function initGexf(arArtistes, dbl)
   }
   else
   {
+     console.log(arArtistes);
     nomArtiste = mapIdLabel[arArtistes[0]];
     idArtistes = arArtistes.join(',');
   }
 
   if (dbl == 0)
   {
-    console.log(dbl);
     $('#sigma-example').single_double_click(function () {
+      }, function () {
+//        init(nomArtiste, 1);
         getInfoArtiste(nomArtiste)
         getVideoYoutube(nomArtiste);
-      }, function () {
-        init(nomArtiste, 1);
     });
   }
 
@@ -87,24 +86,26 @@ function initGexf(arArtistes, dbl)
    document.getElementById('sigma-example').innerHTML = '';
   var sigInst = sigma.init($('#sigma-example')[0]).drawingProperties({
    defaultLabelColor: '#fff',
-   defaultLabelSize: 14,
+   defaultLabelSize: 11,
    defaultLabelBGColor: '#fff',
    defaultLabelHoverColor: '#000',
-   labelThreshold: 6,
+      labelThreshold: 4,
    defaultEdgeType: 'curv'
   }).graphProperties({
    minNodeSize: 1,
-   maxNodeSize: 10,
+   maxNodeSize: 15,
    minEdgeSize: 1,
-   maxEdgeSize: 1
+   maxEdgeSize: 1     
   });
 
   sigInst.stopForceAtlas2();
 
-  // (requires "sigma.parseGexf.js" to be executed)
-  //sigInst.parseGexf('gexf/' + path + ".gexf");
+  if (all == 1)
+     sigInst.parseGexf("jazz.gexf");
+  else
+     sigInst.parseJSON("getJson.php?ids=" + idArtistes);
+
   console.log(idArtistes);
-  sigInst.parseJSON("getJson.php?ids=" + idArtistes);
    //sigInst.parseJSON("json/9680.json");
 
 
@@ -260,12 +261,17 @@ sigInst.bind('overnodes',function(event){
 
     var isRunning = true;
 
-   idTimeout = setTimeout(function() {
-        sigInst.stopForceAtlas2();
-   sigInst.draw();
-        isRunning = false;
-        document.getElementById('stop-layout').childNodes[0].nodeValue = 'Start Layout';
-        }, 10000);
+    if (all == 0)
+    {
+      idTimeout = setTimeout(function() {
+           sigInst.stopForceAtlas2();
+      sigInst.draw();
+           isRunning = false;
+           document.getElementById('stop-layout').childNodes[0].nodeValue = 'Start Layout';
+           }, 10000);
+    }
+    else 
+        sigInst.draw(); 
 
     document.getElementById('stop-layout').addEventListener('click',function(){
         if(isRunning){

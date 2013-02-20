@@ -15,6 +15,12 @@ if ( ! $connection )
 mysql_select_db($db) or die ("pas de connection");
 
 
+define('GRAPH_ALL', 1);
+
+if (GRAPH_ALL)
+   $fp = fopen('jazz.dot', 'w');
+
+
 //mysql_query("SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_connection = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'",$db);
 
 $filtre = 2;
@@ -27,11 +33,13 @@ group by name ";
 
 $q = mysql_query($requete) or die(mysql_error()); 
 
+$rows = array();
+$arNode = array();
 
 while($r = mysql_fetch_assoc($q)) 
 {
 
-
+  print $r['name'] . "\n";
   $requete= "SELECT a.id as albumid,title, p.artistid, name
     FROM Albums a 
     JOIN AlbumPrimaryArtists p  ON p.albumid = a.id
@@ -40,8 +48,12 @@ while($r = mysql_fetch_assoc($q))
     ";
 
   $q1 = mysql_query($requete) or die(mysql_error()); 
-  $rows = array();
-  $arNode = array();
+
+  if(!GRAPH_ALL)
+  {
+     $rows = array();
+     $arNode = array();
+  }
 
 
 
@@ -65,7 +77,9 @@ while($r = mysql_fetch_assoc($q))
       JOIN Albums a ON c.albumid = a.id
       where albumid = " . $r1['albumid']."
       and artistCategoryId = $filtre
+      and jobid != 3
       Group by c.artistid  ";
+      //jobid  = 3 composer
 
     $q2 = mysql_query($requete) or die(mysql_error()); 
     while($r2 = mysql_fetch_assoc($q2)) 
@@ -93,14 +107,28 @@ while($r = mysql_fetch_assoc($q))
     }
   }
 
+   if (!GRAPH_ALL)
+   {
     $fp = fopen($r['id'].  '.json', 'w');
     fwrite($fp, json_encode($rows));
     fclose($fp);
+   }
 
   }
-
-
 }
 
+fwrite($fp,"digraph G { \n");
+foreach ($rows['nodes'] as $node)
+{
+   fwrite($fp, $node['id'] . ' [label="' .str_replace('"', '',$node['label']) .  '" shape=doublecircle]' . "\n");
+}
+
+foreach ($rows['edges'] as $edge)
+{
+   fwrite($fp,$edge['source'] . " -> "  . $edge['target'] . ' [label="' .str_replace('"', '\"',$edge['label']) . '"] ' . "\n");
+}  
+
+fwrite($fp,"}\n");
+fclose($fp);
 
 ?>
