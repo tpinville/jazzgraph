@@ -70,7 +70,7 @@ while($r = mysql_fetch_assoc($q))
         $arNode[] = $r1['artistid'];
       }
 
-    $requete = "SELECT c.artistid as source, title as label, ar.name 
+    $requete = "SELECT c.artistid as source, title as label, ar.name, originalReleaseDate
       from Credits c
       JOIN LinksArtistCategory l ON c.artistid = l.artistid
       JOIN Artists ar ON c.artistid = ar.id
@@ -103,6 +103,7 @@ while($r = mysql_fetch_assoc($q))
         $edge['target'] = $r['id'];
         $edge['label'] = $r2['label'];
         $edge['source'] = $r2['source']*1;
+        $edge['date'] = $r2['originalReleaseDate'];
         $rows['edges'][] = $edge;    
     }
   }
@@ -117,18 +118,25 @@ while($r = mysql_fetch_assoc($q))
   }
 }
 
-fwrite($fp,"digraph G { \n");
-foreach ($rows['nodes'] as $node)
+
+if (GRAPH_ALL)
 {
-   fwrite($fp, $node['id'] . ' [label="' .str_replace('"', '',$node['label']) .  '" shape=doublecircle]' . "\n");
+  fwrite($fp,"digraph G { \n");
+  foreach ($rows['nodes'] as $node)
+  {
+     fwrite($fp, $node['id'] . ' [label="' .str_replace('"', '',$node['label']) .  '" shape=doublecircle]' . "\n");
+  }
+
+  foreach ($rows['edges'] as $edge)
+  {
+//     fwrite($fp,$edge['source'] . " -> "  . $edge['target'] . ' [label="' .str_replace('"', '\"',$edge['label']) . '" ] ' . "\n");
+     $date = substr($edge['date'],0,4);
+//     if ($date == '0000')
+//       $date = '';
+       fwrite($fp,$edge['source'] . " -> "  . $edge['target'] . ' [label="(' . $date  . ') ' . str_replace('"', '\"',$edge['label'])  .'"] ' . "\n");
+  }  
+
+  fwrite($fp,"}\n");
+  fclose($fp);
 }
-
-foreach ($rows['edges'] as $edge)
-{
-   fwrite($fp,$edge['source'] . " -> "  . $edge['target'] . ' [label="' .str_replace('"', '\"',$edge['label']) . '"] ' . "\n");
-}  
-
-fwrite($fp,"}\n");
-fclose($fp);
-
 ?>

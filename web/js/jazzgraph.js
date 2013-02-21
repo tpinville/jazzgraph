@@ -57,10 +57,11 @@ function initGexf(arArtistes, dbl, all)
   {
     idArtistes =  '175553,9680';
     nomArtiste = 'John Coltrane';
+    idArtiste = '175553';
   }
   else
   {
-     console.log(arArtistes);
+    idArtiste = arArtistes[0];
     nomArtiste = mapIdLabel[arArtistes[0]];
     idArtistes = arArtistes.join(',');
   }
@@ -70,14 +71,14 @@ function initGexf(arArtistes, dbl, all)
     $('#sigma-example').single_double_click(function () {
       }, function () {
 //        init(nomArtiste, 1);
-        getInfoArtiste(nomArtiste)
+        getInfoArtiste(nomArtiste, idArtiste)
         getVideoYoutube(nomArtiste);
     });
   }
 
   if (nomArtiste != undefined)
   {
-    getInfoArtiste(nomArtiste);
+    getInfoArtiste(nomArtiste, idArtiste);
     getVideoYoutube(nomArtiste);
   }
   /**
@@ -105,7 +106,6 @@ function initGexf(arArtistes, dbl, all)
   else
      sigInst.parseJSON("getJson.php?ids=" + idArtistes);
 
-  console.log(idArtistes);
    //sigInst.parseJSON("json/9680.json");
 
 
@@ -178,6 +178,8 @@ sigInst.bind('overnodes',function(event){
       var neighbors = {};
       var node;
       var libelle = mapIdLabel[event.content[0]];
+      var id = event.content[0];
+
       sigInst.iterEdges(function(e){
          if(nodes.indexOf(e.source)>=0 || nodes.indexOf(e.target)>=0)
          {
@@ -199,6 +201,7 @@ sigInst.bind('overnodes',function(event){
          {
             var artiste = '';
             nomArtiste = libelle;
+            idArtiste = id;
 
             if (libelle == mapIdLabel[e.target])
                artiste = mapIdLabel[e.source];
@@ -374,15 +377,29 @@ function getInfoAlbum(artist)
       });
 }
 
-function getInfoArtiste(artist)
+function getInfoArtiste(artist,idArtiste)
 {
-  document.getElementById('infoartiste').innerHTML = '<h1>' + artist + '</h1>';
+
+
+      $('#infoartiste').text("");     
+  $.getJSON("getInfoArtist.php?id="+ idArtiste, function(data)      { 
+      $('#infoartiste').append('<ul>');     
+      $.each(data , function(key, val) 
+      {
+        $('#infoartiste').append('<li><b>' + key + "</b> : " + val + "</li>");
+      });
+      $('#infoartiste').append('</ul>');     
+   });
+
+  document.getElementById('imgArtiste').innerHTML = '<h1>' + artist + '</h1>';
+
   $.getJSON("http://api.discogs.com/database/search?q="+ artist +"&type=artist&callback=?", function(data) 
   {
     var artistid = data.data.results[0].id;
 
     if (artistid != undefined)
     {
+
       $.getJSON("http://api.discogs.com/artists/"+ artistid +"?callback=?", function(data)      {
 
   //      alert(data.data.images[0]);
@@ -403,11 +420,16 @@ function getInfoArtiste(artist)
               imgheight= imgheight/ fact;
             }
 
-            $("<img/>").attr("src", imgprop.uri150).attr("width",imgwidth).attr("height",imgheight).appendTo("#infoartiste");
+            $("<img/>").attr("src", imgprop.uri150).attr("width",imgwidth).attr("height",imgheight).appendTo("#imgArtiste");
           }
 
+          /*
           if (data.data.profile != undefined)
-            $('<div>', {text:data.data.profile}).appendTo("#infoartiste");     
+            $('<div>', {text:data.data.profile}).appendTo("#infoartiste");  
+            */
+            
+
+
         });
     }
   });

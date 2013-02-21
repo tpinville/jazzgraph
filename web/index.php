@@ -52,6 +52,7 @@ function getSelectBox($ids)
   <script type="text/javascript">    
     var mapIdLabel = new Object();
     var nomArtiste = '';
+    var idArtiste = '';
   </script>
   <script src="/js/sigma.parseGexf.js"></script>
   <script src="/js/sigma.parseJSON.js"></script>
@@ -100,8 +101,11 @@ function getSelectBox($ids)
 </div>
 
 <div id="images">
+  <div id="imgArtiste">
+  </div>
   <div id="infoartiste">
   </div>
+
   <div id="playerContainer">
      <object id="player"></object>
   </div>
