@@ -21,24 +21,29 @@
 	padding-left: 0; 
 	list-style: none; 
 }
+.asmselect{
+
+	position: relative;
+  top:200px;
+}
 
 .asmListItem {
 	position: relative; 
 	margin-left: 0;
 	padding-left: 0;
 	list-style: none;
-	background: #222;
+	background: #E7E7E7;
 	border: 0px solid #bbb; 
 	width: 100%; 
 	margin: 0 0 -1px 0; 
 	line-height: 1em;
-	color: #FFF;
+	color: #444;
   font-size: 13px;
   /*font-weight:bold;*/
 }
 
 .asmListItem:hover {
-	background-color: #CCC;
+	background-color: #444;
 	color: #000;
 }
 
@@ -57,5 +62,5 @@
 	right: 0; 
 	top: 0;
 	padding: 5px; 
-	color: #F00;
+	color: #000;
 }

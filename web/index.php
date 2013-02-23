@@ -37,10 +37,15 @@ function getSelectBox($ids)
 ?>
 
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
+<title>Music</title> 
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/cv.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/jazzgraph.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="/css/jquery.asmselect.css" />
   <script src="/js/prettify.js"></script>
@@ -56,66 +61,111 @@ function getSelectBox($ids)
   </script>
   <script src="/js/sigma.parseGexf.js"></script>
   <script src="/js/sigma.parseJSON.js"></script>
-  <script src="/d3.v3.js"></script>
   <script src="/js/jazzgraph.js"></script>
   <script src="/js/jazzgraph.3d.js"></script>
   <script src="/js/jazzgraph.style.js"></script>
   <script src="/js/sigma.forceatlas2.js"></script>
 </head>
 <body>
-<div id="selectartists">
-<div class="styled-select">
-<select multiple="multiple" class="asmselect" size=4 title="Select some artists" id="jazzartists">
-<?=getSelectBox('175553,9680');?>
-</select>
-</div>
-<br/>
 
-<div align="center"> 
-<a href="#" class="button" onclick="init(getSelectValue('jazzartists'),1);">GO ! (Dexter) </a>
-<br/>   
-<br/>   
-<br/>   
-<div >
-<a href="#" class="button" id="stop-layout">Stop Layout</a>
-<br/>   
-<br/>   
-<br/>   
-
-<a href="#" class="button"  onclick="init('',1,0,1);" id="graph">Show Graph</a>
-</div>
-</div>
-<!--  <div class="ui-widget">
-  <label for="listArtists">Artistes </label>
-  <input id="listArtists" />
-  </div>-->
-
- </div>
-
-<div class="container">
-    <div class="row">
-  
-  <div class="span12 sigma-parent" id="sigma-example-parent">
-    <div class="sigma-expand" id="sigma-example"></div>
+  <!-- Navbar
+  ================================================== -->
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse"
+      data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="../"></a>
+      <div class="nav-collapse collapse" id="main-menu">
+        <ul class="nav" id="main-menu-left">
+        <li><a id="swatch-link" href="cv.html">CV</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Thèmes de recherche<b class="caret"></b></a>
+        <ul class="dropdown-menu" id="swatch-menu">-
+        <li><a href="ea.html">Algorithmes évolutionnistes</a></li>
+        <li><a href="nn.html">Réseaux de neurones</a></li>
+        <li><a href="er.html">Robotique évolutionniste</a></li>
+        <li><a href="rl.html">Apprentissage par renforcement</a></li>
+        </ul>
+        </li>
+        <li><a href="index.php">Musique</a></li>
+        <ul class="nav pull-right" id="main-menu-right">
+        </ul>
+    </div>
+    </div>
+    </div>
   </div>
-</div>
+  <br/>
+  <br/>
+   <div class="row">
+       <div class="span12">
+       </div>
+   </div>
+   <div class="row">
 
-<div id="images">
-  <div id="imgArtiste">
-  </div>
-  <div id="infoartiste">
-  </div>
+       <div class="span1"></div>
 
-  <div id="playerContainer">
-     <object id="player"></object>
-  </div>
-  <div id="videos2">
-  </div>
- </div>
- <div id="albums">
- </div>
-  </div>
+       <div class="span2 selectartists" id="selectartists">
+         <div>
+         <br/>
+              <a href="#" class="btn" width=200  onclick="init('',1,0,1);"
+                id="graph">Show all artists &nbsp; </a>
+                
+                <br/>
+                <br/>
+          </div>
+        <div class="styled-select">
+            <select multiple="multiple" class="asmselect"  title="Select artists" id="jazzartists">
+            <?=getSelectBox('505770,988386,175553,9680');?>
+            </select></div>
+             <div>
+              <a href="#" class="btn" 
+              onclick="init(getSelectValue('jazzartists'),1);">GO ! (Dexter)
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+<!--              <a href="#" class="btn" id="stop-layout">Stop Layout</a>-->
+                </div>
 
+          <div id="albums"> </div>         
+        </div>
+
+        <div id="sigma-example-parent" class="span11 sigma-parent">
+            <div class="sigma-expand " id="sigma-example"></div>
+        </div>
+
+        <div class="span3">
+            <div id="imgArtiste"> </div>
+            <div id="infoartiste"> </div>
+            <div id="bio"> </div>
+
+            <div id="infoAl"><br/> </div>
+        </div>
+
+
+    </div>
+
+    <div class="row listvideos">
+        <div class="span12"> <br/> </div>
+     </div>
+
+        <div class="row listvideos">
+        <div class="">
+        <div class="span3"> </div>
+        <div class="span8 listvideos"> 
+            <div id="videos2"></div>
+       </div>
+        <div class="span3"> 
+            <div id="playerContainer"><object id="player"></object> </div>
+       </div>
+       </div>
+       </div>
+    <div class="row listvideos">
+        <div class="span"> <br/> </div>
+     </div>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
-

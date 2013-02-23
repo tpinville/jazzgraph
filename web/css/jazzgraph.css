@@ -1,168 +1,70 @@
 /* RESET */
-body{
-  background: #000;
-  font-size: 11px;
-  color:#fff;
-}
-#images{
+body { color: #444; background-color: #E7E7E7;}
 
-  position:relative;
-  top:20px;
-  left: 75%;
-  width:23%;
-  font-size: 11px;
-}
-#playerContainer
-{
-  position:relative;
-    height: 180px; 
-    float: left;
-}
-#videos2{
-  position:relative;
-  top:105px;
-}
-#selectartists{
-  position:absolute;
-  top:20px;
-  left:0px;
-  height: 100%;
-  width:10%;
-}
-/* sigma.js context : */
 .sigma-parent {
-  position: absolute;
-  top:20px;
-  left:12%;
-   background: #000;
-   height: 85%;
-   width: 63%;
+  border-width: 0px;
+  border-style: solid; 
+  border-color: #000000; 
+  position: relative;
+height: 600px;
 }
 .sigma-expand {
   position: absolute;
   width: 100%;
+  background: #444;
   height: 100%;
-  top: 0;
-  left: 0;
-}
-.buttons-container{
-    padding-bottom: 8px;
-      padding-top: 12px;
-}
-.titlec {
-    font-size: small;
 }
 ul.videos li {
   float: left;
-  width: 10em;
-         margin-bottom: 1em;
+width: 9em;
+       margin-bottom: 1em;
 }
 ul.videos
 {
-    margin-bottom: 0em;
-      padding-left : 0em;
-        margin-left: 0em;
-          list-style: none;
+  position:relative;
+  top:15px;
+  margin-bottom: 0em;
+  padding-left : 0em;
+  margin-left: 0em;
+  list-style: none;
+  font-size: 9px;
+  color: #000;
+  text-indent: 100%;
+    white-space: nowrap;
+  overflow: hidden;
 }
-ul.selectReplacement {
-  margin: 0;
-  padding: 0;
-  height: 1.65em;
-  width: 300px;
+#infoartiste{
+  font-size: 10px;
+  list-style: none;
 }
-ul.selectReplacement li {
-  background: #222222;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-           font-size: 11px;
-                    line-height: 1.7em;
-                             list-style: none;
-                             margin: 0;
-                             padding: 1px 12px;
-                             width: 150px;
+#bio{
+  font-size: 10px;
+  line-height:140%;
 }
-ul.selectOpen li {
-  display: block;
-}
-ul.selectReplacement li.selected {
-  color: #fff;
-  display: block;
-}
-ul.selectOpen li.selected {
-  background: #CCCCCC;
-  display: block;
-}
-ul.selectOpen li:hover,
-  ul.selectOpen li.hover,
-  ul.selectOpen li.selected:hover {
-background: #CCCCCC;
-color: #fff;
-  }
-
-select.replaced {
-display: none;
-}
-
-.node {
-  stroke: #fff;
-  stroke-width: 1.5px;
-}
-
-.link {
-  stroke: #999;
-  stroke-opacity: .6;
-}
-
 .styled-select select {
-/*  background: transparent;*/
-  padding: 0px;
-  font-size: 12px;
-  background: #222;
-  color: #FFF;
-  border: 1px solid #222;
-  outline:0px;
- /* border-radius: 10px;*/
-/*  -webkit-appearance: none;*/
+  /*  background: transparent;*/
+      font-size: 13px;
+      width:140px;
+        background: #E7E7E7;
+        color: #444;
+          border: 1px solid #222;
+              outline:0px;
+
 }
 .styled-select option {
-  background: #222;
-  padding: 0px;
-  border: 1px solid #222;
-  color: #FFF;
-/*  outline:0px;*/
-/*  -webkit-appearance: none;*/
+    background: #E7E7E7;
+      padding: 0px;
+        border: 0px solid #222;
+          color: #444;
+          /*  outline:0px;*/
+          /*  -webkit-appearance: none;*/
 }
 
+#selectartists{
+/*  background-color: #7D7A7A;*/
+}
 
-.button {
-  border-top: 1px solid #96d1f8;
-background: #65a9d7;
-background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
-background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
-background: -moz-linear-gradient(top, #3e779d, #65a9d7);
-background: -ms-linear-gradient(top, #3e779d, #65a9d7);
-background: -o-linear-gradient(top, #3e779d, #65a9d7);
-padding: 5px 10px;
-         -webkit-border-radius: 8px;
-         -moz-border-radius: 8px;
-         border-radius: 8px;
-         -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-         -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-         box-shadow: rgba(0,0,0,1) 0 1px 0;
-         text-shadow: rgba(0,0,0,.4) 0 1px 0;
-color: white;
-       font-size: 14px;
-       font-family: Georgia, serif;
-       text-decoration: none;
-       vertical-align: middle;
+.listvideos{
+  background-color: #000;
 }
-.button:hover {
-  border-top-color: #28597a;
-background: #28597a;
-color: #ccc;
-}
-.button:active {
-  border-top-color: #1b435e;
-background: #1b435e;
-}
+

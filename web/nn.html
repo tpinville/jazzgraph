@@ -1,0 +1,417 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Réseaux de neurones</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/these.css" rel="stylesheet">
+  <link href="css/cv.css" rel="stylesheet">		
+</HEAD>
+<BODY >
+  <!-- Navbar
+  ================================================== -->
+  <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+  <div class="container">
+  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  </a>
+  <a class="brand" href="../"></a>
+  <div class="nav-collapse collapse" id="main-menu">
+  <ul class="nav" id="main-menu-left">
+  <li><a id="swatch-link" href="cv.html">CV</a></li>
+  <li><a href="publications.html">Publications</a></li>
+  <li class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Thèmes de recherche<b class="caret"></b></a>
+  <ul class="dropdown-menu" id="swatch-menu">-
+  <li><a href="ea.html">Algorithmes évolutionnistes</a></li>
+  <li><a href="nn.html">Réseaux de neurones</a></li>
+  <li><a href="er.html">Robotique évolutionniste</a></li>
+  <li><a href="rl.html">Apprentissage par renforcement</a></li>
+  </ul>
+  </li>
+  <li><a href="index.php">Musique</a></li>
+  <ul class="nav pull-right" id="main-menu-right">
+  </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+		<div class="platform">
+
+
+
+	      	
+	      	<div class="main">  	
+<H2 CLASS="section"><!--SEC ANCHOR --><A NAME="htoc1">0.1</A>  Réseaux de neurones</H2><!--SEC END --><!--TOC subsection Modèles de neurones-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc2">0.1.1</A>  Modèles de neurones</H3><!--SEC END --><P>
+<A NAME="reseauxneurones"></A></P><!--TOC subsubsection Neurone biologique-->
+<H4 CLASS="subsubsection"><!--SEC ANCHOR -->0.1.1.1  Neurone biologique</H4><!--SEC END --><BLOCKQUOTE CLASS="figure"><DIV CLASS="center"><DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV>
+<IMG SRC="img/biological_neuron.png" width=350>
+<DIV CLASS="caption"><TABLE CELLSPACING=6 CELLPADDING=0><TR><TD VALIGN=top ALIGN=left>Figure 0.1: schéma d'un neurone biologique</TD></TR>
+</TABLE></DIV>
+<A NAME="fig:simple_bio_neuron.pdf"></A>
+<DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV></DIV></BLOCKQUOTE><P>Le cerveau humain contient près de 86 milliards de neurones (<A HREF="#Azevedo2009">Azevedo et al., 2009</A>), et il existe environ 200 types de neurones.
+Dans un neurone nous pouvons distinguer trois régions principales (cf. figure
+<A HREF="#fig:simple_bio_neuron.pdf">0.1</A>) : le corps cellulaire qui contient le noyau du
+neurone ainsi que la machine biochimique nécessaire à la synthèse d'enzymes;
+les dendrites, qui se divisent comme les branches d'un arbre, recueillent
+l'information d'autres neurones et l'acheminent vers le corps de la
+cellule; l'axone, généralement très long et unique, il conduit
+l'information du corps cellulaire vers d'autres neurones avec qui il fait
+des connexions appelées synapses.</P><P>Au niveau des synapses, la transmission de l'information se fait par
+l'intermédiaire de molécules chimiques : les neuromédiateurs. Quand un signal
+électrique arrive au niveau de la synapse, il provoque l'émission de
+neuromédiateurs excitateurs ou inhibiteurs qui vont se fixer sur les
+récepteurs dendritiques de l'autre côté de l'espace inter-synaptique. Lorsque
+suffisamment de molécules excitatrices se sont fixées, un signal électrique est
+émis dans les dendrites. Le neurone compare alors la somme de
+tous ces signaux à un seuil. Si la somme excède ce seuil,
+le neurone émet un signal électrique (émission d'un potentiel d'action) le
+long de son axone. Sinon, il reste inactif et ne stimule pas les neurones
+auxquels il est connecté.</P><BLOCKQUOTE CLASS="figure"><DIV CLASS="center"><DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV>
+<IMG SRC="img/simple_neuron_transfer.png" width=350>
+<DIV CLASS="caption"><TABLE CELLSPACING=6 CELLPADDING=0><TR><TD VALIGN=top ALIGN=left>Figure 0.2: schéma d'un neurone générique. Une première fonction combine les
+différentes entrées (le plus souvent une somme) alors qu'une seconde fonction
+transforme ce résultat pour générer la valeur de sortie du neurone.</TD></TR>
+</TABLE></DIV><P><A NAME="fig:simple_neuron.pdf"></A>
+</P><DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV></DIV></BLOCKQUOTE><!--TOC subsubsection Neurone artificiel-->
+<H4 CLASS="subsubsection"><!--SEC ANCHOR -->0.1.1.2  Neurone artificiel</H4><!--SEC END --><P>
+Un neurone artificiel modélise plus ou moins fidèlement le fonctionnement
+d'un neurone biologique. Il peut être défini comme une fonction algébrique
+non linéaire, paramétrée, à valeurs bornées, de variables réelles appelées
+entrée.
+On identifie trois éléments de bases :
+un ensemble de poids de connexions, un seuil, et une fonction d'activation (<A HREF="#Haykin1998">Haykin, 1998</A>,<A HREF="#Floreano2008">Floreano and Mattiussi, 2008</A>).</P><P>Voici une petite revue de quelques modèles de neurones du plus simplifié au plus biomimétique.</P><!--TOC paragraph Mc Culloch's and Pitts-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Mc Culloch's and Pitts</H5><!--SEC END --><P>
+C'est la première modélisation hautement simplifiée d'un neurone décrit 
+par (<A HREF="#McCulloch1943">McCulloch and Pitts, 1943</A>).
+Cette modélisation décrit une unité logique de seuil (Threshold Logic Unit
+(TLU)) qui applique une fonction de transfert ϕ aux entrées du neurone.</P><TABLE CLASS="display dcenter"><TR VALIGN="middle"><TD CLASS="dcell">
+<I>y</I><SUP>(<I>i</I>)</SUP>=ϕ(</TD><TD CLASS="dcell"><TABLE CLASS="display"><TR><TD CLASS="dcell" ALIGN="center"><I>n</I></TD></TR>
+<TR><TD CLASS="dcell" ALIGN="center"><FONT SIZE=6>∑</FONT></TD></TR>
+<TR><TD CLASS="dcell" ALIGN="center"><I>j</I>=1</TD></TR>
+</TABLE></TD><TD CLASS="dcell"><I>w</I><SUB><I>j</I>,<I>i</I></SUB> <I>y</I><SUP>(<I>j</I>)</SUP>)
+    (1)</TD></TR>
+</TABLE><P>Avec <I>y</I><SUP>(<I>i</I>)</SUP> la valeur de sortie du neurone, ϕ la fonction de
+transfert, <I>y</I><SUP>(1)</SUP>,<I>y</I><SUP>(<I>n</I>)</SUP> les différentes entrées et <I>w</I><SUB><I>j</I>,<I>i</I></SUB> les poids
+associés. </P><P>Dans la formulation originelle McCulloch et Pitts, les neurones 
+avaient une sortie binaire (0 ou 1), mais 
+deux des fonctions les plus utilisées sont la fonction
+seuil et la fonction sigmoïde : </P><TABLE CLASS="display dcenter"><TR VALIGN="middle"><TD CLASS="dcell">
+ϕ(<I>x</I>)=</TD><TD CLASS="dcell"><TABLE CLASS="display"><TR><TD CLASS="dcell" ALIGN="center">1</TD></TR>
+<TR><TD CLASS="hbar"></TD></TR>
+<TR><TD CLASS="dcell" ALIGN="center">1+<I>e</I><SUP>−λ(<I>y</I><SUP>(<I>i</I>)</SUP>+bias)</SUP></TD></TR>
+</TABLE></TD><TD CLASS="dcell">
+<A NAME="eq:sigm"></A>
+    (2)</TD></TR>
+</TABLE><P>
+avec <I>bias</I> correspondant au biais et λ au coefficient de pente.</P><!--TOC paragraph Neurones à fonction radiale (RBF)-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Neurones à fonction radiale (RBF)</H5><!--SEC END --><P>
+Les neurones à fonction radiale (Radial Basis Function ou
+RBF) (<A HREF="#buhmann2003radial">Buhmann, 2003</A>) représentent une autre variété de neurones artificiels dont l'intensité de
+la réponse est inversement proportionnelle à la distance entre les entrées et
+un point précis dans l'espace de ces entrées. 
+Les réseaux de fonctions à base radiale sont notamment utilisés dans
+la classification, l'approximation et la reconnaissance de
+parole. Leur but est d'approximer un comportement désiré
+par une collection de fonction, appelées noyaux. Un noyau
+est caractérisé par un centre <I>Ci</I> et des champs récepteurs <I>r</I>.</P><!--TOC paragraph Intégrateur à fuite-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Intégrateur à fuite</H5><!--SEC END --><P>
+L'intégrateur à fuite (Leaky integrator, LI)
+possède une dynamique du premier ordre <SUP><A NAME="text1" HREF="#note1">1</A></SUP> avec une non-linéarité liée à la fonction de décision (souvent
+une sigmoïde) (<A HREF="#Floreano2008">Floreano and Mattiussi, 2008</A>). 
+Le terme intégrateur à fuite est une référence aux circuits électriques parce
+qu'un neurone polarisé se comporte électriquement comme un condensateur,
+avec un courant de fuite comme sur la figure <A HREF="#fig:integrateurafuite">0.3</A>.
+Les réseaux de neurones intégrateurs à fuite sont très utilisés pour 
+modéliser le comportement d'une assemblée de neurones<SUP><A NAME="text2" HREF="#note2">2</A></SUP> (<A HREF="#Dayan2005">Dayan and Abbott, 2005</A>).</P><!--TOC paragraph Le modèle LPDS (Locally Projected Dynamic System)-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Le modèle LPDS (Locally Projected Dynamic System)</H5><!--SEC END --><P>
+<A NAME="par:lpds"></A>
+Variante du modèle LI dont les propriétés permettent de vérifier
+mathématiquement la stabilité des réseaux dans lesquels il est utilisé. Il a
+notamment été utilisé dans le cadre de modèles contractants des ganglions de la
+base (<A HREF="#Girard2008">Girard et al., 2008</A>). Dans le cas d'une simulation utilisant la méthode
+d'Euler pour ses intégrations, son comportement est calculé de la manière
+suivante:</P><TABLE CLASS="display dcenter"><TR VALIGN="middle"><TD CLASS="dcell">
+
+
+     
+
+</TD><TD CLASS="dcell"><TABLE CELLSPACING=6 CELLPADDING=0><TR><TD ALIGN=right NOWRAP>  <I>p</I><SUB><I>t</I></SUB><SUP>(<I>i</I>)</SUP></TD><TD ALIGN=center NOWRAP> =</TD><TD ALIGN=left NOWRAP><TABLE CLASS="display"><TR VALIGN="middle"><TD CLASS="dcell"><TABLE CLASS="display"><TR><TD CLASS="dcell" ALIGN="center">&nbsp;</TD></TR>
+<TR><TD CLASS="dcell" ALIGN="center"><FONT SIZE=6>∑</FONT></TD></TR>
+<TR><TD CLASS="dcell" ALIGN="center"><I>j</I> ∈ <I>C</I></TD></TR>
+</TABLE></TD><TD CLASS="dcell"><I>w</I><SUB><I>i</I>,<I>j</I></SUB><I>y</I><SUB><I>t</I></SUB><SUP>(<I>j</I>)</SUP></TD></TR>
+</TABLE></TD><TD ALIGN=right NOWRAP>    (3)</TD></TR>
+<TR><TD ALIGN=right NOWRAP>  <I>a</I><SUB><I>t</I>+<I>dt</I></SUB><SUP>(<I>i</I>)</SUP></TD><TD ALIGN=center NOWRAP> =</TD><TD ALIGN=left NOWRAP><TABLE CLASS="display"><TR VALIGN="middle"><TD CLASS="dcell"> max(0,min(1,<I>a</I><SUB><I>t</I></SUB><SUP>(<I>i</I>)</SUP>+</TD><TD CLASS="dcell"><TABLE CLASS="display"><TR><TD CLASS="dcell" ALIGN="center"><I>p</I><SUB><I>t</I></SUB><SUP>(<I>i</I>)</SUP>−<I>a</I><SUB><I>t</I></SUB><SUP>(<I>i</I>)</SUP>+<I>T</I><SUB><I>i</I></SUB></TD></TR>
+<TR><TD CLASS="hbar"></TD></TR>
+<TR><TD CLASS="dcell" ALIGN="center">τ<SUP>(<I>i</I>)</SUP></TD></TR>
+</TABLE></TD><TD CLASS="dcell">.<I>dt</I>)) </TD></TR>
+</TABLE></TD><TD ALIGN=right NOWRAP>    (4)</TD></TR>
+<TR><TD ALIGN=right NOWRAP>  <I>y</I><SUB><I>t</I>+<I>dt</I></SUB><SUP>(<I>i</I>)</SUP></TD><TD ALIGN=center NOWRAP> =</TD><TD ALIGN=left NOWRAP><TABLE CLASS="display"><TR VALIGN="middle"><TD CLASS="dcell"> </TD><TD CLASS="dcell">⎧<BR>
+⎪<BR>
+⎨<BR>
+⎪<BR>
+⎩</TD><TD CLASS="dcell"><TABLE CELLSPACING=6 CELLPADDING=0><TR><TD ALIGN=right NOWRAP>    <I>a</I><SUB><I>t</I>+<I>dt</I></SUB><SUP>(<I>i</I>)</SUP></TD><TD ALIGN=center NOWRAP>si i est excitateur</TD></TR>
+<TR><TD ALIGN=right NOWRAP>    −<I>a</I><SUB><I>t</I>+<I>dt</I></SUB><SUP>(<I>i</I>)</SUP></TD><TD ALIGN=center NOWRAP>si i est inhibiteur </TD></TR>
+<TR><TD ALIGN=right NOWRAP>  </TD></TR>
+</TABLE></TD><TD CLASS="dcell">
+</TD></TR>
+</TABLE></TD><TD ALIGN=right NOWRAP>    (5)</TD></TR>
+</TABLE></TD></TR>
+</TABLE><P><I>y</I><SUB><I>t</I>+<I>dt</I></SUB><SUP>(<I>i</I>)</SUP> étant la variable de sortie du neurone <I>i</I>, <I>T</I><SUB><I>i</I></SUB>
+et τ<SUP>(<I>i</I>)</SUP> des constantes propres du neurone et τ des constantes et
+<I>p</I><SUB><I>t</I></SUB><SUP>(<I>i</I>)</SUP> la somme des entrées à l'instant <I>t</I>. La principale différence
+entre ce modèle et un LI vient des opérateurs min et max qui limitent
+les valeurs possibles pour la variable d'état interne du neurone. L'intérêt est
+de fortement réduire le temps maximum de retour à l'état de stabilité dans le
+cas où le neurone est soumis à des entrées ayant une forte intensité (dans le
+cadre d'une entrée inhibitrice très forte, un neurone LI peut voir sa variable
+d'état atteindre des valeurs très fortement négatives. Après l'arrêt de cette
+entrée, la variable interne mettra un temps important avant de revenir à l'état
+d'équilibre, même avec une entrée excitatrice).</P><!--TOC paragraph Les modèles impulsionnels-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Les modèles impulsionnels</H5><!--SEC END --><P>
+Modèles dont le but est de décrire la série d'impulsions générée par un
+neurone. La "sortie" du modèle est une suite d'instants, le temps des
+potentiels d'action. L'intérêt de ces modèles est de pouvoir illustrer une
+capacité de synchronisation contrairement aux modèles précédents. Or il a été
+montré que la synchronisation neuronale existe dans le système nerveux et a un
+rôle fonctionnel (<A HREF="#Brette2003">Brette, 2003</A>). Selon (<A HREF="#Maass1997">Maass, 1997</A>), ils sont
+computationnellement plus efficaces que les autres réseaux de neurones. </P><P>Il existe différents types de modèles impulsionnels : 
+</P><UL CLASS="itemize"><LI CLASS="li-itemize">
+Le modèle de (<A HREF="#Hodgkin1952">Hodgkin and Huxley, 1952</A>) (HH) :
+ce modèle mathématique décrit la dynamique temporelle du neurone dans
+différents compartiments et reproduit les principaux "modes" de
+fonctionnement du neurone biologique. 
+Le modèle est défini par quatre équations différentielles inter-dépendantes.
+</LI><LI CLASS="li-itemize">Le modèle Integrate &amp; Fire (IF) et ses dérivés : proposé par
+Lapicque (<A HREF="#Lapicque1907">Lapicque, 1907</A>) se place à un niveau de détail de modélisation
+moins précis que le modèle de Hodgkin &amp; Huxley. Le neurone est modélisé tel
+un circuit électrique composé d'un condensateur et d'une résistance électrique
+(dipôle RC). Le modèle est décrit, mathématiquement, par une seule équation
+différentielle.
+</LI><LI CLASS="li-itemize">Leaky Integrate &amp; Fire : adaptation du modèle précédent afin que le
+potentiel de membrane tende à revenir à sa valeur de repos, en l'absence de
+stimulation, ce qui est plus proche de la réalité biologique.
+</LI><LI CLASS="li-itemize">Le Spike Response Model (SRM) (<A HREF="#Gerstner2002">Gerstner and Kistler, 2002</A>) : il s'agit
+d'une modélisation phénoménologique du neurone, au sens où l'on ne considère
+pas les mécanismes sous-jacents, mais seulement le comportement du neurone.
+</LI><LI CLASS="li-itemize">Le modèle d'Izhikevich (<A HREF="#Izhikevich03">Izhikevich, 2003</A>) fait intervenir deux
+équations différentielles couplées, permettant de reproduire une vingtaine de
+comportements dynamiques différents, ce qui le rend utile pour les
+modélisateurs qui souhaitent que leurs modèles restent proches des
+observations biologiques.
+</LI></UL><BLOCKQUOTE CLASS="figure"><DIV CLASS="center"><DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV>
+<IMG SRC="img/integrateurafuite.png" width=350>
+<DIV CLASS="caption"><TABLE CELLSPACING=6 CELLPADDING=0><TR><TD VALIGN=top ALIGN=left>Figure 0.3: circuit minimal d'un neurone LI.</TD></TR>
+</TABLE></DIV>
+<A NAME="fig:integrateurafuite"></A>
+<DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV></DIV></BLOCKQUOTE><!--TOC subsection Réseaux de neurones-->
+<H3 CLASS="subsection"><!--SEC ANCHOR --><A NAME="htoc3">0.1.2</A>  Réseaux de neurones</H3><!--SEC END --><P>Le choix de la topologie d'un réseau dépend de la tâche que l'on souhaite
+résoudre</P><!--TOC paragraph Les réseaux "feed forward"-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Les réseaux "feed forward"</H5><!--SEC END --><P>Ce sont des réseaux dont la structure suit une
+logique de traitement de l'information au travers de couches de neurones
+successives, de l'entrée vers la sortie, sans retour de l'information en amont
+(voir figure <A HREF="#fig:ff_network">0.4</A>). C'est par exemple le cas des perceptrons et perceptrons
+multi-couches (<A HREF="#Rosenblatt1958">Rosenblatt, 1958</A>,<A HREF="#Rumelhart1986">Rumelhart et al., 1986</A>). 
+Dans ces réseaux la dynamique est
+dirigée par la présentation des exemples d'entrée. Les activations se
+propagent en sens unique, de la couche d'entrée à la couche de sortie.
+Ils sont utilisés pour de la classification, reconnaissance des formes (caractères, parole, ...) (<A HREF="#lecun1989backpropagation">LeCun et al., 1989</A>) ou pour de la prédiction.
+</P><BLOCKQUOTE CLASS="figure"><DIV CLASS="center"><DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV>
+<IMG SRC="img/ff_network.png" width=350>
+<DIV CLASS="caption"><TABLE CELLSPACING=6 CELLPADDING=0><TR><TD VALIGN=top ALIGN=left>Figure 0.4: 
+<A NAME="fig:ff_network"></A>
+Réseau feed-forward avec une couche cachée.</TD></TR>
+</TABLE></DIV>
+<DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV></DIV></BLOCKQUOTE><!--TOC paragraph Cartes auto-organisatrices-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Cartes auto-organisatrices</H5><!--SEC END --><P>Ces cartes (<A HREF="#Fukushima1975">Fukushima, 1975</A>,<A HREF="#Kohonen1982">Kohonen, 1982</A>,<A HREF="#Rumelhart1985">Rumelhart and Zipser, 1985</A>)
+sont inspirées de la structure du
+cortex, notamment visuel, dans lequel on peut observer une connectivité
+locale . En d'autres termes, chaque neurone est connecté aux entrées et à ses
+voisins. 
+Parmi les différentes applications réalisées à l'aide des cartes 
+auto-organisatrices, un assez grand nombre sont des tâches de classification non supervisées :
+comme une aide dans l'analyse d'observations satellitaire (<A HREF="#yacoub2001topological">Yacoub et al., 2001</A>) ou la recherche 
+documentaire (<A HREF="#kaski1998websom">Kaski et al., 1998</A>).
+Pour une liste d'applications se référer à (<A HREF="#kohonen2001self">Kohonen, 2001</A>).</P><!--TOC paragraph Réseaux Récurrents-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Réseaux Récurrents</H5><!--SEC END --><P>
+il s'agit de réseaux dont la structure, peut
+comporter des récurrences (voir figure <A HREF="#fig:rnn_network">0.5</A>). Ces
+récurrences peuvent changer radicalement la dynamique qui pourra s'instaurer dans
+un réseau de neurones et l'amener à s'auto-entretenir. La notion de réseau récurrent est
+étudiée et mise en application dans une mémoire auto-associative (<A HREF="#Hopfield1982">Hopfield, 1982</A>).
+L'utilisation de récurrence sera reprise dans le contexte des
+perceptrons multicouches, avec le réseau de Jordan (<A HREF="#Jordan1986">Jordan, 1986</A>) et le réseau de Elman (<A HREF="#Elman1990">Elman, 1990</A>). Dans
+ces deux modèles, l'activation de la couche de sortie (dans le cas Jordan) ou de la couche cachée
+(dans le cas de Elman) est dupliquée en retour dans la couche d'entrée.
+Les réseaux récurrents utilisant des intégrateurs à fuite peuvent être désignés sous le
+nom de réseaux de neurones récurrents à temps continus (continuous time recurrent
+neural network, CTRNN) (<A HREF="#Beer1995">Beer, 1995</A>,<A HREF="#Yamauchi1996">Yamauchi and Beer, 1996</A>).
+Ils sont connus pour être
+théoriquement capables de répliquer n'importe quels systèmes dynamiques 
+et il a été montré que des petits CTRNN sont capables de dynamiques complexes (<A HREF="#Beer1995">Beer, 1995</A>,<A HREF="#beer2006parameter">Beer, 2006</A>,<A HREF="#Bongard2011">Bongard, 2011</A>).</P><BLOCKQUOTE CLASS="figure"><DIV CLASS="center"><DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV>
+<DIV CLASS="minipage">
+<IMG SRC="img/RNN.png" width=350>
+<IMG SRC="img/elman_network.png" width=350>
+</DIV>
+<DIV CLASS="caption"> 
+<A NAME="fig:rnn_network">Figure 0.5:</A> Architectures de réseaux récurrents. (a) Réseau récurrent simple. (b) Réseau de type Elman.
+</DIV>
+<DIV CLASS="center"><HR WIDTH="80%" SIZE=2></DIV></DIV></BLOCKQUOTE><!--TOC paragraph Les réseaux <EM>Echo State</EM>-->
+<H5 CLASS="paragraph"><!--SEC ANCHOR -->Les réseaux <EM>Echo State</EM></H5><!--SEC END --><P>
+Les réseaux <EM>echo state</EM> (<A HREF="#jaeger2002tutorial">Jaeger, 2002</A>) sont composés d'une couche cachée faiblement et aléatoirement connectée (autour de
+1% de connectivité). 
+Les taux de connectivité et les poids de connexion de la couche cachée 
+sont fixés au préalable et doivent respecter la propriété d'<EM>echo state</EM>
+(cette propriété est décrite à la section <A HREF="#section:carac_mem">??</A>).</P><P>Ce type de réseau a été testé sur différentes applications robotiques telles
+que la détection d'évènements complexes dans la navigation d'un
+robot autonome (<A HREF="#antonelo2007event">Antonelo et al., 2007</A>) ou des 
+tâches impliquant une forme de mémoire (<A HREF="#Hartland2009">Hartland et al., 2009</A>).</P><!--BEGIN NOTES chapter-->
+<HR CLASS="footnoterule"><DL CLASS="thefootnotes"><DT CLASS="dt-thefootnotes">
+<A NAME="note1" HREF="#text1">1</A></DT><DD CLASS="dd-thefootnotes">On appelle un élément du
+premier ordre, un système décrit par l'équation
+différentielle du premier ordre : <I>d</I><I>x</I>(<I>t</I>)/<I>d</I><I>t</I>  = 
+<I>f</I>(<I>x</I>(<I>t</I>),<I>t</I>) où la fonction <I>f</I> définit le système dynamique étudié 
+</DD><DT CLASS="dt-thefootnotes"><A NAME="note2" HREF="#text2">2</A></DT><DD CLASS="dd-thefootnotes">Une assemblée
+de neurones est un groupe de neurones qui entretiennent entre eux des
+connexions synaptiques renforcées, de sorte qu'ils ont plus de chance d'être
+actifs tous ensembles en même temps.
+</DD></DL>
+<!--END NOTES-->
+<!--TOC chapter Références-->
+<H1 CLASS="chapter"><!--SEC ANCHOR -->Références</H1><!--SEC END --><DL CLASS="thebibliography"><DT CLASS="dt-thebibliography">
+<A NAME="antonelo2007event"><FONT COLOR=purple>[Antonelo et al., 2007]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Antonelo, E., Schrauwen, B., Dutoit, X., Stroobandt, D., and Nuttin, M. (2007).
+Event detection and localization in mobile robot navigation using
+reservoir computing.
+<EM>Artificial Neural Networks–ICANN 2007</EM>, pages 660–669.</DD><DT CLASS="dt-thebibliography"><A NAME="Azevedo2009"><FONT COLOR=purple>[Azevedo et al., 2009]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Azevedo, F. A. C., Carvalho, L. R. B., Grinberg, L. T., Farfel, J. M.,
+Ferretti, R. E. L., Leite, R. E. P., Jacob Filho, W., Lent, R., and
+Herculano-Houzel, S. (2009).
+Equal numbers of neuronal and nonneuronal cells make the human brain
+an isometrically scaled-up primate brain.
+<EM>Journal of Comparative Neurology</EM>, 513(5):532–541.</DD><DT CLASS="dt-thebibliography"><A NAME="Beer1995"><FONT COLOR=purple>[Beer, 1995]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Beer, R. D. (1995).
+On the Dynamics of Small Continuous-Time Recurrent Neural Networks.
+<EM>Adaptive Behavior</EM>, 3(4):469–509.</DD><DT CLASS="dt-thebibliography"><A NAME="beer2006parameter"><FONT COLOR=purple>[Beer, 2006]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Beer, R. D. (2006).
+Parameter space structure of continuous-time recurrent neural
+networks.
+<EM>Neural Computation</EM>, 18(12):3009–3051.</DD><DT CLASS="dt-thebibliography"><A NAME="Bongard2011"><FONT COLOR=purple>[Bongard, 2011]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Bongard, J. (2011).
+Morphological change in machines accelerates the evolution of robust
+behavior.
+<EM>Proceedings of the National Academy of Sciences</EM>,
+2010:1234–1239.</DD><DT CLASS="dt-thebibliography"><A NAME="Brette2003"><FONT COLOR=purple>[Brette, 2003]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Brette, R. (2003).
+Modèles Impulsionnels de Réseaux de Neurones Biologiques.</DD><DT CLASS="dt-thebibliography"><A NAME="buhmann2003radial"><FONT COLOR=purple>[Buhmann, 2003]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Buhmann, M. D. (2003).
+<EM>Radial basis functions: theory and implementations</EM>,
+volume 12.
+Cambridge university press.</DD><DT CLASS="dt-thebibliography"><A NAME="Dayan2005"><FONT COLOR=purple>[Dayan and Abbott, 2005]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Dayan, P. and Abbott, L. F. (2005).
+<EM>Theoretical Neuroscience: Computational and Mathematical
+Modeling of Neural Systems</EM>.
+The MIT Press.</DD><DT CLASS="dt-thebibliography"><A NAME="Elman1990"><FONT COLOR=purple>[Elman, 1990]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Elman, J. (1990).
+Finding structure in time.
+<EM>Cognitive science</EM>, 14(2):179–211.</DD><DT CLASS="dt-thebibliography"><A NAME="Floreano2008"><FONT COLOR=purple>[Floreano and Mattiussi, 2008]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Floreano, D. and Mattiussi, C. (2008).
+<EM>Bio-inspired artificial intelligence: Theories, methods, and
+technologies</EM>.</DD><DT CLASS="dt-thebibliography"><A NAME="Fukushima1975"><FONT COLOR=purple>[Fukushima, 1975]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Fukushima, K. (1975).
+Cognitron: a self-organizing multilayered neural network.
+<EM>Biological Cybernetics</EM>, 20(3-4):121–136.</DD><DT CLASS="dt-thebibliography"><A NAME="Gerstner2002"><FONT COLOR=purple>[Gerstner and Kistler, 2002]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Gerstner, W. and Kistler, W. (2002).
+<EM>Spiking Neuron Models: An Introduction</EM>.
+Cambridge University Press, New York, NY, USA.</DD><DT CLASS="dt-thebibliography"><A NAME="Girard2008"><FONT COLOR=purple>[Girard et al., 2008]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Girard, B., Tabareau, N., Pham, Q. C., Berthoz, A., and Slotine, J. J. (2008).
+Where neuroscience and dynamic system theory meet autonomous
+robotics: a contracting basal ganglia model for action selection.
+<EM>Neural Networks</EM>, 21(4):628–641.</DD><DT CLASS="dt-thebibliography"><A NAME="Hartland2009"><FONT COLOR=purple>[Hartland et al., 2009]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Hartland, C., Bredeche, N., and Sebag, M. (2009).
+Memory-enhanced evolutionary robotics: the echo state network
+approach.
+In <EM>In proc. of IEEE-CEC'09</EM>, number section IV, pages
+2788–2795.</DD><DT CLASS="dt-thebibliography"><A NAME="Haykin1998"><FONT COLOR=purple>[Haykin, 1998]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Haykin, S. (1998).
+<EM>Neural Networks: A Comprehensive Foundation, 2nd edition</EM>.
+Prentice Hall PTR.</DD><DT CLASS="dt-thebibliography"><A NAME="Hodgkin1952"><FONT COLOR=purple>[Hodgkin and Huxley, 1952]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Hodgkin, A. L. and Huxley, A. F. (1952).
+A quantitative description of membrane current and its application
+to conduction and excitation in nerve.
+<EM>The Journal of physiology</EM>, 117(4):500–544.</DD><DT CLASS="dt-thebibliography"><A NAME="Hopfield1982"><FONT COLOR=purple>[Hopfield, 1982]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Hopfield, J. J. (1982).
+Neural networks and physical systems with emergent collective
+computational abilities.
+<EM>Proceedings of the National Academy of Sciences of the United
+States of America</EM>, 79(8):2554–8.</DD><DT CLASS="dt-thebibliography"><A NAME="Izhikevich03"><FONT COLOR=purple>[Izhikevich, 2003]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Izhikevich, E. M. (2003).
+Simple model of spiking neurons.
+<EM>IEEE Trans. Neural Networks</EM>, pages 1569–1572.</DD><DT CLASS="dt-thebibliography"><A NAME="jaeger2002tutorial"><FONT COLOR=purple>[Jaeger, 2002]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Jaeger, H. (2002).
+<EM>Tutorial on training recurrent neural networks, covering BPPT,
+RTRL, EKF and the" echo state network" approach</EM>.
+GMD-Forschungszentrum Informationstechnik.</DD><DT CLASS="dt-thebibliography"><A NAME="Jordan1986"><FONT COLOR=purple>[Jordan, 1986]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Jordan, M. I. (1986).
+Serial order: A parallel distributed processing approach.
+<EM>Advances in Connectionist Theory Speech</EM>,
+121(ICS-8604):471–495.</DD><DT CLASS="dt-thebibliography"><A NAME="kaski1998websom"><FONT COLOR=purple>[Kaski et al., 1998]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Kaski, S., Honkela, T., Lagus, K., and Kohonen, T. (1998).
+WEBSOM–self-organizing maps of document collections.
+<EM>Neurocomputing</EM>, 21(1):101–117.</DD><DT CLASS="dt-thebibliography"><A NAME="Kohonen1982"><FONT COLOR=purple>[Kohonen, 1982]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Kohonen, T. (1982).
+Self-organized formation of topologically correct feature maps.
+<EM>Biological Cybernetics</EM>, 43(1):59–69.</DD><DT CLASS="dt-thebibliography"><A NAME="kohonen2001self"><FONT COLOR=purple>[Kohonen, 2001]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Kohonen, T. (2001).
+<EM>Self-organizing maps</EM>, volume 30.
+Springer Verlag.</DD><DT CLASS="dt-thebibliography"><A NAME="Lapicque1907"><FONT COLOR=purple>[Lapicque, 1907]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Lapicque, L. (1907).
+Recherches quantitatives sur l'excitation electrique des nerfs
+traites comme une polarization.
+<EM>J Physiol (Paris)</EM>, pages 622–635.</DD><DT CLASS="dt-thebibliography"><A NAME="lecun1989backpropagation"><FONT COLOR=purple>[LeCun et al., 1989]</FONT></A></DT><DD CLASS="dd-thebibliography">
+LeCun, Y., Boser, B., Denker, J. S., Henderson, D., Howard, R. E., Hubbard, W.,
+and Jackel, L. D. (1989).
+Backpropagation applied to handwritten zip code recognition.
+<EM>Neural computation</EM>, 1(4):541–551.</DD><DT CLASS="dt-thebibliography"><A NAME="Maass1997"><FONT COLOR=purple>[Maass, 1997]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Maass, W. (1997).
+Networks of spiking neurons: the third generation of neural network
+models.
+<EM>Neural networks</EM>.</DD><DT CLASS="dt-thebibliography"><A NAME="McCulloch1943"><FONT COLOR=purple>[McCulloch and Pitts, 1943]</FONT></A></DT><DD CLASS="dd-thebibliography">
+McCulloch, W. S. and Pitts, W. (1943).
+A logical calculus of the ideas immanent in nervous activity.
+<EM>Bulletin of Mathematical Biophysics</EM>, 5(4):115–133.</DD><DT CLASS="dt-thebibliography"><A NAME="Rosenblatt1958"><FONT COLOR=purple>[Rosenblatt, 1958]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Rosenblatt, F. (1958).
+The perceptron: A probabilistic model for information storage and
+organization in the brain.
+<EM>Psychological review</EM>, 65(1958).</DD><DT CLASS="dt-thebibliography"><A NAME="Rumelhart1986"><FONT COLOR=purple>[Rumelhart et al., 1986]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Rumelhart, D. E., Hinton, G. E., and Williams, R. J. (1986).
+Learning representations by back-propagating errors.
+<EM>Nature</EM>, 323(6088):533–536.</DD><DT CLASS="dt-thebibliography"><A NAME="Rumelhart1985"><FONT COLOR=purple>[Rumelhart and Zipser, 1985]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Rumelhart, D. E. and Zipser, D. (1985).
+Feature discovery by competitive learning.
+<EM>Cognitive science</EM>, 9(1):75–112.</DD><DT CLASS="dt-thebibliography"><A NAME="yacoub2001topological"><FONT COLOR=purple>[Yacoub et al., 2001]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Yacoub, M., Badran, F., and Thiria, S. (2001).
+A topological hierarchical clustering: Application to ocean color
+classification.
+<EM>Artificial Neural Networks—ICANN 2001</EM>, pages 492–499.</DD><DT CLASS="dt-thebibliography"><A NAME="Yamauchi1996"><FONT COLOR=purple>[Yamauchi and Beer, 1996]</FONT></A></DT><DD CLASS="dd-thebibliography">
+Yamauchi, B. and Beer, R. D. (1996).
+Spatial learning for navigation in dynamic environments.
+<EM>IEEE transactions on systems, man, and cybernetics. Part B,
+Cybernetics : a publication of the IEEE Systems, Man, and Cybernetics
+Society</EM>, 26(3):496–505.</DD></DL><!--CUT END -->
+<!--HTMLFOOT-->
+<!--ENDHTML-->
+<!--FOOTER-->
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</HTML>

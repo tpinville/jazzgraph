@@ -17,7 +17,7 @@ mysql_select_db($db) or die ("pas de connection");
 
   $arIds = split(",",$ids);
   $requete = "select birthdate as `Birth Date`, birthplace as `Birth place`,
-  deathDate as `Death date`, deathplace as `Death Place`, Country,
+  deathDate as `Death date`,  Country,
   decade as Decades from Artists a 
   Join ActiveYears y on  y.artistid = a.id
   where a.id =  $idArtiste

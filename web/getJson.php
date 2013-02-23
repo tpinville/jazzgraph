@@ -5,13 +5,14 @@ require_once 'jsonwrapper/JSON/JSON.php';
 
 global $couleurs;
   $couleurs = array(
-            array('r' => 128, 'g' => 0,'b' => 0),
-            array('r' => 153, 'g' => 255,'b' => 51),
-            array('r' => 51, 'g' => 153,'b' => 153),
-            array('r' => 238, 'g' => 255,'b' => 127),
-            array('r' => 128, 'g' => 0,'b' => 128),
+            array('r' => 231, 'g' => 231,'b' => 231),
+            array('r' => 39, 'g' => 153,'b' => 221),
+            array('r' => 191, 'g' => 71,'b' => 81),
+            array('r' => 220, 'g' => 240,'b' => 36),
+            array('r' => 143, 'g' => 0,'b' => 69),
             array('r' => 40, 'g' => 131,'b' => 184),
             array('r' => 184, 'g' => 177,'b' => 40),
+            array('r' => 46, 'g' => 77,'b' => 197),
             array('r' => 245, 'g' => 101,'b' => 44),
             array('r' => 128, 'g' => 0,'b' => 128),
             array('r' => 0, 'g' => 128,'b' => 128),
