@@ -6,7 +6,7 @@ var listArtists = ["John Coltrane", "Miles Davis", "Charles Mingus"
 
 $(document).ready(function() {
     $("select[multiple]").asmSelect({
-      sortable: true,
+      sortable: false,
       highlight: false,
       hideWhenAdded:true,
       animate: true,
@@ -55,7 +55,7 @@ function initGexf(arArtistes, dbl, all)
   // à l'init
   if (arArtistes == '' || arArtistes.type == 'DOMContentLoaded')
   {
-    idArtistes =  '505770,988386,175553,9680,';
+    idArtistes =  '175553,9680,';
     nomArtiste = 'John Coltrane';
     idArtiste = '175553';
   }
@@ -211,7 +211,7 @@ function initGexf(arArtistes, dbl, all)
         'background': '#E7E7E7',
         'color': '#444',
         'font-size' : '10px',
-        'height' : '130pt',
+        'height' : '125pt',
         'overflow':'auto',
         'box-shadow': '0 0 0px #666',
         'line-height':'140%'
@@ -367,7 +367,7 @@ function getInfoArtiste(artist,idArtiste)
       $('#infoartiste').append('</ul>');     
    });
 
-  document.getElementById('imgArtiste').innerHTML = '<h4>' + artist + '</h4>';
+  document.getElementById('imgArtiste').innerHTML = '<h4>' + artist + "</h4><a href='http://www.discogs.com/artist/"+ artist.replace(' ', '+') + "' target='_blank'>Discogs</a>&nbsp;- <a  href='http://en.wikipedia.org/wiki/"+ artist.replace(' ', '_') + "' target='_blank'>Wikipedia</a>";
 
   $.getJSON("http://api.discogs.com/database/search?q="+ artist +"&type=artist&callback=?", function(data) 
   {
@@ -434,6 +434,10 @@ function getSelectValue(selectId)
   } 
   return values;  
 }
+
+$(document).ready(function() { 
+      $('#infos').modal();
+});
 
 if (document.addEventListener) {
   document.addEventListener('DOMContentLoaded', init, false);
