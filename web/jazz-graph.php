@@ -45,9 +45,19 @@ function getSelectBox($ids)
 <meta name="description" content="">
 <meta name="author" content="">
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/cv.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/css/jazzgraph.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="/css/jquery.asmselect.css" />
+<style type="text/css">
+@media (min-width: 900px) { 
+  .platform {width:1280px; 
+     background-color: #E7E7E7; 
+  }
+
+}
+</style>
 </head>
+
 <body>
 
     <div class="modal hide fade" id="infos">
@@ -121,12 +131,10 @@ function getSelectBox($ids)
     </div>
   </div>
 
-  <br/>
-  <br/>
+		<div class="platform">
 
    <div class="row">
 
-       <div class="span1"></div>
        <div class="span2 selectartists" id="selectartists">
          <div>
          <br/>
@@ -157,6 +165,7 @@ function getSelectBox($ids)
         </div>
 
         <div class="span3">
+        <br/>
             <div id="imgArtiste"> </div>
             <div id="infoartiste"> </div>
             <div id="bio"> </div>
@@ -167,12 +176,12 @@ function getSelectBox($ids)
 
     </div>
 
-    <div class="row listvideos">
+    <div class="row">
 
         <div class="row listvideos">
         <div class="">
-        <div class="span3"> </div>
-        <div class="span8 listvideos"> 
+        <div class="span2"> </div>
+        <div class="span7 listvideos"> 
             <div id="videos2"></div>
        </div>
         <div class="span3"> 
@@ -183,6 +192,7 @@ function getSelectBox($ids)
     <div class="row listvideos">
         <div class="span"> <br/> </div>
      </div>
+ </div>
   <script type="text/javascript">    
     var mapIdLabel = new Object();
     var nomArtiste = '';
