@@ -6,8 +6,9 @@ body { color: #444; background-color: #E7E7E7;}
   border-style: solid; 
   border-color: #000000; 
   position: relative;
+  top:20px;
 height: 600px;
-left:-15px;
+left:0px;
 }
 .sigma-expand {
   position: absolute;
@@ -67,5 +68,9 @@ ul.videos
 
 .listvideos{
 /*  background-color: #000;*/
+}
+#videos2{
+position:relative;
+left:20px;
 }
 

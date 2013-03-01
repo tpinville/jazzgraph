@@ -15,7 +15,6 @@ $idArtiste = (int) $_GET['id'];
 // Connecte la base
 mysql_select_db($db) or die ("pas de connection");
 
-  $arIds = split(",",$ids);
   $requete = "select birthdate as `Birth Date`, birthplace as `Birth place`,
   deathDate as `Death date`,  Country,
   decade as Decades from Artists a 

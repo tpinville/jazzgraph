@@ -11,46 +11,7 @@
 </HEAD>
 <BODY >
 
-  <!-- Navbar
-  ================================================== -->
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse"
-          data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="../"></a>
-
-        <div class="nav-collapse collapse" id="main-menu">
-          <ul class="nav" id="main-menu-left">
-            <li><a id="swatch-link" href="index.html">CV</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown"
-                href="#">Thèmes de recherche<b class="caret"></b></a>
-              <ul class="dropdown-menu" id="swatch-menu">
-                <li><a href="algorithmes-evolutionnistes.html">Algorithmes
-                  évolutionnistes</a></li>
-                <li><a href="reseaux-de-neurones.html">Réseaux de
-                  neurones</a></li>
-                <li><a href="robotique-evolutionniste.html">Robotique
-                  évolutionniste</a></li>
-                <li><a href="apprentissage-renforcement.html">Apprentissage par
-                renforcement</a></li>
-              </ul>
-            </li>
-          <li><a href="videos.html">Videos</a></li>
-          <li><a href="jazz-graph.php">Jazz Graph</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <ul class="nav pull-right" id="main-menu-right">
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+<?include("menu.html")?>
 
 		<div class="platform">
 
@@ -422,5 +383,6 @@ Society</EM>, 26(3):496–505.</DD></DL><!--CUT END -->
 </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
+<?include("footer.inc")?>
 </body>
 </HTML>
